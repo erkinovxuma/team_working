@@ -82,6 +82,17 @@
     }
 }
 
+@media only screen and (max-width: 1440px){
+    .header{
+        .nav{
+            .nav__logo{
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1200px){
     .header{
         .nav{

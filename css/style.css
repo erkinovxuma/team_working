@@ -15,7 +15,7 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -110,6 +110,11 @@ a {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 1440px) {
+  .header .nav .nav__logo p {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .header .nav .nav__menu {
     display: flex;
