@@ -1,26 +1,31 @@
+TeamLeader{
+    Home - 1 page
+    Braces - 6 page
+}
+
 Hondamir{
-    Services - Услуги
-    Promotions - Акции, рассрочка
+    Services - Услуги - 2 page
+    Promotions - Акции, рассрочка - 13 page
 }
 Shoxjahon{
-    All on 4
-    Reviews - Отзывы
+    All on 4 - 3 page
+    Reviews - Отзывы - 12 page
 }
 Asilbek{
-    Regions - Регионы
-    Doctors - Врачи
-    Articles - Статьи
+    Regions - Регионы - 4 page
+    Doctors - Врачи - 9 page
+    Articles - Статьи - 14 page
 }
 Begzod{
-    Dentistry - Лечение зубов
-    Contacts - Контакты
+    Dentistry - Лечение зубов - 5 page
+    Contacts - Контакты - 16 page
 }
 Maxsad{
-    Veneers - Виниры
-    1 doctor - 1 врач
-    Article template - Шаблон статьи
+    Veneers - Виниры - 7 page
+    1 doctor - 1 врач - 10 page
+    Article template - Шаблон статьи - 15 page
 }
 Humoyun{
-    Dental laboratory - Зуботехническая лаборатория
-    Under the doctor - Под врача
+    Dental laboratory - Зуботехническая лаборатория - 8 page
+    Under the doctor - Под врача - 11 page
 }
