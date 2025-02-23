@@ -19,4 +19,125 @@ a {
   margin: 0 auto;
 }
 
+.header {
+  width: 100%;
+  font-family: "Roboto";
+}
+.header .nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.header .nav .nav__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.header .nav .nav__logo p {
+  color: #000;
+  font-size: 1rem;
+  width: 15rem;
+  border-left: 1px solid #000;
+  padding: 0.3rem 1rem;
+}
+.header .nav .nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2.2rem;
+}
+.header .nav .nav__menu li {
+  position: relative;
+}
+.header .nav .nav__menu li a {
+  color: #000;
+  font-size: 1rem;
+}
+.header .nav .nav__menu .nav__servmenu, .header .nav .nav__menu .nav__clinmenu {
+  width: 20rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.12);
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+.header .nav .nav__menu .nav__servmenu li, .header .nav .nav__menu .nav__clinmenu li {
+  position: relative;
+}
+.header .nav .nav__menu .nav__servmenu a, .header .nav .nav__menu .nav__clinmenu a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+.header .nav .nav__menu .nav__servmenu a:hover, .header .nav .nav__menu .nav__clinmenu a:hover {
+  background-color: #F3F4F6;
+}
+.header .nav .nav__menu .services:hover .nav__servmenu {
+  display: block;
+}
+.header .nav .nav__burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+  display: none;
+  cursor: pointer;
+}
+.header .nav .nav__burger a {
+  color: #30B5DF;
+  font-size: 1.125rem;
+}
+.header .nav .nav__burger i {
+  color: #30B5DF;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header .nav .nav__menu {
+    display: flex;
+    justify-content: "";
+    align-items: "";
+    flex-direction: "";
+    flex-wrap: "";
+    gap: 1.2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header .nav .nav__logo p {
+    display: none;
+  }
+  .header .nav .nav__menu {
+    display: none;
+  }
+  .header .nav .nav__burger {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .nav .nav__logo p {
+    display: none;
+  }
+  .header .nav .nav__menu {
+    display: none;
+  }
+  .header .nav .nav__burger {
+    display: flex;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

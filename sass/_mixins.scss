@@ -1,0 +1,22 @@
+@use './roots' as *;
+
+@mixin flexBox($justify-content, $align-items, $flex-direction, $flex-wrap, $gap) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    gap: $gap;
+}
+
+@mixin button(){
+    padding: $padding;
+    border: $border;
+    border-radius: $border-radius;
+    background-color: $background-color;
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    cursor: pointer;
+    transition: all 0.3s;
+}
