@@ -1,0 +1,5 @@
+Bu fayllarga tegma👌
+
+sani ishlatotgan fayling faqat "_roots.scss" & "_mixins.scss" ichiga kirib kod yozma faqat olib ishlat
+
+sani ishlashing kerak bo'lgan fayllar papkalar ichida

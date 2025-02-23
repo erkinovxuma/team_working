@@ -1,0 +1,26 @@
+Hondamir{
+    Services - Услуги
+    Promotions - Акции, рассрочка
+}
+Shoxjahon{
+    All on 4
+    Reviews - Отзывы
+}
+Asilbek{
+    Regions - Регионы
+    Doctors - Врачи
+    Articles - Статьи
+}
+Begzod{
+    Dentistry - Лечение зубов
+    Contacts - Контакты
+}
+Maxsad{
+    Veneers - Виниры
+    1 doctor - 1 врач
+    Article template - Шаблон статьи
+}
+Humoyun{
+    Dental laboratory - Зуботехническая лаборатория
+    Under the doctor - Под врача
+}
