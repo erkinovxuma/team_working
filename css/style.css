@@ -85,7 +85,10 @@ a {
 .header .nav .nav__menu .nav__servmenu a:hover, .header .nav .nav__menu .nav__clinmenu a:hover {
   background-color: #F3F4F6;
 }
-.header .nav .nav__menu .services:hover .nav__servmenu {
+.header .nav .nav__menu .nav__services:hover .nav__servmenu {
+  display: block;
+}
+.header .nav .nav__menu .nav__clinic:hover .nav__clinmenu {
   display: block;
 }
 .header .nav .nav__burger {

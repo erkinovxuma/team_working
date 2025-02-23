@@ -55,9 +55,14 @@
                 }
 
             }
-            .services{
+            .nav__services{
                 &:hover .nav__servmenu{
                     display: block;
+                }
+            }
+            .nav__clinic{
+                &:hover .nav__clinmenu{
+                    display: block
                 }
             }
         }
