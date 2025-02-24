@@ -2,7 +2,13 @@
 @use '../../../mixins';
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    background-color: $bg-white;
+    box-shadow: 0 2px 1rem $shadow-gray;
+    z-index: 998;
     font-family: $Roboto;
     .nav{
         height: 5rem;
@@ -36,7 +42,13 @@
             .nav__reviews{
                 position: relative;
                 .reviews{
-                    @include mixins.sms('157', -12px, -30px, '', '')
+                    @include mixins.sms('157', -12px, -30px, '', '');
+                }
+            }
+            .nav__clinmenu{
+                position: relative;
+                .reviews{
+                    @include mixins.sms('157', 5px, '', '', 75px);
                 }
             }
             .nav__servmenu, .nav__clinmenu {

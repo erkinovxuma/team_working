@@ -8,10 +8,11 @@
     background-image: url('../../../../assets/img/Home/main/heading_sec_img.png');
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 850px;
     border-radius: $br-20;
     padding: 2rem;
     position: relative;
+    top: 6rem;
     @include mixins.flexBox(center, flex-start, column, '', 2rem);
     .txt{
         @include mixins.flexBox(center, flex-start, column, '', '');
@@ -32,7 +33,7 @@
         }
     }
     .buttons{
-        @include mixins.flexBox(center, center, '', '', 1.5rem);
+        @include mixins.flexBox(center, center, '', wrap, 1.5rem);
         .record{
             @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
         }
@@ -59,11 +60,9 @@
         position: absolute;
         bottom: 2rem;
         right: 2rem;
-        // margin-top: 7rem;
         width: 100%;
         @include mixins.flexBox(flex-end, center, row, '', .6rem);
         .card{
-            // width: 10rem;
             padding: 1rem;
             border-radius: $br-10;
             border: 1px solid $br-gray;
@@ -89,4 +88,99 @@
             @include mixins.sms('4', -12px, 0, '', '');
         }
     }
+}
+
+
+@media only screen and (max-width: 1440px){
+    .heading_sec{
+        .reklam{
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    .heading_sec{
+        background-image: url('../../../../assets/img/Home/main/heading_sec_img_2.png');
+        background-position: right;
+        background-size: 500px;
+
+        .txt{
+            h3{
+                font-size: $fs-20;
+            }
+            h1{
+                font-size: $fs-72;
+                font-family: $Roboto, sans-serif;
+                font-weight: $fw-8;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .heading_sec{
+        .working_time{
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 557px){
+    .heading_sec{
+        background-position: bottom center;
+        background-size: 450px;
+        @include mixins.flexBox(space-around, center, column, '', .6rem);
+
+        .txt{
+            @include mixins.flexBox(center, center, column, '', '');
+            text-align: center;
+            margin-bottom: 8rem;
+            h3{
+                font-size: $fs-18;
+            }
+            h1{
+                font-size: $fs-48;
+            }
+            h5{
+                font-size: $fs-14;
+            }
+        }
+        .buttons{
+            width: 100%;
+            li{
+                text-align: center;
+                @include mixins.flexBox(center, center, column, '', 2rem);
+                width: 100%;
+                .record{
+                    width: 100%;
+                    @include mixins.button(10px 0, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
+                }
+                .whatsApp{
+                    width: 100%;
+                    @include mixins.button(10px 0, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-16, $fw-5, $shadow-green);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px){
+    .heading_sec{
+        .buttons{
+            width: 100%;
+            li{
+                text-align: center;
+                @include mixins.flexBox(center, center, column, '', 2rem);
+                width: 100%;
+                .record{
+                    width: 100%;
+                    @include mixins.button(10px 5px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-12, $fw-5, $shadow-skyblue);
+                }
+                .whatsApp{
+                    width: 100%;
+                    @include mixins.button(10px 5px, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-12, $fw-5, $shadow-green);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px){
+
 }
