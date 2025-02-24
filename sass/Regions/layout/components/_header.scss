@@ -36,7 +36,7 @@
             .nav__reviews{
                 position: relative;
                 .reviews{
-                    @include mixins.sms('157')
+                    @include mixins.sms('157', -12px, -30px, '', '');
                 }
             }
             .nav__servmenu, .nav__clinmenu {

@@ -9,7 +9,7 @@
     gap: $gap;
 }
 
-@mixin button(){
+@mixin button($padding, $border,$border-radius, $background-color, $color, $font-size, $font-weight, $box-shadow){
     padding: $padding;
     border: $border;
     border-radius: $border-radius;
@@ -19,16 +19,28 @@
     font-weight: $font-weight;
     cursor: pointer;
     transition: all 0.3s;
+
+    &:hover{
+        filter: brightness(.9);
+        box-shadow: 0 0 5px 7px $box-shadow;
+    }
 }
 
-@mixin sms($content){
+@mixin glassCard{
+    background-image: linear-gradient(135deg rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(6px);
+}
+
+@mixin sms($content, $top, $right, $bottom, $left){
     position: relative;
 
     &::after{
         content: $content;
         position: absolute;
-        top: -12px;
-        right: -30px;
+        top: $top;
+        bottom: $bottom;
+        right: $right;
+        left: $left;
         font-size: $fs-10;
         background-color: $bg-skyblue;
         color: $fc-white;
