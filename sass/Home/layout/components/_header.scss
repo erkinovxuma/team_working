@@ -27,6 +27,16 @@
                 a{
                     color: $fc-dark;
                     font-size: $fs-16;
+                    transition: all .3s;
+                    &:hover{
+                        color: $fc-skyblue;
+                    }
+                }
+            }
+            .nav__reviews{
+                position: relative;
+                .reviews{
+                    @include mixins.sms('157')
                 }
             }
             .nav__servmenu, .nav__clinmenu {
