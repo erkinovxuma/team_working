@@ -61,6 +61,10 @@ a {
 .header .nav .nav__menu li a {
   color: #000;
   font-size: 1rem;
+  transition: all 0.3s;
+}
+.header .nav .nav__menu li a:hover {
+  color: #30B5DF;
 }
 .header .nav .nav__menu .nav__reviews {
   position: relative;

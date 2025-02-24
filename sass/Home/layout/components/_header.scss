@@ -27,6 +27,10 @@
                 a{
                     color: $fc-dark;
                     font-size: $fs-16;
+                    transition: all .3s;
+                    &:hover{
+                        color: $fc-skyblue;
+                    }
                 }
             }
             .nav__reviews{
