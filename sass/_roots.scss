@@ -14,6 +14,8 @@ $fs-60: 3.75rem;
 $fs-72: 4.5rem;
 $fs-100: 6.25rem;
 $fs-120: 7.5rem;
+$fs-140: 8.75rem;
+$fs-160: 10rem;
 
 // FONT WEIGHT
 $fw-1: 100;
@@ -34,12 +36,14 @@ $BebasNeue: 'Bebas Neue';
 $fc-dark: #000;
 $fc-white: #fff;
 $fc-gray: #384450;
+$fc-light-gray: #6B7680;
 $fc-skyblue: #30B5DF;
 
 // BACKGROUND COLOR
 $bg-dark: #000;
 $bg-black: #111C27;
 $bg-white: #fff;
+$bg-darker-white: #F6F4F4;
 $bg-gray: #384450;
 $bg-gray-60: #11182760;
 $bg-light-gray: #F3F4F6;
@@ -54,6 +58,7 @@ $br-blue: #9CA3AF;
 $br-blue_1: #949DA6;
 $br-blue-2: #D1D6DB;
 $br-blue-3: #E5E7EB;
+$br-gray: #d1d5db66;
 $br-blue-4: #30B5DF;
 
 // BORDER RADIUS
@@ -64,3 +69,7 @@ $br-16: 1rem;
 $br-18: 1.125rem;
 $br-20: 1.25rem;
 $br-24: 1.5rem;
+
+// BOX SHADOW COLOR
+$shadow-skyblue: #30B5DF66;
+$shadow-green: #25D36666;
