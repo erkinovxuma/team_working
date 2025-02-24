@@ -29,6 +29,12 @@
                     font-size: $fs-16;
                 }
             }
+            .nav__reviews{
+                position: relative;
+                .reviews{
+                    @include mixins.sms('157')
+                }
+            }
             .nav__servmenu, .nav__clinmenu {
                 width: 20rem;
                 display: none;

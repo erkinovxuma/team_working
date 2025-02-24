@@ -62,6 +62,26 @@ a {
   color: #000;
   font-size: 1rem;
 }
+.header .nav .nav__menu .nav__reviews {
+  position: relative;
+}
+.header .nav .nav__menu .nav__reviews .reviews {
+  position: relative;
+}
+.header .nav .nav__menu .nav__reviews .reviews::after {
+  content: "157";
+  position: absolute;
+  top: -12px;
+  right: -30px;
+  font-size: 0.625rem;
+  background-color: #30B5DF;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header .nav .nav__menu .nav__servmenu, .header .nav .nav__menu .nav__clinmenu {
   width: 20rem;
   display: none;
