@@ -300,7 +300,87 @@ a {
   letter-spacing: 0%;
   margin-bottom: 24px;
 }
-.main .heading_section .reklam {
+.main .heading_section .buttons {
+  width: 100%;
+  max-width: 399px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 4px;
+}
+.main .heading_section .buttons .white_button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 35px;
+  max-width: 248px;
+  font-family: "Roboto", serif;
+  color: rgb(148, 157, 166);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 0%;
+}
+.main .heading_section .buttons .blue_button {
+  width: 100%;
+  max-width: 147px;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(48, 181, 223);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+}
+.main .heading_section .buttons .blue_button:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 5px 7px "";
+}
+.main .heading_section .input {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 8px;
+  margin-bottom: 26px;
+}
+.main .heading_section .input input {
+  width: 16;
+  height: 16;
+  border-radius: 4px;
+  border-width: 0.67px;
+  border: 0.67px solid rgb(249, 250, 251);
+}
+.main .heading_section .input span {
+  font-family: "Inter", serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 18.2px;
+  letter-spacing: 2%;
+  color: rgb(249, 250, 251);
+}
+.main .heading_section .input span a {
+  color: rgb(249, 250, 251);
+  font-family: "Inter", serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 18.2px;
+  letter-spacing: 2%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+}
+.main .heading_section .reklame {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -309,7 +389,7 @@ a {
   flex-wrap: "";
   gap: 0.6rem;
 }
-.main .heading_section .reklam .card {
+.main .heading_section .reklame .card {
   padding: 1rem;
   border-radius: 0.625rem;
   border: 1px solid rgba(209, 213, 219, 0.4);
@@ -318,17 +398,17 @@ a {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-.main .heading_section .reklam .card:last-child {
+.main .heading_section .reklame .card:last-child {
   padding: 0.6rem;
 }
-.main .heading_section .reklam .card:last-child img {
+.main .heading_section .reklame .card:last-child img {
   height: 100%;
 }
-.main .heading_section .reklam .card img {
+.main .heading_section .reklame .card img {
   height: 100%;
 }
 @media only screen and (max-width: 557px) {
-  .main .heading_section .reklam {
+  .main .heading_section .reklame {
     position: relative;
     bottom: 0;
     right: 0;
@@ -340,7 +420,7 @@ a {
     flex-wrap: "";
     gap: 0.6rem;
   }
-  .main .heading_section .reklam .card {
+  .main .heading_section .reklame .card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,21 +429,21 @@ a {
     gap: 0.6rem;
     width: 100%;
   }
-  .main .heading_section .reklam .card:last-child {
+  .main .heading_section .reklame .card:last-child {
     position: static;
     bottom: 4px;
     padding: 1rem;
   }
-  .main .heading_section .reklam .card:last-child img {
+  .main .heading_section .reklame .card:last-child img {
     height: 1rem;
   }
-  .main .heading_section .reklam .card img {
+  .main .heading_section .reklame .card img {
     height: 0.6rem;
   }
-  .main .heading_section .reklam .card_1 {
+  .main .heading_section .reklame .card_1 {
     position: relative;
   }
-  .main .heading_section .reklam .card_1::after {
+  .main .heading_section .reklame .card_1::after {
     content: "60";
     position: absolute;
     top: -12px;
@@ -379,10 +459,10 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .main .heading_section .reklam .card_2 {
+  .main .heading_section .reklame .card_2 {
     position: relative;
   }
-  .main .heading_section .reklam .card_2::after {
+  .main .heading_section .reklame .card_2::after {
     content: "34";
     position: absolute;
     top: -12px;
@@ -398,10 +478,10 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .main .heading_section .reklam .card_3 {
+  .main .heading_section .reklame .card_3 {
     position: relative;
   }
-  .main .heading_section .reklam .card_3::after {
+  .main .heading_section .reklame .card_3::after {
     content: "4";
     position: absolute;
     top: -12px;

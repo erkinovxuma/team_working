@@ -40,9 +40,75 @@
       letter-spacing: 0%;
       margin-bottom: 24px;
     }
-    // .buttons {
-    // }
-    .reklam {
+    .buttons {
+      width: 100%;
+      max-width: calc(248px + 4px + 147px);
+      margin-bottom: 24px;
+      @include mixins.flexBox(center, center, row, "", 4px);
+      .white_button {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 18px 35px;
+        max-width: 248px;
+        font-family: "Roboto", serif;
+        color: rgba(148, 157, 166, 1);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17.58px;
+        letter-spacing: 0%;
+      }
+      .blue_button {
+        width: 100%;
+        max-width: 147px;
+        @include mixins.button(
+          18px 32px,
+          none,
+          8px,
+          rgba(48, 181, 223, 1),
+          rgba(255, 255, 255, 1),
+          15px,
+          500,
+          ""
+        );
+        line-height: 19.5px;
+        letter-spacing: 0%;
+      }
+    }
+    .input {
+      width: 100%;
+      max-width: 430px;
+      @include mixins.flexBox(flex-start, center, row, "", 8px);
+      input {
+        width: 16;
+        height: 16;
+        border-radius: 4px;
+        border-width: 0.67px;
+        border: 0.67px solid rgba(249, 250, 251, 1);
+      }
+      span {
+        font-family: "Inter", serif;
+        font-weight: $fw-3;
+        font-size: $fs-14;
+        line-height: 18.2px;
+        letter-spacing: 2%;
+        color: rgba(249, 250, 251, 1);
+        a {
+          color: rgba(249, 250, 251, 1);
+          font-family: "Inter", serif;
+          font-weight: $fw-3;
+          font-size: $fs-14;
+          line-height: 18.2px;
+          letter-spacing: 2%;
+          text-decoration: underline;
+          text-decoration-style: solid;
+
+          text-decoration-thickness: Auto;
+        }
+      }
+      margin-bottom: 26px;
+    }
+    .reklame {
       width: 100%;
       @include mixins.flexBox(flex-end, center, row, "", 0.6rem);
       .card {
