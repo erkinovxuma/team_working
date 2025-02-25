@@ -12,7 +12,7 @@
     border-radius: $br-20;
     padding: 2rem;
     position: relative;
-    top: 6rem;
+    // top: 6rem;
     @include mixins.flexBox(center, flex-start, column, '', 2rem);
     .txt{
         @include mixins.flexBox(center, flex-start, column, '', '');

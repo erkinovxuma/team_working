@@ -27,8 +27,8 @@
 }
 
 @mixin glassCard{
-    background-image: linear-gradient(135deg rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(6px);
+    background-image: linear-gradient(135deg rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
 }
 
 @mixin sms($content, $top, $right, $bottom, $left){
