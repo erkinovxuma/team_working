@@ -535,6 +535,10 @@ a {
     width: 100%;
     max-width: 262px;
   }
+  .main .heading_section p {
+    width: 100%;
+    max-width: 296px;
+  }
 }
 
 .heading_sec {
