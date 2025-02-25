@@ -1,0 +1,98 @@
+@use "../../roots" as *;
+@use "../../mixins";
+
+.main {
+  width: 100%;
+  .heading_section {
+    width: 100%;
+    background-image: url("../../../assets/img/hero-section\ qariya.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6.938rem 2rem 2.438rem 3.5rem;
+    border-radius: $br-20;
+    background-color: $bg-darker-white;
+    position: relative;
+    @include mixins.flexBox(center, flex-start, column, "", "");
+    h1 {
+      width: 100%;
+      max-width: 500px;
+      text-transform: uppercase;
+      font-family: $BebasNeue, monospace;
+      font-weight: 700;
+      font-size: 4.688rem;
+      color: $bg-white;
+      line-height: 4.219rem;
+      letter-spacing: -0.5%;
+      margin-bottom: 1rem;
+      .h1_span {
+        color: rgba(48, 181, 223, 1);
+      }
+    }
+    p {
+      width: 100%;
+      max-width: 355px;
+      font-family: "Roboto", serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 21px;
+      letter-spacing: 0%;
+      margin-bottom: 24px;
+    }
+    // .buttons {
+    // }
+    .reklam {
+      width: 100%;
+      @include mixins.flexBox(flex-end, center, row, "", 0.6rem);
+      .card {
+        padding: 1rem;
+        border-radius: $br-10;
+        border: 1px solid $br-gray;
+        position: relative;
+        @include mixins.glassCard;
+        &:last-child {
+          padding: 0.6rem;
+          img {
+            height: 100%;
+          }
+        }
+        img {
+          height: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 557px) {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        @include mixins.flexBox(flex-end, center, row, "", 0.6rem);
+        .card {
+          @include mixins.flexBox(center, center, row, "", 0.6rem);
+          width: 100%;
+          &:last-child {
+            position: static;
+            bottom: 4px;
+            padding: 1rem;
+            img {
+              height: 1rem;
+            }
+          }
+          img {
+            height: 0.6rem;
+          }
+        }
+        .card_1 {
+          @include mixins.sms("60", -12px, 0, "", "");
+        }
+        .card_2 {
+          @include mixins.sms("34", -12px, 0, "", "");
+        }
+        .card_3 {
+          @include mixins.sms("4", -12px, 0, "", "");
+        }
+      }
+    }
+  }
+}
