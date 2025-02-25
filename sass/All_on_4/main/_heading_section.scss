@@ -108,7 +108,7 @@
       }
       margin-bottom: 26px;
     }
-    .reklame  {
+    .reklame {
       width: 100%;
       @include mixins.flexBox(flex-end, center, row, "", 0.6rem);
       .card {
@@ -158,6 +158,48 @@
         .card_3 {
           @include mixins.sms("4", -12px, 0, "", "");
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .heading_section {
+      // background-image: url("../../../assets/img/heading_section-media-img.png");
+      // background-size: cover;
+      background-position: right center;
+      padding: 318px 16px 40px 16px;
+      h1 {
+        font-size: 40px;
+      }
+      .buttons {
+        width: 100%;
+        // max-width: 100%;
+        flex-direction: column;
+        .white_button {
+          width: 100%;
+          max-width: 100%;
+        }
+        .blue_button {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .input {
+        display: none;
+      }
+      .reklame {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .heading_section {
+      background-image: url("../../../assets/img/heading_section-media-img.png");
+      background-size: cover;
+      padding: 318px 16px 40px 16px;
+      h1 {
+        width: 100%;
+        max-width: 262px;
       }
     }
   }
