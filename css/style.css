@@ -40,8 +40,7 @@ a {
   box-shadow: 0 2px 1rem rgba(255, 255, 255, 0.4);
   z-index: 998;
   font-family: "Roboto";
-  max-width: 1200px;
-  
+
 }
 .header .nav {
   height: 5rem;
