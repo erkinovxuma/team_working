@@ -507,7 +507,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .heading_sec .reklam .card:last-child {
   padding: 0.6rem;
@@ -883,7 +884,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .hero .reklam .card:last-child {
   padding: 0.6rem;
@@ -1440,6 +1442,4 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
