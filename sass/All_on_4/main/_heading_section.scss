@@ -108,7 +108,7 @@
       }
       margin-bottom: 26px;
     }
-    .reklame {
+    .reklame  {
       width: 100%;
       @include mixins.flexBox(flex-end, center, row, "", 0.6rem);
       .card {
