@@ -9,6 +9,13 @@
     gap: $gap;
 }
 
+@mixin gridBox(){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rowss;
+    gap: $gap;
+}
+
 @mixin button($padding, $border,$border-radius, $background-color, $color, $font-size, $font-weight, $box-shadow){
     padding: $padding;
     border: $border;

@@ -2,6 +2,8 @@
 @use '../mixins';
 
 .header{
+    width: 100%;
+    padding: 0 2rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,6 +13,7 @@
     z-index: 998;
     font-family: $Roboto;
     .nav{
+        width: 100%;
         height: 5rem;
         @include mixins.flexBox(space-between, center, row, nowrap, 0);
 
@@ -27,7 +30,7 @@
         }
 
         .nav__menu{
-            @include mixins.flexBox(space-between, center, row, nowrap, 2.2rem);
+            @include mixins.flexBox(space-between, center, row, nowrap, 3rem);
             li {
                 position: relative;
                 a{
@@ -62,12 +65,12 @@
                 padding: 0;
                 margin: 0;
                 z-index: 1000;
-
                 li{
                     position: relative;
                 }
 
                 a{
+                    overflow: hidden;
                     display: block;
                     width: 100%;
                     padding: 15px;

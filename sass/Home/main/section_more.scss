@@ -1,0 +1,14 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.section_more{
+    width: 100%;
+    @include mixins.flexBox(center, center, row, '', 2rem);
+    .cont{
+        width: 100%;
+        @include mixins.flexBox(center, center, row, row, 2rem);
+        .card{
+            width: 800px;
+        }
+    }
+}
