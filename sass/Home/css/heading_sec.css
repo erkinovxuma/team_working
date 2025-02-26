@@ -354,9 +354,11 @@
   }
   .heading_sec .reklam .card:last-child img {
     height: 1rem;
+    width: 100%;
   }
   .heading_sec .reklam .card img {
     height: 0.6rem;
+    width: 100%;
   }
   .heading_sec .reklam .card_1 {
     position: relative;
