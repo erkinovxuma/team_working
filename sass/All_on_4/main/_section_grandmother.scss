@@ -114,4 +114,38 @@
       }
     }
   }
+  @media only screen and (max-width: 1326px) {
+    .section_grandmother {
+      padding: 50px;
+      background-position: top center;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    .section_grandmother {
+      padding: 20px;
+      .section_grandmother_title {
+        flex-direction: column;
+        row-gap: 20px;
+        .title_div {
+          flex-direction: column;
+          row-gap: 20px;
+          img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .title_div_left {
+            b {
+              text-align: center;
+            }
+            ul {
+              li {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1942,6 +1942,36 @@ a {
   letter-spacing: 0%;
   color: rgb(255, 255, 255);
 }
+@media only screen and (max-width: 1326px) {
+  .main .section_grandmother {
+    padding: 50px;
+    background-position: top center;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .main .section_grandmother {
+    padding: 20px;
+  }
+  .main .section_grandmother .section_grandmother_title {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .main .section_grandmother .section_grandmother_title .title_div {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .main .section_grandmother .section_grandmother_title .title_div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .section_grandmother .section_grandmother_title .title_div .title_div_left b {
+    text-align: center;
+  }
+  .main .section_grandmother .section_grandmother_title .title_div .title_div_left ul li {
+    text-align: center;
+  }
+}
 
 .heading_sec {
   width: 100%;
