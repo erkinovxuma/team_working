@@ -9,7 +9,7 @@
     gap: $gap;
 }
 
-@mixin gridBox($columns, $rows, $wrap, $gap){
+@mixin gridBox($columns, $rows, $wrap:"wrap", $gap){
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
     grid-template-rows: repeat($rows, 1fr);
@@ -32,6 +32,18 @@
         filter: brightness(.9);
         box-shadow: 0 0 5px 7px $box-shadow;
     }
+}
+
+@mixin input($width, $height, $padding, $border, $fs, $txt-color,$bg-color, $br-radius){
+    width: $width;
+    height: $height;
+    padding: $padding;
+    border: $border;
+    outline: none;
+    font-size: $fs;
+    color: $txt-color;
+    background: $bg-color;
+    border-radius: $br-radius;
 }
 
 @mixin glassCard{

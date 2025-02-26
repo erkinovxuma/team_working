@@ -68,7 +68,7 @@ a {
 }
 .header {
   width: 100%;
-  padding: 0 2rem;
+  padding: 0.5rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -764,12 +764,14 @@ a {
 
 @media only screen and (max-width: 1024px) {
   .cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex-wrap: "";
     gap: "";
+  }
+  .cont .card {
+    width: 100%;
   }
 }
 

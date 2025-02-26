@@ -10,7 +10,6 @@
         width: 100%;
         @include mixins.gridBox(2, 2, none, 2rem);
         .card{
-            // width: 800px;
             height: 22rem;
             padding: 2.2rem;
             border-radius: $br-20;
@@ -69,8 +68,10 @@
 }
 @media only screen and (max-width: 1024px){
     .cont{
-        // width: 100%;
-        @include mixins.flexBox(center, center, column, none, '')
+        @include mixins.gridBox(1, 1, '', '');
+        .card{
+            width: 100%;
+        }
     }
 }
 @media only screen and (max-width: 768px){
