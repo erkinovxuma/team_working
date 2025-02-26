@@ -991,6 +991,107 @@ a {
 .main {
   width: 100%;
 }
+.main .section_department .department_top {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 557px;
+}
+.main .section_department .department_top h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 55.8px;
+  letter-spacing: 0%;
+  color: rgb(17, 24, 39);
+  margin-bottom: 28px;
+}
+.main .section_department .department_top h5 span {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 55.8px;
+  letter-spacing: 0%;
+  color: rgb(48, 181, 223);
+}
+.main .section_department .department_top p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 437px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25.5px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(56, 68, 80);
+}
+.main .section_department .active_buttons {
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main .section_department .active_buttons .xirurgiya {
+  width: 100%;
+  max-width: 115px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 60px;
+  background-color: rgb(48, 181, 223);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+}
+.main .section_department .active_buttons .xirurgiya:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 5px 7px "";
+}
+.main .section_department .active_buttons .ortopediya {
+  background-color: rgb(243, 244, 246);
+  width: 100%;
+  max-width: 127px;
+  border: none;
+  border-radius: 60px;
+  padding: 8px 20px;
+  max-width: 248px;
+  font-family: "Roboto", serif;
+  color: rgb(17, 24, 39);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 0%;
+}
+.main .section_department .active_buttons .zubotexnika {
+  background-color: rgb(243, 244, 246);
+  width: 100%;
+  max-width: 142px;
+  border: none;
+  border-radius: 60px;
+  padding: 8px 20px;
+  max-width: 248px;
+  font-family: "Roboto", serif;
+  color: rgb(17, 24, 39);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 0%;
+}
+
 .heading_sec {
   width: 100%;
   font-family: "Roboto";
