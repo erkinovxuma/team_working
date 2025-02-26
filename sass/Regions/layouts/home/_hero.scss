@@ -28,35 +28,31 @@
             }
         }
         p{
+            width: 500px;
             color: $fc-white;
             font-size: $fs-16;
             font-weight: $fw-3;
             position: relative;
             top: 15px;
+            line-height: 1.5;
         }
     }
     .buttons{
-        @include mixins.flexBox(center, center, '', wrap, 4.8rem);
+        @include mixins.flexBox(center, center, '', wrap, 4.6rem);
         .input{
-            @include mixins.input( 130%, 40px, 20px, 1px solid $transparent, 1rem, grey,white, 8px);
+            @include mixins.input( 130%, 2.5rem, 0.25rem, 1px solid transparent, 1rem, grey,white, 0.5rem);
         }
         .whatsApp{
             @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
         }
     }
-    .working_time{
-        @include mixins.flexBox(center, center, '', '', 1.5rem);
-        li{
-            @include mixins.flexBox(center, center, '', '', .5rem);
-            i{
-                font-size: $fs-24;
-                color: $fc-skyblue;
-            }
-            p{
-                color: $fc-dark;
-                font-weight: $fw-4;
-                font-size: $fs-16;
-            }
+    .check_tm{
+        position: relative;
+        top: -10px;
+        @include mixins.flexBox(center, center, '', wrap, 1rem);
+        p{
+            color: $fc-white;
+            font-weight: $fw-3;
         }
     }
     .reklam{
@@ -108,9 +104,6 @@
         background-size: 500px;
 
         .txt{
-            h3{
-                font-size: $fs-20;
-            }
             h1{
                 font-size: $fs-72;
                 font-family: $Roboto, sans-serif;
@@ -136,13 +129,10 @@
             @include mixins.flexBox(center, center, column, '', '');
             text-align: center;
             margin-bottom: 8rem;
-            h3{
-                font-size: $fs-18;
-            }
             h1{
                 font-size: $fs-48;
             }
-            h5{
+            p{
                 font-size: $fs-14;
             }
         }
