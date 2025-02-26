@@ -1834,12 +1834,113 @@ a {
 }
 .main .section_grandmother {
   width: 100%;
+  padding: 0px 155px;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+  background-color: rgb(222, 239, 255);
   background-image: url("../../../assets/img/grandmother_background.png");
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .section_grandmother .section_grandmother_text {
+  margin-bottom: 41px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-top: 200px;
+}
+.main .section_grandmother .section_grandmother_text h6 {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 65px;
+  letter-spacing: 0%;
+  color: rgb(17, 24, 39);
+}
+.main .section_grandmother .section_grandmother_text h6 span {
+  color: rgb(48, 181, 223);
+}
+.main .section_grandmother .section_grandmother_text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25.5px;
+  color: rgb(17, 28, 39);
+  letter-spacing: 0%;
+}
+.main .section_grandmother .section_grandmother_title {
+  width: 100%;
+  max-width: 1131px;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.main .section_grandmother .section_grandmother_title .title_div {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+  padding: 32px;
+  max-width: 557px;
+  background-color: rgba(255, 255, 255, 0.86);
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(36px);
+          backdrop-filter: blur(36px);
+}
+.main .section_grandmother .section_grandmother_title .title_div .title_div_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .section_grandmother .section_grandmother_title .title_div .title_div_left b {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgb(11, 31, 53);
+  letter-spacing: 0%;
+  display: block;
+  margin-bottom: 24px;
+}
+.main .section_grandmother .section_grandmother_title .title_div .title_div_left ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.main .section_grandmother .section_grandmother_title .title_div .title_div_left ul li {
+  list-style: disc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25.5px;
+  letter-spacing: 0%;
+}
+.main .section_grandmother .section_grandmother_title .title_div .title_div_left ul li::marker {
+  color: rgb(48, 181, 223);
+}
+.main .section_grandmother .section_grandmother_title .title_div .title_div_left button {
+  margin-top: 55px;
+  display: block;
+  width: 100%;
+  border: none;
+  max-width: 187px;
+  border-radius: 8px;
+  padding: 18px 24px;
+  background-color: rgb(48, 181, 223);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
 }
 
 .heading_sec {
