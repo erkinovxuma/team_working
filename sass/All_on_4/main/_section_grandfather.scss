@@ -16,7 +16,55 @@
       background-image: url("../../../assets/img/grandfather_background.png");
       background-repeat: no-repeat;
       background-size: cover;
-      padding: 48px;
+      padding: 98px 48px 48px 48px;
+      margin-bottom: 16px;
+      h6 {
+        margin-bottom: 24px;
+        span {
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: 32px;
+          // leading-trim: Cap height;
+          color: rgba(22, 163, 208, 1);
+          line-height: 38.4px;
+          letter-spacing: 0%;
+        }
+        color: rgba(17, 28, 39, 1);
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        // leading-trim: Cap height;
+        line-height: 26.4px;
+        letter-spacing: 0%;
+      }
+      ul {
+        width: 100%;
+        max-width: 347px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+        li {
+          font-family: "Roboto", sans-serif;
+          color: rgba(17, 28, 39, 1);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22.5px;
+          letter-spacing: 0%;
+          list-style: disc;
+          &::marker {
+            color: rgba(48, 181, 223, 1);
+          }
+          a {
+            font-family: "Roboto", sans-serif;
+            color: rgba(17, 28, 39, 1);
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22.5px;
+            letter-spacing: 0%;
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 }
