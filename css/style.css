@@ -988,6 +988,9 @@ a {
   }
 }
 
+.main {
+  width: 100%;
+}
 .heading_sec {
   width: 100%;
   font-family: "Roboto";
