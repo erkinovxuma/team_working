@@ -603,8 +603,6 @@ a {
 }
 
 .videoSlider {
-  max-width: 1178px;
-  padding: 0 24px;
   margin: 0 auto;
 }
 .videoSlider .videos {
