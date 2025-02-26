@@ -456,7 +456,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .main .heading_section .reklame .card:last-child {
   padding: 0.6rem;
@@ -774,7 +775,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .main .section_dental_metod .dental_method .dental_method_left {
   width: 100%;
@@ -846,7 +848,8 @@ a {
   row-gap: 20px;
 }
 .main .section_dental_metod .dental_method .dental_method_left ul li {
-  column-gap: 11px;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -886,7 +889,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   margin-bottom: 32px;
 }
 .main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top .slide {
@@ -1033,7 +1037,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1110,7 +1115,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
 }
 .main .section_department .department_bottom .department_slider .department_slider_top .slider_left {
   width: 100%;
@@ -1156,7 +1162,8 @@ a {
   width: 322px;
   display: flex;
   align-items: center;
-  column-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .main .section_department .department_bottom .department_slider_bottom {
   height: 64px;
@@ -1512,7 +1519,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .heading_sec .reklam .card:last-child {
   padding: 0.6rem;
@@ -2029,7 +2037,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .hero .reklam .card:last-child {
   padding: 0.6rem;
@@ -2423,7 +2432,8 @@ a {
   flex-wrap: "";
   gap: "";
   background-color: rgba(255, 255, 255, 0.603);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 30px 20px;
   border-radius: 1rem;
   border: 1px solid rgba(128, 128, 128, 0.13);
@@ -3767,6 +3777,4 @@ input[type=text] {
     margin: 0px 0 0;
     max-width: 80%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
