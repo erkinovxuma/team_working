@@ -1677,6 +1677,157 @@ a {
   letter-spacing: 0%;
   text-decoration: underline;
 }
+.main .section_grandfather .grandfather_middle {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_left {
+  width: 100%;
+  max-width: 557px;
+  padding: 32px;
+  border-radius: 22px;
+  background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_left .left_infos {
+  width: 100%;
+  max-width: 302px;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_left .left_infos h3 {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(17, 28, 39);
+  line-height: 26px;
+  margin-bottom: 16px;
+  letter-spacing: 0%;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_left .left_infos p {
+  width: 100%;
+  max-width: 260px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(17, 28, 39);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_left img {
+  transform: translateY(-50px);
+  display: block;
+  margin-left: auto;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos {
+  width: 100%;
+  max-width: 557px;
+  background-color: rgb(249, 250, 251);
+  padding: 32px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos .right_infos_style h3 {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(17, 28, 39);
+  line-height: 26px;
+  margin-bottom: 16px;
+  letter-spacing: 0%;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos .right_infos_style p {
+  width: 100%;
+  max-width: 260px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(17, 28, 39);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos img {
+  width: 238px;
+  transform: translate(30px, 30px);
+}
+.main .section_grandfather .section_grandfather__P {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(107, 118, 128);
+  line-height: 26.35px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 100%;
+  max-width: 401px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 1320px) {
+  .main .section_grandfather {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .main .section_grandfather {
+    padding: 20px;
+  }
+  .main .section_grandfather .grandfather_top {
+    background-position: center center;
+    padding: 88px 30px 30px 30px;
+  }
+  .main .section_grandfather .grandfather_middle {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_left {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_right {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main .section_grandfather {
+    padding: 10px;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_right {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos .right_infos_style h3 {
+    text-align: center;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos .right_infos_style p {
+    text-align: center;
+  }
+  .main .section_grandfather .grandfather_middle .grandfather_middle_right .right_infos img {
+    transform: translate(0px, 0px);
+  }
+}
 
 .heading_sec {
   width: 100%;
