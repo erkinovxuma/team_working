@@ -682,6 +682,8 @@ a {
   }
 }
 .section_more {
+  font-family: "Roboto";
+  padding: 5rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -692,15 +694,83 @@ a {
 }
 .section_more .cont {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  flex-wrap: none;
   gap: 2rem;
 }
 .section_more .cont .card {
-  width: 800px;
+  height: 22rem;
+  padding: 2.2rem;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: "";
+  gap: 1rem;
+}
+.section_more .cont .card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+.section_more .cont .card p {
+  width: 40%;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.section_more .cont .card a {
+  padding: 10px 20px;
+  border: 1px solid #30B5DF;
+  border-radius: 0.5rem;
+  background-color: #30B5DF;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.section_more .cont .card a:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 5px 7px "";
+}
+.section_more .cont .card_1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/Home/main/sec_2_img_!.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section_more .cont .card_2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/Home/main/sec_2_img_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section_more .cont .card_3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/Home/main/sec_2_img_3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section_more .cont .card_4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/Home/main/sec_2_img_4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: none;
+    gap: "";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

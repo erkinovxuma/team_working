@@ -9,10 +9,11 @@
     gap: $gap;
 }
 
-@mixin gridBox(){
+@mixin gridBox($columns, $rows, $wrap, $gap){
     display: grid;
-    grid-template-columns: $columns;
-    grid-template-rows: $rowss;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    flex-wrap: $wrap;
     gap: $gap;
 }
 

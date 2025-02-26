@@ -2,13 +2,83 @@
 @use '../../mixins';
 
 .section_more{
+    font-family: $Roboto;
+    padding: 5rem 0;
     width: 100%;
     @include mixins.flexBox(center, center, row, '', 2rem);
     .cont{
         width: 100%;
-        @include mixins.flexBox(center, center, row, row, 2rem);
+        @include mixins.gridBox(2, 2, none, 2rem);
         .card{
-            width: 800px;
+            // width: 800px;
+            height: 22rem;
+            padding: 2.2rem;
+            border-radius: $br-20;
+            @include mixins.flexBox(flex-end, flex-start, column, '', 1rem);
+
+            h3{
+                font-size: $fs-24;
+                color: $fc-white;
+                font-weight: $fw-6;
+            }
+            p{
+                width: 40%;
+                font-size: $fs-16;
+                color: $fc-white;
+                letter-spacing: 2px;
+            }
+            a{
+                @include mixins.button(10px 20px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, '');
+
+            }
+        }
+        .card_1{
+            background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url('../../../assets/img/Home/main/sec_2_img_!.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .card_2{
+            background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url('../../../assets/img/Home/main/sec_2_img_2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .card_3{
+            background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url('../../../assets/img/Home/main/sec_2_img_3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .card_4{
+            background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url('../../../assets/img/Home/main/sec_2_img_4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
+}
+
+
+
+@media only screen and (max-width: 1440px){
+
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 1024px){
+    .cont{
+        // width: 100%;
+        @include mixins.flexBox(center, center, column, none, '')
+    }
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 425px){
+
+}
+@media only screen and (max-width: 375px){
+
 }
