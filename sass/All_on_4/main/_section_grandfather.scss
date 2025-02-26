@@ -1,0 +1,22 @@
+@use "../../roots" as *;
+@use "../../mixins";
+
+.main {
+  width: 100%;
+  .section_grandfather {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 155px 144px 155px;
+    .grandfather_top {
+      width: 100%;
+      max-width: 100%;
+      background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+      background-image: url("../../../assets/img/grandfather_background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 48px;
+    }
+  }
+}
