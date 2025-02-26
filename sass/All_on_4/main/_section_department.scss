@@ -283,6 +283,9 @@
           .department_slider_top {
             display: flex;
             justify-content: center;
+            .slider_left {
+              padding: 10px;
+            }
           }
         }
 

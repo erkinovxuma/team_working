@@ -728,7 +728,7 @@ a {
 
 @media (max-width: 440px) {
   .videoSlider {
-    padding: 0 17px;
+    padding: 0px;
   }
   .videoSlider .videos {
     display: flex;
@@ -1254,6 +1254,9 @@ a {
   .main .section_department .department_bottom .department_slider .department_slider_top {
     display: flex;
     justify-content: center;
+  }
+  .main .section_department .department_bottom .department_slider .department_slider_top .slider_left {
+    padding: 10px;
   }
   .main .section_department .department_bottom .department_slider_bottom {
     flex-direction: column;
