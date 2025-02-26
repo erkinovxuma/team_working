@@ -257,7 +257,7 @@ a {
   font-family: "Roboto";
   height: 650px;
   background-color: #F6F4F4;
-  background-image: url("../../../../assets/img/Home/main/heading_sec_img.png");
+  background-image: url("../../../assets/img/heading_sec_img.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 850px;
@@ -710,6 +710,9 @@ a {
   flex-direction: column;
   flex-wrap: "";
   gap: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .section_more .cont .card h3 {
   font-size: 1.5rem;
@@ -739,27 +742,15 @@ a {
 }
 .section_more .cont .card_1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_!.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .section_more .cont .card_2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/Home/main/sec_2_img_2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_2.jpg");
 }
 .section_more .cont .card_3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/Home/main/sec_2_img_3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_3.jpg");
 }
 .section_more .cont .card_4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/Home/main/sec_2_img_4.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_4.jpg");
 }
 
 @media only screen and (max-width: 1024px) {
