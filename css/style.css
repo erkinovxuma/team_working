@@ -1502,6 +1502,116 @@ a {
   }
 }
 
+.main {
+  width: 100%;
+}
+.main .section_info {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 187px;
+}
+.main .section_info .section_info_div {
+  width: 100%;
+  max-width: 621px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.main .section_info .section_info_div .info_div_top b {
+  display: block;
+  margin-bottom: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: rgb(17, 24, 39);
+  line-height: 46px;
+  letter-spacing: 0%;
+}
+.main .section_info .section_info_div .info_div_top b span {
+  color: rgb(48, 181, 223);
+}
+.main .section_info .section_info_div .info_div_top p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(17, 24, 39);
+  line-height: 25.5px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+.main .section_info .section_info_div .info_div_top strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: rgb(17, 24, 39);
+  line-height: 25.5px;
+  letter-spacing: 0%;
+}
+.main .section_info .section_info_div .info_div_middle {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+}
+.main .section_info .section_info_div .info_div_middle ul {
+  width: 100%;
+  max-width: 310px;
+}
+.main .section_info .section_info_div .info_div_middle ul li {
+  list-style-image: url("../../../assets/svg/icon_radius_50.svg");
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(17, 24, 39);
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+.main .section_info .section_info_div .info_div_middle ul li span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(56, 68, 80);
+  line-height: 25.5px;
+  letter-spacing: 0%;
+}
+.main .section_info .section_info_div .info_div_bottom p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(17, 28, 39);
+  line-height: 32.64px;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+}
+.main .section_info .section_info_div .info_div_bottom p span {
+  color: rgb(48, 181, 223);
+}
+.main .section_info .section_info_div .info_div_bottom span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(17, 24, 39);
+  line-height: 25.5px;
+  letter-spacing: 0%;
+}
+@media only screen and (max-width: 1023px) {
+  .main .section_info {
+    padding: 50px;
+  }
+  .main .section_info .section_info_div .info_div_middle {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .main .section_info {
+    padding: 20px;
+  }
+}
+
 .heading_sec {
   width: 100%;
   font-family: "Roboto";
