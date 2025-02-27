@@ -8,7 +8,7 @@
     @include mixins.flexBox(center, center, row, '', 2rem);
     .cont{
         width: 100%;
-        @include mixins.gridBox(2, 2, none, 2rem);
+        @include mixins.gridBox(2, 2, '', 2rem);
         .card{
             height: 22rem;
             padding: 2.2rem;
@@ -59,9 +59,9 @@
 }
 @media only screen and (max-width: 1024px){
     .cont{
-        @include mixins.flexBox(center, center, column, wrap, '');
+        @include mixins.gridBox(2, 2, '', 2rem);
         .card{
-            width: 100%;
+            // width: 100%;
         }
     }
 }
