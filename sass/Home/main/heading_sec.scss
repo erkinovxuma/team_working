@@ -31,6 +31,32 @@
             font-size: $fs-16;
             font-weight: $fw-4;
         }
+
+        @media only screen and (max-width: 1024px){
+            h3{
+                font-size: $fs-20;
+            }
+            h1{
+                font-size: $fs-72;
+                font-family: $Roboto, sans-serif;
+                font-weight: $fw-8;
+            }
+        }
+
+        @media only screen and (max-width: 557px){
+            @include mixins.flexBox(center, center, column, '', '');
+            text-align: center;
+            margin-bottom: 8rem;
+            h3{
+                font-size: $fs-18;
+            }
+            h1{
+                font-size: $fs-48;
+            }
+            h5{
+                font-size: $fs-14;
+            }
+        }
     }
     .buttons{
         @include mixins.flexBox(center, center, '', wrap, 1.5rem);
@@ -39,6 +65,39 @@
         }
         .whatsApp{
             @include mixins.button(10px 15px, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-16, $fw-5, $shadow-green);
+        }
+        @media only screen and (max-width: 375px){
+            width: 100%;
+            li{
+                text-align: center;
+                @include mixins.flexBox(center, center, column, '', 2rem);
+                width: 100%;
+                .record{
+                    width: 100%;
+                    @include mixins.button(10px 5px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-12, $fw-5, $shadow-skyblue);
+                }
+                .whatsApp{
+                    width: 100%;
+                    @include mixins.button(10px 5px, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-12, $fw-5, $shadow-green);
+                }
+            }
+        }
+
+        @media only screen and (max-width: 557px){
+            width: 100%;
+            li{
+                text-align: center;
+                @include mixins.flexBox(center, center, column, '', 2rem);
+                width: 100%;
+                .record{
+                    width: 100%;
+                    @include mixins.button(10px 0, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
+                }
+                .whatsApp{
+                    width: 100%;
+                    @include mixins.button(10px 0, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-16, $fw-5, $shadow-green);
+                }
+            }
         }
     }
     .working_time{
@@ -55,6 +114,12 @@
                 font-size: $fs-16;
             }
         }
+
+        @media only screen and (max-width: 768px){
+            display: none;
+        }
+
+
     }
     .reklam{
         position: absolute;
@@ -87,79 +152,11 @@
         .card_3{
             @include mixins.sms('4', -12px, 0, '', '');
         }
-    }
-}
+        @media only screen and (max-width: 1440px){
+                    display: none;
+        }
 
-
-@media only screen and (max-width: 1440px){
-    .heading_sec{
-        .reklam{
-            display: none;
-        }
-    }
-}
-@media only screen and (max-width: 1024px){
-    .heading_sec{
-        background-image: url('../../../assets/img/heading_sec_img_2.png') !important;
-        background-position: right;
-        background-size: 500px;
-
-        .txt{
-            h3{
-                font-size: $fs-20;
-            }
-            h1{
-                font-size: $fs-72;
-                font-family: $Roboto, sans-serif;
-                font-weight: $fw-8;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 768px){
-    .heading_sec{
-        .working_time{
-            display: none;
-        }
-    }
-}
-@media only screen and (max-width: 557px){
-    .heading_sec{
-        background-position: bottom center;
-        background-size: 450px;
-        @include mixins.flexBox(space-around, center, column, '', .6rem);
-
-        .txt{
-            @include mixins.flexBox(center, center, column, '', '');
-            text-align: center;
-            margin-bottom: 8rem;
-            h3{
-                font-size: $fs-18;
-            }
-            h1{
-                font-size: $fs-48;
-            }
-            h5{
-                font-size: $fs-14;
-            }
-        }
-        .buttons{
-            width: 100%;
-            li{
-                text-align: center;
-                @include mixins.flexBox(center, center, column, '', 2rem);
-                width: 100%;
-                .record{
-                    width: 100%;
-                    @include mixins.button(10px 0, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
-                }
-                .whatsApp{
-                    width: 100%;
-                    @include mixins.button(10px 0, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-16, $fw-5, $shadow-green);
-                }
-            }
-        }
-        .reklam{
+        @media only screen and (max-width: 557px){
             position: relative;
             bottom: 0;
             right: 0;
@@ -191,28 +188,15 @@
             }
         }
     }
-}
 
-@media only screen and (max-width: 375px){
-    .heading_sec{
-        .buttons{
-            width: 100%;
-            li{
-                text-align: center;
-                @include mixins.flexBox(center, center, column, '', 2rem);
-                width: 100%;
-                .record{
-                    width: 100%;
-                    @include mixins.button(10px 5px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-12, $fw-5, $shadow-skyblue);
-                }
-                .whatsApp{
-                    width: 100%;
-                    @include mixins.button(10px 5px, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-12, $fw-5, $shadow-green);
-                }
-            }
-        }
+    @media only screen and (max-width: 1024px){
+            background-image: url('../../../assets/img/heading_sec_img_2.png') !important;
+            background-position: right;
+            background-size: 500px;
     }
-}
-@media only screen and (max-width: 320px){
-
+    @media only screen and (max-width: 557px){
+            background-position: bottom center;
+            background-size: 450px;
+            @include mixins.flexBox(space-around, center, column, '', .6rem);
+    }
 }
