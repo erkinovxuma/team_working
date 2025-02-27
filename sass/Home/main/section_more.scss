@@ -46,31 +46,38 @@
         .card_4{
             background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url('../../../assets/img/sec_2_img_4.jpg');
         }
-    }
-}
 
-
-
-@media only screen and (max-width: 1440px){
-
-}
-@media only screen and (max-width: 1200px){
-
-}
-@media only screen and (max-width: 1024px){
-    .cont{
-        @include mixins.gridBox(2, 2, '', 2rem);
-        .card{
-            // width: 100%;
+        @media only screen and (max-width: 1024px){
+            @include mixins.gridBox(2, 2, '', 2rem);
+        }
+        @media only screen and (max-width: 768px){
+            @include mixins.gridBox(1, 2, '', 2rem);
         }
     }
 }
-@media only screen and (max-width: 768px){
 
-}
-@media only screen and (max-width: 425px){
 
-}
-@media only screen and (max-width: 375px){
 
-}
+// @media only screen and (max-width: 1440px){
+
+// }
+// @media only screen and (max-width: 1200px){
+
+// }
+// @media only screen and (max-width: 1024px){
+//     .cont{
+//         @include mixins.gridBox(2, 2, '', 2rem);
+//         .card{
+//             // width: 100%;
+//         }
+//     }
+// }
+// @media only screen and (max-width: 768px){
+
+// }
+// @media only screen and (max-width: 425px){
+
+// }
+// @media only screen and (max-width: 375px){
+
+// }

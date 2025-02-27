@@ -752,9 +752,8 @@ a {
 .section_more .cont .card_4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_4.jpg");
 }
-
 @media only screen and (max-width: 1024px) {
-  .cont {
+  .section_more .cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -762,6 +761,16 @@ a {
     gap: 2rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .section_more .cont {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex-wrap: "";
+    gap: 2rem;
+  }
+}
+
 .hero {
   width: 100%;
   font-family: "Roboto";
