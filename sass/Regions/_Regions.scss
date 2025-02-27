@@ -1,8 +1,8 @@
 @use '../components/header';
-@use '.././Regions/layouts/home/hero';
-@use '.././Regions/layouts/skills/skills';
-@use '.././Regions/layouts/timeline/timeline';  
-@use '.././Regions/layouts/instruments/instruments';
-@use '.././Regions/layouts/team/team';
+@use './main/hero';
+@use './main/skills';
+@use './main/timeline';
+@use './main/instruments';
+@use './main/team';
 @use '../components/footer';
 
