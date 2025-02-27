@@ -451,7 +451,7 @@ a {
 }
 @media only screen and (max-width: 1024px) {
   .heading_sec {
-    background-image: url("../../../assets/img/heading_sec_img_2.png");
+    background-image: url("../../../assets/img/heading_sec_img_2.png") !important;
     background-position: right;
     background-size: 500px;
   }
@@ -743,38 +743,23 @@ a {
 .section_more .cont .card_1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_!.jpg");
 }
-.section_more .cont .card_1:hover {
-  background-image: linear-gradient(rgba(95, 95, 95, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/img/sec_2_img_!.jpg");
-  background-size: 120%;
-}
 .section_more .cont .card_2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_2.jpg");
-}
-.section_more .cont .card_2:hover {
-  background-image: linear-gradient(rgba(95, 95, 95, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/img/sec_2_img_2.jpg");
-  background-size: 120%;
 }
 .section_more .cont .card_3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_3.jpg");
 }
-.section_more .cont .card_3:hover {
-  background-image: linear-gradient(rgba(95, 95, 95, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/img/sec_2_img_3.jpg");
-  background-size: 130%;
-}
 .section_more .cont .card_4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../../assets/img/sec_2_img_4.jpg");
-}
-.section_more .cont .card_4:hover {
-  background-size: 120%;
-  background-image: linear-gradient(rgba(95, 95, 95, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/img/sec_2_img_4.jpg");
 }
 
 @media only screen and (max-width: 1024px) {
   .cont {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    flex-wrap: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: "";
   }
   .cont .card {
