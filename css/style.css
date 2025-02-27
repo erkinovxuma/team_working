@@ -781,12 +781,12 @@ a {
     width: 100%;
   }
 }
-.heading_sec {
+.hero {
   width: 100%;
   font-family: "Roboto";
   height: 650px;
   background-color: #F6F4F4;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6784313725), rgba(0, 0, 0, 0.0901960784)), url("./../../../../assets/img/hero-section qariya.jpg");
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6784313725), rgba(0, 0, 0, 0.0901960784)), url("./../../../assets/img/hero-section qariya.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -800,7 +800,7 @@ a {
   flex-wrap: "";
   gap: 2rem;
 }
-.heading_sec .txt {
+.hero .txt {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -808,19 +808,17 @@ a {
   flex-wrap: "";
   gap: "";
 }
-.heading_sec .txt h1 {
-  width: 800px;
+.hero .txt h1 {
   color: #fff;
-  font-size: 6.25rem;
+  font-size: 3.75rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
-  line-height: 85.5px;
+  line-height: 60.5px;
 }
-.heading_sec .txt h1 span {
+.hero .txt h1 span {
   color: #30B5DF;
 }
-.heading_sec .txt p {
-  width: 500px;
+.hero .txt p {
   color: #fff;
   font-size: 1rem;
   font-weight: 300;
@@ -828,7 +826,7 @@ a {
   top: 15px;
   line-height: 1.5;
 }
-.heading_sec .buttons {
+.hero .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -836,7 +834,7 @@ a {
   flex-wrap: wrap;
   gap: 4.6rem;
 }
-.heading_sec .buttons .input {
+.hero .buttons .input {
   width: 130%;
   height: 2.5rem;
   padding: 0.25rem;
@@ -847,7 +845,7 @@ a {
   background: white;
   border-radius: 0.5rem;
 }
-.heading_sec .buttons .whatsApp {
+.hero .buttons .whatsApp {
   padding: 10px 15px;
   border: 1px solid #30B5DF;
   border-radius: 0.5rem;
@@ -858,11 +856,11 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 }
-.heading_sec .buttons .whatsApp:hover {
+.hero .buttons .whatsApp:hover {
   filter: brightness(0.9);
   box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
 }
-.heading_sec .check_tm {
+.hero .check_tm {
   position: relative;
   top: -10px;
   display: flex;
@@ -872,11 +870,11 @@ a {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.heading_sec .check_tm p {
+.hero .check_tm p {
   color: #fff;
   font-weight: 300;
 }
-.heading_sec .reklam {
+.hero .reklam {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
@@ -888,7 +886,7 @@ a {
   flex-wrap: "";
   gap: 0.6rem;
 }
-.heading_sec .reklam .card {
+.hero .reklam .card {
   padding: 1rem;
   border-radius: 0.625rem;
   border: 1px solid rgba(209, 213, 219, 0.4);
@@ -896,19 +894,19 @@ a {
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
 }
-.heading_sec .reklam .card:last-child {
+.hero .reklam .card:last-child {
   padding: 0.6rem;
 }
-.heading_sec .reklam .card:last-child img {
+.hero .reklam .card:last-child img {
   height: 100%;
 }
-.heading_sec .reklam .card img {
+.hero .reklam .card img {
   height: 100%;
 }
-.heading_sec .reklam .card_1 {
+.hero .reklam .card_1 {
   position: relative;
 }
-.heading_sec .reklam .card_1::after {
+.hero .reklam .card_1::after {
   content: "60";
   position: absolute;
   top: -12px;
@@ -924,10 +922,10 @@ a {
   justify-content: center;
   align-items: center;
 }
-.heading_sec .reklam .card_2 {
+.hero .reklam .card_2 {
   position: relative;
 }
-.heading_sec .reklam .card_2::after {
+.hero .reklam .card_2::after {
   content: "34";
   position: absolute;
   top: -12px;
@@ -943,10 +941,10 @@ a {
   justify-content: center;
   align-items: center;
 }
-.heading_sec .reklam .card_3 {
+.hero .reklam .card_3 {
   position: relative;
 }
-.heading_sec .reklam .card_3::after {
+.hero .reklam .card_3::after {
   content: "4";
   position: absolute;
   top: -12px;
@@ -1207,15 +1205,16 @@ a {
 }
 .skills h3 {
   text-align: center;
+  font-weight: 500;
   font-size: 1.375rem;
 }
 .skills h3 span {
   color: #30B5DF;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.375rem;
 }
 .skills h2 {
-  font-size: 1.875rem;
+  font-size: 3.75rem;
   margin-bottom: 30px;
 }
 .skills .parent {
@@ -1239,6 +1238,7 @@ a {
   border-radius: 15px;
 }
 .skills .parent__card p {
+  font-size: 1.25rem;
   color: #384450;
   line-height: 1.5;
 }
