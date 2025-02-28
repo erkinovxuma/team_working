@@ -50,11 +50,5 @@
         @media only screen and (max-width: 768px){
             @include mixins.gridBox(1, 2, '', 2rem);
         }
-        @media only screen and (max-width: 425px){
-
-        }
-        @media only screen and (max-width: 375px){
-
-        }
     }
 }
