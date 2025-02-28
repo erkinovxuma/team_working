@@ -1,12 +1,12 @@
 @use '../../roots' as *;
 @use '../../mixins';
 
-.hero{
+.hero {
     width: 100%;
     font-family: $Roboto;
     height: 650px;
     background-color: $bg-darker-white;
-    background: linear-gradient(45deg, #000000ad,#00000017), url('./../../../assets/img/hero-section\ qariya.jpg');
+    background: linear-gradient(45deg, #000000ad, #00000017), url('./../../../assets/img/hero-section\ qariya.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,20 +14,24 @@
     padding: 2rem;
     position: relative;
     @include mixins.flexBox(center, flex-start, column, '', 2rem);
-    .txt{
+
+    .txt {
         @include mixins.flexBox(center, flex-start, column, '', '');
-        h1{
+
+        h1 {
             // width: 800px;
             color: $fc-white;
             font-size: $fs-60;
             font-family: $BebasNeue, sans-serif;
             font-weight: $fw-7;
             line-height: 60.5px;
-            span{
+
+            span {
                 color: $fc-skyblue;
             }
         }
-        p{
+
+        p {
             // width: 500px;
             color: $fc-white;
             font-size: $fs-16;
@@ -37,175 +41,92 @@
             line-height: 1.5;
         }
     }
-    .buttons{
-        @include mixins.flexBox(center, center, '', wrap, 4.6rem);
-        .input{
-            @include mixins.input( 130%, 2.5rem, 0.25rem, 1px solid transparent, 1rem, grey,white, 0.5rem);
+
+    .buttons {
+        width: 100%;
+        @include mixins.flexBox(start, center, row, '', 1rem);
+
+        .input {
+            @include mixins.input(100%, 2.5rem, 0.25rem, 1px solid transparent, 1rem, grey, white, 0.5rem);
+
+            @media only screen and (max-width: 768px) {
+                text-align: center;
+                @include mixins.input(100%, 2.5rem, 0.25rem, 1px solid transparent, 0.9rem, grey, white, 0.5rem);
+            }
         }
-        .whatsApp{
+
+        .whatsApp {
             @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
+
+            @media only screen and (max-width: 768px) {
+                @include mixins.button(10px 25px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
+
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            @include mixins.flexBox(start, flex-start, column, '', 1rem);
+
         }
     }
-    .check_tm{
+
+    .check_tm {
         position: relative;
         top: -10px;
         @include mixins.flexBox(center, center, '', wrap, 1rem);
-        p{
+
+        p {
             color: $fc-white;
             font-weight: $fw-3;
         }
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
     }
-    .reklam{
+
+    .reklam {
         position: absolute;
         bottom: 2rem;
         right: 2rem;
         width: 100%;
         @include mixins.flexBox(flex-end, center, row, '', .6rem);
-        .card{
+
+        .card {
             padding: 1rem;
             border-radius: $br-10;
             border: 1px solid $br-gray;
             position: relative;
             @include mixins.glassCard;
-            &:last-child{
+
+            &:last-child {
                 padding: .6rem;
-                img{
+
+                img {
                     height: 100%;
                 }
             }
-            img{
+
+            img {
                 height: 100%;
             }
         }
-        .card_1{
+
+        .card_1 {
             @include mixins.sms('60', -12px, 0, '', '');
         }
-        .card_2{
+
+        .card_2 {
             @include mixins.sms('34', -12px, 0, '', '');
         }
-        .card_3{
+
+        .card_3 {
             @include mixins.sms('4', -12px, 0, '', '');
         }
-    }
-}
 
-
-@media only screen and (max-width: 1440px){
-    .heading_sec{
-        .reklam{
+        @media screen and (max-width:768px) {
             display: none;
         }
     }
-}
-@media only screen and (max-width: 1024px){
-    .heading_sec{
-        background-image: url('../../../../assets/img/Home/main/heading_sec_img_2.png');
-        background-position: right;
-        background-size: 500px;
-
-        .txt{
-            h1{
-                font-size: $fs-72;
-                font-family: $Roboto, sans-serif;
-                font-weight: $fw-8;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 768px){
-    .heading_sec{
-        .working_time{
-            display: none;
-        }
-    }
-}
-@media only screen and (max-width: 557px){
-    .heading_sec{
-        background-position: bottom center;
-        background-size: 450px;
-        @include mixins.flexBox(space-around, center, column, '', .6rem);
-
-        .txt{
-            @include mixins.flexBox(center, center, column, '', '');
-            text-align: center;
-            margin-bottom: 8rem;
-            h1{
-                font-size: $fs-48;
-            }
-            p{
-                font-size: $fs-14;
-            }
-        }
-        .buttons{
-            width: 100%;
-            li{
-                text-align: center;
-                @include mixins.flexBox(center, center, column, '', 2rem);
-                width: 100%;
-                .record{
-                    width: 100%;
-                    @include mixins.button(10px 0, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
-                }
-                .whatsApp{
-                    width: 100%;
-                    @include mixins.button(10px 0, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-16, $fw-5, $shadow-green);
-                }
-            }
-        }
-        .reklam{
-            position: relative;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            @include mixins.flexBox(flex-end, center, row, '', .6rem);
-            .card{
-                @include mixins.flexBox(center, center, row, '', .6rem);
-                width: 100%;
-                &:last-child{
-                    position: static;
-                    bottom: 4px;
-                    padding: 1rem;
-                    img{
-                        height: 1rem;
-                    }
-                }
-                img{
-                    height: .6rem;
-                }
-            }
-            .card_1{
-                @include mixins.sms('60', -12px, 0, '', '');
-            }
-            .card_2{
-                @include mixins.sms('34', -12px, 0, '', '');
-            }
-            .card_3{
-                @include mixins.sms('4', -12px, 0, '', '');
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 375px){
-    .heading_sec{
-        .buttons{
-            width: 100%;
-            li{
-                text-align: center;
-                @include mixins.flexBox(center, center, column, '', 2rem);
-                width: 100%;
-                .record{
-                    width: 100%;
-                    @include mixins.button(10px 5px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-12, $fw-5, $shadow-skyblue);
-                }
-                .whatsApp{
-                    width: 100%;
-                    @include mixins.button(10px 5px, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-12, $fw-5, $shadow-green);
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width: 320px){
-
 }
