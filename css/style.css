@@ -272,6 +272,7 @@ a {
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 0;
+  display: none;
   width: 20rem;
   position: absolute;
   top: 100%;

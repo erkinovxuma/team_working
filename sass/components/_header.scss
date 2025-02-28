@@ -138,6 +138,7 @@
 
         .nav__list{
             @include mixins.flexBox(center, flex-start, column, nowrap, 0);
+            display: none;
             width: 20rem;
             position: absolute;
             top: 100%;
