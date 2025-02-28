@@ -1,0 +1,37 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.podcast_sec{
+    font-family: $Roboto;
+    padding: 2rem 0;
+    .cont{
+        @include mixins.flexBox(center, center, row, no-wrap, 2rem);
+        .card{
+            @include mixins.flexBox(space-between, center, column, no-wrap, 2rem);
+            width: 440px;
+            height: 500px;
+            background-color: $bg-light-gray;
+            padding: 2.5rem 1.5rem 1.5rem;
+            border-radius: $br-16;
+            h5{
+                font-size: $fs-22;
+                font-weight: $fw-8;
+                letter-spacing: 2px;
+                margin-bottom: .5rem;
+            }
+            p{
+                font-size: $fs-18;
+                font-weight: $fw-4;
+                letter-spacing: 1px;
+                line-height: 1.8rem;
+            }
+            .img{
+                width: 100%;
+                @include mixins.flexBox(end, center, row, no-wrap, 1rem);
+                .img_rotate{
+                    transform: rotate(35deg);
+                }
+            }
+        }
+    }
+}
