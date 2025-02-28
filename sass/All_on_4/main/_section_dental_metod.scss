@@ -22,7 +22,7 @@
     }
     .dental_method{
         width: 100%;
-        @include mixins.flexBox();
+        @include mixins.flexBox(center, center, row, wrap, 2rem);
     }
   }
 }
