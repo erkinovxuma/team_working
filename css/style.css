@@ -314,6 +314,323 @@ a {
   display: block;
 }
 
+.main {
+  width: 100%;
+}
+.main .heading_section {
+  width: 100%;
+  background-image: url("../../../assets/img/hero-section qariya.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6.938rem 2rem 2.438rem 3.5rem;
+  border-radius: 1.25rem;
+  background-color: #F6F4F4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: "";
+  gap: "";
+}
+.main .heading_section h1 {
+  width: 100%;
+  max-width: 500px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", monospace;
+  font-weight: 700;
+  font-size: 4.688rem;
+  color: #fff;
+  line-height: 4.219rem;
+  letter-spacing: -0.5%;
+  margin-bottom: 1rem;
+}
+.main .heading_section h1 .h1_span {
+  color: rgb(48, 181, 223);
+}
+.main .heading_section p {
+  width: 100%;
+  max-width: 355px;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 21px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+.main .heading_section .buttons {
+  width: 100%;
+  max-width: 399px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 4px;
+}
+.main .heading_section .buttons .white_button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 35px;
+  max-width: 248px;
+  font-family: "Roboto", serif;
+  color: rgb(148, 157, 166);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 0%;
+}
+.main .heading_section .buttons .blue_button {
+  width: 100%;
+  max-width: 147px;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(48, 181, 223);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+}
+.main .heading_section .buttons .blue_button:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 5px 7px "";
+}
+.main .heading_section .input {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 8px;
+  margin-bottom: 26px;
+}
+.main .heading_section .input input {
+  width: 16;
+  height: 16;
+  border-radius: 4px;
+  border-width: 0.67px;
+  border: 0.67px solid rgb(249, 250, 251);
+}
+.main .heading_section .input span {
+  font-family: "Inter", serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 18.2px;
+  letter-spacing: 2%;
+  color: rgb(249, 250, 251);
+}
+.main .heading_section .input span a {
+  color: rgb(249, 250, 251);
+  font-family: "Inter", serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 18.2px;
+  letter-spacing: 2%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+}
+.main .heading_section .reklame {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 0.6rem;
+}
+.main .heading_section .reklame .card {
+  padding: 1rem;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(209, 213, 219, 0.4);
+  position: relative;
+  background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+}
+.main .heading_section .reklame .card:last-child {
+  padding: 0.6rem;
+}
+.main .heading_section .reklame .card:last-child img {
+  height: 100%;
+}
+.main .heading_section .reklame .card img {
+  height: 100%;
+}
+@media only screen and (max-width: 557px) {
+  .main .heading_section .reklame {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: "";
+    gap: 0.6rem;
+  }
+  .main .heading_section .reklame .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: "";
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .main .heading_section .reklame .card:last-child {
+    position: static;
+    bottom: 4px;
+    padding: 1rem;
+  }
+  .main .heading_section .reklame .card:last-child img {
+    height: 1rem;
+  }
+  .main .heading_section .reklame .card img {
+    height: 0.6rem;
+  }
+  .main .heading_section .reklame .card_1 {
+    position: relative;
+  }
+  .main .heading_section .reklame .card_1::after {
+    content: "60";
+    position: absolute;
+    top: -12px;
+    bottom: "";
+    right: 0;
+    left: "";
+    font-size: 0.625rem;
+    background-color: #30B5DF;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .heading_section .reklame .card_2 {
+    position: relative;
+  }
+  .main .heading_section .reklame .card_2::after {
+    content: "34";
+    position: absolute;
+    top: -12px;
+    bottom: "";
+    right: 0;
+    left: "";
+    font-size: 0.625rem;
+    background-color: #30B5DF;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .heading_section .reklame .card_3 {
+    position: relative;
+  }
+  .main .heading_section .reklame .card_3::after {
+    content: "4";
+    position: absolute;
+    top: -12px;
+    bottom: "";
+    right: 0;
+    left: "";
+    font-size: 0.625rem;
+    background-color: #30B5DF;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main .heading_section {
+    background-position: right center;
+    padding: 318px 16px 40px 16px;
+  }
+  .main .heading_section h1 {
+    font-size: 40px;
+  }
+  .main .heading_section .buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main .heading_section .buttons .white_button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .heading_section .buttons .blue_button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .heading_section .input {
+    display: none;
+  }
+  .main .heading_section .reklame {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main .heading_section {
+    background-image: url("../../../assets/img/heading_section-media-img.png");
+    background-size: cover;
+    padding: 318px 16px 40px 16px;
+  }
+  .main .heading_section h1 {
+    width: 100%;
+    max-width: 262px;
+  }
+  .main .heading_section p {
+    width: 100%;
+    max-width: 296px;
+  }
+}
+
+.main {
+  width: 100%;
+}
+.main .section_dental_metod {
+  padding: 139px 155px 86px 155px;
+}
+.main .section_dental_metod h2 {
+  width: 100%;
+  max-width: 637px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(17, 28, 39);
+  margin-bottom: 40px;
+}
+.main .section_dental_metod h2 span {
+  color: rgb(22, 163, 208);
+}
+.main .section_dental_metod .dental_method {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .heading_sec {
   width: 100%;
   font-family: "Roboto";
