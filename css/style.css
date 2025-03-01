@@ -605,9 +605,15 @@ a {
   width: 100%;
 }
 .main .section_dental_metod {
-  padding: 139px 155px 86px 155px;
+  padding: 139px 0px 86px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1440px;
 }
 .main .section_dental_metod h2 {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 637px;
   font-family: "Roboto", serif;
@@ -623,13 +629,173 @@ a {
   color: rgb(22, 163, 208);
 }
 .main .section_dental_metod .dental_method {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+.main .section_dental_metod .dental_method .dental_method_left {
   width: 100%;
+  max-width: 345px;
+  border: 0px solid #d1d6db;
+  border-radius: 20px;
+  padding: 48px 13px 101px 32px;
+  width: 345px;
+  background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+}
+.main .section_dental_metod .dental_method .dental_method_left .woman {
+  margin-bottom: 32px;
+}
+.main .section_dental_metod .dental_method .dental_method_left .woman .woman_top {
+  width: 100%;
+  max-width: 195px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-wrap: "";
+  gap: 14px;
+}
+.main .section_dental_metod .dental_method .dental_method_left .woman .woman_top p .woman-name {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23.8px;
+  letter-spacing: 0%;
+  color: rgb(17, 28, 39);
+}
+.main .section_dental_metod .dental_method .dental_method_left .woman .woman_top p .woman-work {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: rgb(107, 114, 128);
+}
+.main .section_dental_metod .dental_method .dental_method_left .woman p {
+  width: 100%;
+  max-width: 293px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25.5px;
+  letter-spacing: 0%;
+  color: rgb(17, 24, 39);
+}
+.main .section_dental_metod .dental_method .dental_method_left b {
+  display: block;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25.5px;
+  letter-spacing: 0%;
+  color: rgb(17, 28, 39);
+  margin-bottom: 24px;
+}
+.main .section_dental_metod .dental_method .dental_method_left ul {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.main .section_dental_metod .dental_method .dental_method_left ul li {
+  column-gap: 11px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(17, 28, 39);
+  line-height: 25.5px;
+  letter-spacing: 0%;
+}
+.main .section_dental_metod .dental_method .dental_method_left ul li a {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(17, 28, 39);
+  line-height: 25.5px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+}
+.main .section_dental_metod .dental_method .dental_method_right {
+  width: 100%;
+  max-width: 800px;
+  padding: 76px 57px;
+  background-color: rgb(255, 255, 255);
+}
+.main .section_dental_metod .dental_method .dental_method_right h4 {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(17, 28, 39);
+  margin-bottom: 16px;
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 32px;
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top .slide p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: rgb(17, 24, 39);
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_buttons {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_buttons p {
+  padding-bottom: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(107, 114, 128);
+  line-height: 16.8px;
+  letter-spacing: -0.5%;
+  border-bottom: 4px solid rgb(48, 181, 223);
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_buttons button {
+  width: 100%;
+  max-width: 72px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(48, 181, 223);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_buttons button:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 5px 7px "";
 }
 
 .heading_sec {

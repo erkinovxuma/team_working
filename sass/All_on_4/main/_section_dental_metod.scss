@@ -4,8 +4,14 @@
 .main {
   width: 100%;
   .section_dental_metod {
-    padding: 139px 155px 86px 155px;
+    padding: 139px 00px 86px 00px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
     h2 {
+      margin-left: auto;
+      margin-right: auto;
       width: 100%;
       max-width: 637px;
       font-family: "Roboto", serif;
@@ -20,9 +26,172 @@
         color: rgba(22, 163, 208, 1);
       }
     }
-    .dental_method{
+    .dental_method {
+      // width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 8px;
+      .dental_method_left {
         width: 100%;
-        @include mixins.flexBox(center, center, row, wrap, 2rem);
+        max-width: 345px;
+        border: 0px solid #d1d6db;
+        border-radius: 20px;
+        padding: 48px 13px 101px 32px;
+        width: 345px;
+        background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+        .woman {
+          margin-bottom: 32px;
+          .woman_top {
+            width: 100%;
+            max-width: 195px;
+            margin-bottom: 24px;
+            @include mixins.flexBox(center, center, row, "", 14px);
+            p {
+              .woman-name {
+                font-family: "Roboto", serif;
+                font-weight: $fw-7;
+                font-size: 17px;
+                line-height: 23.8px;
+                letter-spacing: 0%;
+                color: rgba(17, 28, 39, 1);
+              }
+              .woman-work {
+                font-family: "Roboto", serif;
+                font-weight: $fw-4;
+                font-size: 15px;
+                line-height: 21px;
+                letter-spacing: 0%;
+                color: rgba(107, 114, 128, 1);
+              }
+            }
+          }
+          p {
+            width: 100%;
+            max-width: 293px;
+            font-family: "Roboto", serif;
+            font-weight: $fw-4;
+            font-size: 17px;
+            line-height: 25.5px;
+            letter-spacing: 0%;
+            color: rgba(17, 24, 39, 1);
+          }
+        }
+        b {
+          display: block;
+          font-family: "Roboto", serif;
+          font-weight: $fw-6;
+          font-size: 17px;
+          line-height: 25.5px;
+          letter-spacing: 0%;
+          color: rgba(17, 28, 39, 1);
+          margin-bottom: 24px;
+        }
+        ul {
+          display: block;
+          width: 100%;
+          max-width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: stretch;
+          flex-direction: column;
+          row-gap: 20px;
+          li {
+            column-gap: 11px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-family: "Roboto", serif;
+            font-weight: $fw-4;
+            font-size: 17px;
+            color: rgba(17, 28, 39, 1);
+            line-height: 25.5px;
+            letter-spacing: 0%;
+            a {
+              font-family: "Roboto", serif;
+              font-weight: $fw-4;
+              font-size: 17px;
+              color: rgba(17, 28, 39, 1);
+              line-height: 25.5px;
+              letter-spacing: 0%;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .dental_method_right {
+        width: 100%;
+        max-width: 800px;
+        padding: 76px 57px;
+        background-color: rgba(255, 255, 255, 1);
+
+        h4 {
+          font-family: "Roboto", serif;
+          font-weight: 500;
+          font-size: $fs-20;
+          line-height: 24px;
+          letter-spacing: 0%;
+          text-align: left;
+          color: rgba(17, 28, 39, 1);
+          margin-bottom: 16px;
+        }
+        .method_slider {
+          .slider_top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 16px;
+            margin-bottom: 32px;
+            .slide {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              row-gap: 16px;
+              p {
+                font-family: "Raleway", sans-serif;
+                font-weight: $fw-5;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0%;
+                color: rgba(17, 24, 39, 1);
+              }
+            }
+          }
+          .slider_buttons {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              padding-bottom: 16px;
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              color: rgba(107, 114, 128, 1);
+              line-height: 16.8px;
+              letter-spacing: -0.5%;
+              border-bottom: 4px solid rgba(48, 181, 223, 1);
+            }
+            button {
+              width: 100%;
+              max-width: 72px;
+              @include mixins.button(
+                8px 14px,
+                none,
+                8px,
+                rgba(48, 181, 223, 1),
+                rgba(255, 255, 255, 1),
+                15px,
+                500,
+                ""
+              );
+              line-height: 19.5px;
+              letter-spacing: 0%;
+            }
+          }
+        }
+      }
     }
   }
 }
