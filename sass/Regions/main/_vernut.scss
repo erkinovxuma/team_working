@@ -1,0 +1,70 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.vernut{
+
+    margin-top: 70px;
+    font-family: $Roboto;
+    h1{
+        font-size: $fs-48;
+        text-align: center;
+        span{
+            color: $bg-skyblue;
+        }
+    }
+    &__cnt{
+        @include mixins.flexBox(center, center, row, '', 15.5rem);
+
+        .vernut-img{
+            position: relative;
+            top: -130px;
+            .rectangle{
+                width: 400px;
+                height: 400px;
+                transform: rotate(45deg);
+                background-color: rgb(255, 64, 207);
+                border-radius: 80px;
+                margin-top: 180px;
+                position: relative;
+                left: 60px;
+                z-index: 1;
+            }
+            .alina{
+                width: 300px;
+                padding: 30px;
+                background-color: rgb(245, 245, 245);
+                border-radius: 20px;
+                position: relative;
+                top: 600px;
+                left: 250px;
+                z-index: 300;
+            }
+        }
+        .vernut-txt{
+            width: 500px;
+            h2{
+                font-size: $fs-48;
+                font-weight: 700;
+                color: $bg-dark;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: $fs-18;
+                margin-bottom: 20px;
+                span{
+                    color: $bg-skyblue;
+                }
+            }
+            ul{
+                list-style: disc;
+                color: $bg-dark;
+                position: relative;
+                left: 30px;
+                line-height: 2;
+                li::marker{
+                color: $bg-skyblue;
+                }
+            }
+        }
+    }
+}

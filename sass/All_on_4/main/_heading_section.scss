@@ -1,0 +1,210 @@
+@use "../../roots" as *;
+@use "../../mixins";
+
+.main {
+  width: 100%;
+  .heading_section {
+    width: 100%;
+    background-image: url("../../../assets/img/hero-section\ qariya.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6.938rem 2rem 2.438rem 3.5rem;
+    border-radius: $br-20;
+    background-color: $bg-darker-white;
+    position: relative;
+    @include mixins.flexBox(center, flex-start, column, "", "");
+    h1 {
+      width: 100%;
+      max-width: 500px;
+      text-transform: uppercase;
+      font-family: $BebasNeue, monospace;
+      font-weight: 700;
+      font-size: 4.688rem;
+      color: $bg-white;
+      line-height: 4.219rem;
+      letter-spacing: -0.5%;
+      margin-bottom: 1rem;
+      .h1_span {
+        color: rgba(48, 181, 223, 1);
+      }
+    }
+    p {
+      width: 100%;
+      max-width: 355px;
+      font-family: "Roboto", serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 21px;
+      letter-spacing: 0%;
+      margin-bottom: 24px;
+    }
+    .buttons {
+      width: 100%;
+      max-width: calc(248px + 4px + 147px);
+      margin-bottom: 24px;
+      @include mixins.flexBox(center, center, row, "", 4px);
+      .white_button {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 18px 35px;
+        max-width: 248px;
+        font-family: "Roboto", serif;
+        color: rgba(148, 157, 166, 1);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17.58px;
+        letter-spacing: 0%;
+      }
+      .blue_button {
+        width: 100%;
+        max-width: 147px;
+        @include mixins.button(
+          18px 32px,
+          none,
+          8px,
+          rgba(48, 181, 223, 1),
+          rgba(255, 255, 255, 1),
+          15px,
+          500,
+          ""
+        );
+        line-height: 19.5px;
+        letter-spacing: 0%;
+      }
+    }
+    .input {
+      width: 100%;
+      max-width: 430px;
+      @include mixins.flexBox(flex-start, center, row, "", 8px);
+      input {
+        width: 16;
+        height: 16;
+        border-radius: 4px;
+        border-width: 0.67px;
+        border: 0.67px solid rgba(249, 250, 251, 1);
+      }
+      span {
+        font-family: "Inter", serif;
+        font-weight: $fw-3;
+        font-size: $fs-14;
+        line-height: 18.2px;
+        letter-spacing: 2%;
+        color: rgba(249, 250, 251, 1);
+        a {
+          color: rgba(249, 250, 251, 1);
+          font-family: "Inter", serif;
+          font-weight: $fw-3;
+          font-size: $fs-14;
+          line-height: 18.2px;
+          letter-spacing: 2%;
+          text-decoration: underline;
+          text-decoration-style: solid;
+
+          text-decoration-thickness: Auto;
+        }
+      }
+      margin-bottom: 26px;
+    }
+    .reklame {
+      width: 100%;
+      @include mixins.flexBox(flex-end, center, row, "", 0.6rem);
+      .card {
+        padding: 1rem;
+        border-radius: $br-10;
+        border: 1px solid $br-gray;
+        position: relative;
+        @include mixins.glassCard;
+        &:last-child {
+          padding: 0.6rem;
+          img {
+            height: 100%;
+          }
+        }
+        img {
+          height: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 557px) {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        @include mixins.flexBox(flex-end, center, row, "", 0.6rem);
+        .card {
+          @include mixins.flexBox(center, center, row, "", 0.6rem);
+          width: 100%;
+          &:last-child {
+            position: static;
+            bottom: 4px;
+            padding: 1rem;
+            img {
+              height: 1rem;
+            }
+          }
+          img {
+            height: 0.6rem;
+          }
+        }
+        .card_1 {
+          @include mixins.sms("60", -12px, 0, "", "");
+        }
+        .card_2 {
+          @include mixins.sms("34", -12px, 0, "", "");
+        }
+        .card_3 {
+          @include mixins.sms("4", -12px, 0, "", "");
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .heading_section {
+      // background-image: url("../../../assets/img/heading_section-media-img.png");
+      // background-size: cover;
+      background-position: right center;
+      padding: 318px 16px 40px 16px;
+      h1 {
+        font-size: 40px;
+      }
+      .buttons {
+        width: 100%;
+        // max-width: 100%;
+        flex-direction: column;
+        .white_button {
+          width: 100%;
+          max-width: 100%;
+        }
+        .blue_button {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .input {
+        display: none;
+      }
+      .reklame {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .heading_section {
+      background-image: url("../../../assets/img/heading_section-media-img.png");
+      background-size: cover;
+      padding: 318px 16px 40px 16px;
+      h1 {
+        width: 100%;
+        max-width: 262px;
+      }
+      p {
+        width: 100%;
+        max-width: 296px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use "../../roots" as *;
+@use "../../mixins";
+
+.main {
+  width: 100%;
+  .section_dental_metod {
+    padding: 139px 155px 86px 155px;
+    h2 {
+      width: 100%;
+      max-width: 637px;
+      font-family: "Roboto", serif;
+      font-weight: $fw-5;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: rgba(17, 28, 39, 1);
+      margin-bottom: 40px;
+      span {
+        color: rgba(22, 163, 208, 1);
+      }
+    }
+    .dental_method{
+        width: 100%;
+        @include mixins.flexBox(center, center, row, wrap, 2rem);
+    }
+  }
+}

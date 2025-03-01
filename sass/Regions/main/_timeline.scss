@@ -1,0 +1,63 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.timeline {
+    @include mixins.flexBox(center, center, column, '', 2rem);
+
+    font-family: $Roboto;
+
+    h1 {
+        font-size: $fs-48;
+        text-align: center;
+
+        span {
+            color: $bg-skyblue;
+        }
+    }
+
+    &__time {
+        width: 100%;
+        height: 950px;
+        background-image: url(./../../../../assets/img/watch.png);
+        background-size: 110%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .timelines {
+        @include mixins.flexBox(center, flex-start, row, wrap, 1rem);
+
+        &__card {
+            width: 460px;
+            height: 230px;
+            @include mixins.flexBox(start, flex-start, column, '', 1rem);
+            background-color: $bg-light-blue;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        img{
+            width: 25px;
+        }
+
+        p {
+            font-size: $fs-22;
+            color: $bg-gray;
+            line-height: 1.2;
+            a{
+                color: $bg-skyblue;
+            }
+        }
+
+        .flex-card {
+            @include mixins.flexBox(center, center, row, '', 0.5rem);
+
+            h4 {
+                font-size: $fs-20;
+                font-weight: $fw-6;
+            }
+        }
+    }
+        @media only screen and (max-width: 878px){
+            display: none;
+                }
+}

@@ -1,3 +1,10 @@
-@use './layout/components/header';
+@use '../components/header';
+@use './main/hero';
+@use './main/skills';
+@use './main/timeline';
+@use './main/vernut';
+@use './main/doubts';
+@use './main/instruments';
+@use './main/team';
+@use '../components/footer';
 
-@use './layout/components/footer';

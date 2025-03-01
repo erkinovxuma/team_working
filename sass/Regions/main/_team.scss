@@ -1,0 +1,70 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.team {
+    margin-top: 50px;
+    @include mixins.flexBox(space-between, start, column, wrap, '');
+    font-family: $Roboto;
+
+    &__txt {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        @include mixins.flexBox(space-between, start, row, '', 27.5rem);
+
+        h1 {
+            width: 500px;
+            font-size: $fs-36;
+
+            span {
+                color: $bg-skyblue;
+            }
+
+            @media only screen and (max-width: 640px) {
+                font-size: $fs-24;
+                width: 500px;
+            }
+        }
+
+        .poragraph {
+            width: 500px;
+
+            p {
+                font-size: $fs-20;
+                color: $fc-gray;
+                padding: 5px;
+            }
+
+            @media only screen and (max-width: 640px) {
+                position: relative;
+                top: -430px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            @include mixins.flexBox(center, center, column, '', '');
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 800px;
+        background-image: url(./../../../../assets/img/team\ stamotolog.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+
+        @media only screen and (max-width: 640px) {
+            background-position: center;
+            background-size: 100%;
+            height: 400px;
+            position: relative;
+            top: -40px;
+
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        display: none;
+    }
+}

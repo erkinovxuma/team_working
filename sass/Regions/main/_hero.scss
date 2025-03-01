@@ -1,0 +1,132 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.hero {
+    width: 100%;
+    font-family: $Roboto;
+    height: 650px;
+    background-color: $bg-darker-white;
+    background: linear-gradient(45deg, #000000ad, #00000017), url('./../../../assets/img/hero-section\ qariya.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $br-20;
+    padding: 2rem;
+    position: relative;
+    @include mixins.flexBox(center, flex-start, column, '', 2rem);
+
+    .txt {
+        @include mixins.flexBox(center, flex-start, column, '', '');
+
+        h1 {
+            // width: 800px;
+            color: $fc-white;
+            font-size: $fs-60;
+            font-family: $BebasNeue, sans-serif;
+            font-weight: $fw-7;
+            line-height: 60.5px;
+
+            span {
+                color: $fc-skyblue;
+            }
+        }
+
+        p {
+            // width: 500px;
+            color: $fc-white;
+            font-size: $fs-16;
+            font-weight: $fw-3;
+            position: relative;
+            top: 15px;
+            line-height: 1.5;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        @include mixins.flexBox(start, center, row, '', 1rem);
+
+        .input {
+            @include mixins.input(100%, 2.5rem, 0.25rem, 1px solid transparent, 1rem, grey, white, 0.5rem);
+
+            @media only screen and (max-width: 640px) {
+                text-align: center;
+                @include mixins.input(100%, 2.5rem, 0.25rem, 1px solid transparent, 0.9rem, grey, white, 0.5rem);
+            }
+        }
+
+        .whatsApp {
+            @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
+
+            @media only screen and (max-width: 640px) {
+                @include mixins.button(10px 25px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
+
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            width: 100%;
+            @include mixins.flexBox(start, flex-start, column, '', 1rem);
+
+        }
+    }
+
+    .check_tm {
+        position: relative;
+        top: -10px;
+        @include mixins.flexBox(center, center, '', wrap, 1rem);
+
+        p {
+            color: $fc-white;
+            font-weight: $fw-3;
+        }
+
+        @media screen and (max-width:640px) {
+            display: none;
+        }
+    }
+
+    .reklam {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 100%;
+        @include mixins.flexBox(flex-end, center, row, '', .6rem);
+
+        .card {
+            padding: 1rem;
+            border-radius: $br-10;
+            border: 1px solid $br-gray;
+            position: relative;
+            @include mixins.glassCard;
+
+            &:last-child {
+                padding: .6rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .card_1 {
+            @include mixins.sms('60', -12px, 0, '', '');
+        }
+
+        .card_2 {
+            @include mixins.sms('34', -12px, 0, '', '');
+        }
+
+        .card_3 {
+            @include mixins.sms('4', -12px, 0, '', '');
+        }
+
+        @media screen and (max-width:640px) {
+            display: none;
+        }
+    }
+}
