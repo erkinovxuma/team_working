@@ -1,0 +1,56 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+
+.doubt{
+    font-family: $Roboto;
+    h1{
+        font-size: $fs-48;
+        span{
+            color: $bg-skyblue;
+        }
+    }
+    &__card{
+        margin-top: 40px;
+    @include mixins.flexBox(center, start, row, wrap, 1rem);
+    .card1{
+        width: 710px;
+        height: 350px;
+        @include mixins.flexBox(start, flex-start, row, '', 1rem);
+        background-color: $bg-light-blue;
+        padding: 50px 40px;
+        border-radius: 15px;
+        overflow: hidden;
+        &__txt{
+            h3{
+                font-size: $fs-30;
+            }
+            p{
+                width: 400px;
+                font-size: $fs-18;
+                color: $bg-gray;
+                margin-top: 15px
+            }
+            .card-btn{
+                button{
+                    margin-top: 20px;
+                    @include mixins.button(12px 25px, 1px solid $bg-dark,$br-8, $bg-white, $bg-dark, $fs-18, $fw-5, '');
+                }
+            }
+        }
+        &__img{
+            img{
+                width: 110%;
+                position: relative;
+                top: 84px;
+            }
+            #img2{
+                width: 120%;
+                position: relative;
+                top: 90px;
+                right: 6px;
+            }
+        }
+    }
+    }
+}
