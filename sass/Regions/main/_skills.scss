@@ -16,13 +16,28 @@
             color: $fc-skyblue;
             font-weight: $fw-5;
             font-size: $fs-30;
+            @media only screen and (max-width: 640px){
+                font-size: $fs-18;
+
+                    }
         }
+        @media only screen and (max-width: 640px){
+            font-size: $fs-18;
+            padding: 0 20px;
+            line-height: 1;
+                }
     }
 
     h1 {
         text-align: center;
         font-size: $fs-48;
         margin-bottom: 30px;
+        @media only screen and (max-width: 640px){
+        font-size: $fs-24;
+        margin-bottom: 20px;
+        line-height: 1;
+
+            }
     }
 
     .parent {
@@ -34,7 +49,6 @@
             background-color: $bg-light-blue;
             padding: 30px;
             border-radius: 15px;
-
             p {
                 font-size: $fs-20;
             color: $bg-gray;
@@ -53,7 +67,10 @@
                     color: $bg-skyblue;
                 }
             }
+            @media only screen and (max-width: 640px){
+            width: 350px;
 
+            }
         }
     }
 }

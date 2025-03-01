@@ -49,7 +49,7 @@
         .input {
             @include mixins.input(100%, 2.5rem, 0.25rem, 1px solid transparent, 1rem, grey, white, 0.5rem);
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 640px) {
                 text-align: center;
                 @include mixins.input(100%, 2.5rem, 0.25rem, 1px solid transparent, 0.9rem, grey, white, 0.5rem);
             }
@@ -58,13 +58,13 @@
         .whatsApp {
             @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 640px) {
                 @include mixins.button(10px 25px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
 
             }
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 640px) {
             width: 100%;
             @include mixins.flexBox(start, flex-start, column, '', 1rem);
 
@@ -81,7 +81,7 @@
             font-weight: $fw-3;
         }
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:640px) {
             display: none;
         }
     }
@@ -125,7 +125,7 @@
             @include mixins.sms('4', -12px, 0, '', '');
         }
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:640px) {
             display: none;
         }
     }
