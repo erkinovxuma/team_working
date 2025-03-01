@@ -1,24 +1,39 @@
 @use '../../roots' as *;
 @use '../../mixins';
 
-.vernut{
+.vernut {
 
+    margin-bottom: 50px;
     margin-top: 70px;
     font-family: $Roboto;
-    h1{
+
+    h1 {
         font-size: $fs-48;
         text-align: center;
-        span{
+
+        span {
             color: $bg-skyblue;
         }
+
+        @media only screen and (max-width: 640px) {
+            font-size: $fs-22;
+            line-height: 1;
+            padding: 0 20px;
+        }
     }
-    &__cnt{
+
+    &__cnt {
         @include mixins.flexBox(center, center, row, '', 15.5rem);
 
-        .vernut-img{
+        @media only screen and (max-width: 640px) {
+            @include mixins.flexBox(center, center, column, '', 2rem);
+        }
+
+        .vernut-img {
             position: relative;
             top: -130px;
-            .rectangle{
+
+            .rectangle {
                 width: 400px;
                 height: 400px;
                 transform: rotate(45deg);
@@ -28,8 +43,21 @@
                 position: relative;
                 left: 60px;
                 z-index: 1;
+
+                @media only screen and (max-width: 640px) {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 300px 300px 300px 10px;
+                    transform: rotate(0deg);
+                    left: 0px;
+                    margin-top: 100px;
+
+
+                }
+
             }
-            .alina{
+
+            .alina {
                 width: 300px;
                 padding: 30px;
                 background-color: rgb(245, 245, 245);
@@ -38,32 +66,80 @@
                 top: 600px;
                 left: 250px;
                 z-index: 300;
+
+                @media only screen and (max-width: 640px) {
+                    width: 220px;
+                    left: 50px;
+                    line-height: 1;
+                    border-radius: 10px;
+                    padding: 15px;
+                    top: 360px;
+
+                    h2 {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 14px;
+
+                    }
+
+
+
+
+                }
             }
         }
-        .vernut-txt{
+
+        .vernut-txt {
             width: 500px;
-            h2{
+
+            h2 {
                 font-size: $fs-48;
                 font-weight: 700;
                 color: $bg-dark;
                 margin-bottom: 20px;
-            }
-            p{
-                font-size: $fs-18;
-                margin-bottom: 20px;
-                span{
-                    color: $bg-skyblue;
+
+                @media only screen and (max-width: 640px) {
+                    text-align: center;
+                    font-size: $fs-30;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    font-weight: 600;
                 }
             }
-            ul{
+
+            p {
+                font-size: $fs-18;
+                margin-bottom: 20px;
+
+                span {
+                    color: $bg-skyblue;
+                }
+
+                @media only screen and (max-width: 640px) {
+                    font-size: $fs-16;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+            ul {
                 list-style: disc;
                 color: $bg-dark;
                 position: relative;
                 left: 30px;
                 line-height: 2;
-                li::marker{
-                color: $bg-skyblue;
+                li::marker {
+                    color: $bg-skyblue;
                 }
+                @media only screen and (max-width: 640px) {
+                    width: 300px;
+                }
+            }
+            @media only screen and (max-width: 640px) {
+            width: 340px;
+            position: relative;
+            top: -120px;
             }
         }
     }

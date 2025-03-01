@@ -1237,6 +1237,14 @@ a {
 .hero .txt h1 span {
   color: #30B5DF;
 }
+@media only screen and (max-width: 640px) {
+  .hero .txt h1 {
+    font-size: 1.875rem;
+    line-height: 1;
+    font-weight: 600;
+    width: 200px;
+  }
+}
 .hero .txt p {
   color: #fff;
   font-size: 1rem;
@@ -1268,7 +1276,7 @@ a {
 @media only screen and (max-width: 640px) {
   .hero .buttons .input {
     text-align: center;
-    width: 100%;
+    width: 155%;
     height: 2.5rem;
     padding: 0.25rem;
     border: 1px solid transparent;
@@ -1313,7 +1321,6 @@ a {
 }
 @media only screen and (max-width: 640px) {
   .hero .buttons {
-    width: 100%;
     display: flex;
     justify-content: start;
     align-items: flex-start;
@@ -1430,6 +1437,13 @@ a {
 @media screen and (max-width: 640px) {
   .hero .reklam {
     display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400%;
   }
 }
 
@@ -1598,7 +1612,56 @@ a {
   }
 }
 
+.doktor {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 1rem;
+}
+@media only screen and (max-width: 640px) {
+  .doktor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 1rem;
+    margin-bottom: 10px;
+  }
+  .doktor__img img {
+    width: 350px;
+  }
+}
+.doktor__txt {
+  font-family: "Roboto";
+}
+.doktor__txt h2 {
+  color: #30B5DF;
+  font-size: 1.875rem;
+}
+.doktor__txt p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  width: 450px;
+  color: #384450;
+}
+@media only screen and (max-width: 640px) {
+  .doktor__txt h2 {
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  .doktor__txt p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
 .vernut {
+  margin-bottom: 50px;
   margin-top: 70px;
   font-family: "Roboto";
 }
@@ -1609,6 +1672,13 @@ a {
 .vernut h1 span {
   color: #30B5DF;
 }
+@media only screen and (max-width: 640px) {
+  .vernut h1 {
+    font-size: 1.375rem;
+    line-height: 1;
+    padding: 0 20px;
+  }
+}
 .vernut__cnt {
   display: flex;
   justify-content: center;
@@ -1616,6 +1686,16 @@ a {
   flex-direction: row;
   flex-wrap: "";
   gap: 15.5rem;
+}
+@media only screen and (max-width: 640px) {
+  .vernut__cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 2rem;
+  }
 }
 .vernut__cnt .vernut-img {
   position: relative;
@@ -1632,6 +1712,16 @@ a {
   left: 60px;
   z-index: 1;
 }
+@media only screen and (max-width: 640px) {
+  .vernut__cnt .vernut-img .rectangle {
+    width: 250px;
+    height: 250px;
+    border-radius: 300px 300px 300px 10px;
+    transform: rotate(0deg);
+    left: 0px;
+    margin-top: 100px;
+  }
+}
 .vernut__cnt .vernut-img .alina {
   width: 300px;
   padding: 30px;
@@ -1642,6 +1732,22 @@ a {
   left: 250px;
   z-index: 300;
 }
+@media only screen and (max-width: 640px) {
+  .vernut__cnt .vernut-img .alina {
+    width: 220px;
+    left: 50px;
+    line-height: 1;
+    border-radius: 10px;
+    padding: 15px;
+    top: 360px;
+  }
+  .vernut__cnt .vernut-img .alina h2 {
+    font-size: 16px;
+  }
+  .vernut__cnt .vernut-img .alina p {
+    font-size: 14px;
+  }
+}
 .vernut__cnt .vernut-txt {
   width: 500px;
 }
@@ -1651,12 +1757,28 @@ a {
   color: #000;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 640px) {
+  .vernut__cnt .vernut-txt h2 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}
 .vernut__cnt .vernut-txt p {
   font-size: 1.125rem;
   margin-bottom: 20px;
 }
 .vernut__cnt .vernut-txt p span {
   color: #30B5DF;
+}
+@media only screen and (max-width: 640px) {
+  .vernut__cnt .vernut-txt p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 .vernut__cnt .vernut-txt ul {
   list-style: disc;
@@ -1668,6 +1790,18 @@ a {
 .vernut__cnt .vernut-txt ul li::marker {
   color: #30B5DF;
 }
+@media only screen and (max-width: 640px) {
+  .vernut__cnt .vernut-txt ul {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .vernut__cnt .vernut-txt {
+    width: 340px;
+    position: relative;
+    top: -120px;
+  }
+}
 
 .doubt {
   font-family: "Roboto";
@@ -1677,6 +1811,13 @@ a {
 }
 .doubt h1 span {
   color: #30B5DF;
+}
+@media only screen and (max-width: 640px) {
+  .doubt h1 {
+    font-size: 2.25rem;
+    line-height: 1;
+    text-align: center;
+  }
 }
 .doubt__card {
   margin-top: 40px;
@@ -1701,14 +1842,37 @@ a {
   border-radius: 15px;
   overflow: hidden;
 }
+@media only screen and (max-width: 640px) {
+  .doubt__card .card1 {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 1rem;
+    height: 330px;
+    padding: 30px 20px;
+  }
+}
 .doubt__card .card1__txt h3 {
   font-size: 1.875rem;
+}
+@media only screen and (max-width: 640px) {
+  .doubt__card .card1__txt h3 {
+    font-size: 1.375rem;
+  }
 }
 .doubt__card .card1__txt p {
   width: 400px;
   font-size: 1.125rem;
   color: #384450;
   margin-top: 15px;
+}
+@media only screen and (max-width: 640px) {
+  .doubt__card .card1__txt p {
+    font-size: 1rem;
+    width: 300px;
+  }
 }
 .doubt__card .card1__txt .card-btn button {
   margin-top: 20px;
@@ -1726,10 +1890,22 @@ a {
   filter: brightness(0.9);
   box-shadow: 0 0 5px 7px "";
 }
+@media only screen and (max-width: 640px) {
+  .doubt__card .card1__txt .card-btn {
+    display: none;
+  }
+}
 .doubt__card .card1__img img {
   width: 110%;
   position: relative;
   top: 84px;
+}
+@media only screen and (max-width: 640px) {
+  .doubt__card .card1__img img {
+    width: 90%;
+    top: 24px;
+    left: 160px;
+  }
 }
 .doubt__card .card1__img #img2 {
   width: 120%;
@@ -1737,9 +1913,22 @@ a {
   top: 90px;
   right: 6px;
 }
+@media only screen and (max-width: 640px) {
+  .doubt__card .card1__img #img2 {
+    width: 70%;
+    top: 14px;
+    left: 150px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .doubt__card {
+    padding: 0 20px;
+    width: 380px;
+  }
+}
 
 .instruments {
-  margin-top: 100px;
+  margin-top: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1753,40 +1942,41 @@ a {
 }
 @media only screen and (max-width: 640px) {
   .instruments__img img {
-    width: 100%;
+    width: 110%;
     padding: 0 20px;
   }
 }
 .instruments__form {
-  width: 700px;
+  width: 400px;
 }
-.instruments__form h1 {
+.instruments__form .txt {
+  width: 400px;
+}
+.instruments__form .txt h1 {
   font-size: 3.75rem;
 }
 @media only screen and (max-width: 640px) {
-  .instruments__form h1 {
+  .instruments__form .txt h1 {
     font-size: 1.875rem;
     text-align: center;
     margin-top: -40px;
   }
 }
-.instruments__form p {
+.instruments__form .txt p {
   margin-top: 10px;
   width: 500px;
   color: #384450;
   font-size: 1.375rem;
 }
 @media only screen and (max-width: 640px) {
-  .instruments__form p {
+  .instruments__form .txt p {
     font-size: 1rem;
     text-align: center;
     width: 370px;
     padding: 0 20px;
-    position: relative;
-    left: 160px;
   }
 }
-.instruments__form .email {
+.instruments__form .txt .email {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1795,8 +1985,8 @@ a {
   gap: 0.8rem;
   margin-top: 20px;
 }
-.instruments__form .email .gmail {
-  width: 50%;
+.instruments__form .txt .email .gmail {
+  width: 100%;
   height: 2.5rem;
   padding: 1.5rem;
   border: 1px solid rgba(88, 88, 88, 0.322);
@@ -1806,7 +1996,7 @@ a {
   background: white;
   border-radius: 0.5rem;
 }
-.instruments__form .email .whatsApp {
+.instruments__form .txt .email .whatsApp {
   padding: 10px 15px;
   border: 1px solid #30B5DF;
   border-radius: 0.5rem;
@@ -1817,17 +2007,30 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 }
-.instruments__form .email .whatsApp:hover {
+.instruments__form .txt .email .whatsApp:hover {
   filter: brightness(0.9);
   box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
 }
 @media only screen and (max-width: 640px) {
-  .instruments__form .email .whatsApp {
-    width: 50%;
+  .instruments__form .txt .email .whatsApp {
+    padding: 15px 15px;
+    border: 1px solid #30B5DF;
+    border-radius: 0.5rem;
+    background-color: #30B5DF;
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+  }
+  .instruments__form .txt .email .whatsApp:hover {
+    filter: brightness(0.9);
+    box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
   }
 }
 @media only screen and (max-width: 640px) {
-  .instruments__form .email {
+  .instruments__form .txt .email {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1836,7 +2039,7 @@ a {
     gap: 0.8rem;
   }
 }
-.instruments__form .gift {
+.instruments__form .txt .gift {
   margin-top: 20px;
   display: flex;
   justify-content: flex-start;
@@ -1845,8 +2048,8 @@ a {
   flex-wrap: "";
   gap: 0.8rem;
 }
-.instruments__form .gift .gift1,
-.instruments__form .gift .gift2 {
+.instruments__form .txt .gift .gift1,
+.instruments__form .txt .gift .gift2 {
   width: 280px;
   display: flex;
   justify-content: space-between;
@@ -1856,21 +2059,21 @@ a {
   gap: 0.8rem;
   background-color: #F7F9FC;
 }
-.instruments__form .gift .gift1 p,
-.instruments__form .gift .gift2 p {
+.instruments__form .txt .gift .gift1 p,
+.instruments__form .txt .gift .gift2 p {
   font-size: 1.125rem;
 }
 @media only screen and (max-width: 640px) {
-  .instruments__form .gift .gift1 p,
-  .instruments__form .gift .gift2 p {
+  .instruments__form .txt .gift .gift1 p,
+  .instruments__form .txt .gift .gift2 p {
     font-size: 1rem;
     position: relative;
     left: -30px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .instruments__form .gift .gift1,
-  .instruments__form .gift .gift2 {
+  .instruments__form .txt .gift .gift1,
+  .instruments__form .txt .gift .gift2 {
     width: 350px;
     display: flex;
     justify-content: center;
@@ -1881,7 +2084,7 @@ a {
   }
 }
 @media only screen and (max-width: 640px) {
-  .instruments__form .gift {
+  .instruments__form .txt .gift {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1903,6 +2106,7 @@ a {
 
 .team {
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: start;

@@ -3,6 +3,7 @@
 
 .team {
     margin-top: 50px;
+    margin-bottom: 50px;
     @include mixins.flexBox(space-between, start, column, wrap, '');
     font-family: $Roboto;
 

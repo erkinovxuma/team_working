@@ -9,6 +9,11 @@
         span{
             color: $bg-skyblue;
         }
+        @media only screen and (max-width: 640px) {
+        font-size: $fs-36;
+                    line-height: 1;
+                    text-align: center;
+        }
     }
     &__card{
         margin-top: 40px;
@@ -21,36 +26,69 @@
         padding: 50px 40px;
         border-radius: 15px;
         overflow: hidden;
+        @media only screen and (max-width: 640px) {
+        @include mixins.flexBox(start, flex-start, column, '', 1rem);
+        height: 330px;
+        padding: 30px 20px;
+        }
         &__txt{
             h3{
                 font-size: $fs-30;
+                @media only screen and (max-width: 640px) {
+                    font-size: $fs-22;
+                        }
             }
             p{
                 width: 400px;
                 font-size: $fs-18;
                 color: $bg-gray;
-                margin-top: 15px
+                margin-top: 15px;
+                @media only screen and (max-width: 640px) {
+                    font-size: $fs-16;
+                    width: 300px;
+                        }
+
             }
             .card-btn{
                 button{
                     margin-top: 20px;
                     @include mixins.button(12px 25px, 1px solid $bg-dark,$br-8, $bg-white, $bg-dark, $fs-18, $fw-5, '');
                 }
+                @media only screen and (max-width: 640px) {
+                    display: none;
+                        }
             }
+
         }
         &__img{
             img{
                 width: 110%;
                 position: relative;
                 top: 84px;
+                @media only screen and (max-width: 640px) {
+                width: 90%;
+                top: 24px;
+                left: 160px;
+
+                    }
             }
             #img2{
                 width: 120%;
                 position: relative;
                 top: 90px;
                 right: 6px;
+                @media only screen and (max-width: 640px) {
+                    width: 70%;
+                    top: 14px;
+                    left: 150px;
+
+                        }
             }
         }
     }
+    @media only screen and (max-width: 640px) {
+        padding: 0 20px;
+        width: 380px;
+        }
     }
 }
