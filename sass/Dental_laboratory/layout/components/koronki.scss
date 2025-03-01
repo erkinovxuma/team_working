@@ -1,0 +1,127 @@
+/* styles.scss */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img2 {
+    display: flex ; 
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.img1 {
+    width: 371.3333435058594px;
+    height: 407px;
+    border-radius: 24px;
+    border-width: 1px;
+}
+.box3{
+    margin-top: 177px;
+}
+    .img1 {
+        width: 561px;
+        height: 407px;
+        border-radius: 24px;
+        border-width: 1px;
+        border-radius: 24px;
+        border-width: 1px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #D1D6DB;
+        border-radius: 24px;
+    }
+
+.image-placeholder {        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+            p{
+                display: flex;
+                justify-content: end;
+                align-items: end;
+            }
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #666;
+    width: 284px;
+    height: 114px;
+
+}
+
+.details1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.description1{
+    width: 700px;
+    height: 410px;
+    background: #fff;
+    padding: 56px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        p{
+            margin-top: 16px;
+            margin-bottom: 40px;
+        }
+}
+ .inf1{
+    width: 480px;
+    height: 410px;
+    gap: 24px;
+    background: #fff;
+    padding: 56px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    
+}
+
+@media (max-width: 768px) {
+    .image-cont{
+        flex-direction: column;
+    }
+    .details {
+        flex-direction: column;
+    }
+    .image-box {
+        width: 371.3333435058594px;
+        height: 407px;
+        border-radius: 24px;
+        border-width: 1px;
+        max-width: 80%;
+    }
+    
+}

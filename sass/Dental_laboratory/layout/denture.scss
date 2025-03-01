@@ -1,0 +1,160 @@
+// Ranglar va o'lchamlar
+$primary-color: #2f80ed;
+$text-color: #333;
+$bg-light: #f9f9f9;
+$border-radius: 10px;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: $bg-light;
+}
+
+.dentures {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        text-align: center;
+        color: $text-color;
+    }
+
+    .image-gallery {
+        margin-bottom: 20px;
+
+        .image-box {
+            width: 371.3333435058594px;
+            height: 407px;
+            border-radius: 24px;
+            border-width: 1px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .description {
+            
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: $border-radius;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+            h3.highlight {
+                color: $primary-color;
+            }
+
+            h4 {
+                margin-top: 15px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 553px;
+            height: 500px;
+            gap: 24px;
+            background: linear-gradient(to right, #f0f9ff, #e6f3ff);
+            background-color: #D1D6DB;
+            padding: 20px;
+            border-radius: $border-radius;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input[type="tel"] {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+
+                button {
+                    background: $primary-color;
+                    color: #fff;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                  
+                }
+
+                label {
+                    font-size: 12px;
+
+                    input {
+                        margin-right: 5px;
+                    }
+
+                    a {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+// .box4{
+//     display: flex;
+// }
+
+// Media so‘rovlari
+@media (max-width: 992px) {
+    .dentures .content-container {
+        flex-direction: column;
+
+        .image-gallery {
+            flex-wrap: wrap;
+            .image-box {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .dentures {
+        padding: 10px;
+        max-width: 80%;
+    }
+
+    .content-container {
+        .description {
+            padding: 15px;
+        }
+    .form-container{
+        max-width: 80%;
+    }
+        form {
+            input, button {
+                width: 100%;
+            }
+        }
+    }
+}

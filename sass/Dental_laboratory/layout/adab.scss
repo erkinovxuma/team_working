@@ -1,0 +1,141 @@
+$primary-color: #007BFF;
+$background-color: #f9f9f9;
+$text-color: #333;
+$card-bg: #DEEFFF;
+$shadow: rgba(0, 0, 0, 0.1);
+
+.prosthesis {
+    gap: 24px;
+    font-family: Arial, sans-serif;
+    background: $background-color;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.signup {
+    width: 1280px;
+    height: 204px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    background: $card-bg;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px $shadow;
+    margin-top: 20px;
+}
+.img2 img{
+    width: 82px;
+    height: 71px;
+    
+}
+.signup-text {
+    flex: 1;
+}
+
+.signup form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.signup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup button {
+    background: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup img {
+    width: 70px;
+    height: 67px;
+}
+
+// Media Queries for Responsive Design
+@media (max-width: 1024px) {
+    .signup {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .signup form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .signup input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .signup form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .signup input {
+        width: 100%;
+    }
+
+    .signup img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prosthesis {
+        padding: 10px;
+       
+    }
+    h2{
+        max-width: 80%;
+        text-align: center;
+        margin-left: 9%;
+    }
+    .signup {
+        width: 100%;
+        height: 410px;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .signup button {
+        width: 100%;
+    }
+    
+}
