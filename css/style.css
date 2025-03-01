@@ -1265,7 +1265,7 @@ a {
   background: white;
   border-radius: 0.5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .hero .buttons .input {
     text-align: center;
     width: 100%;
@@ -1294,7 +1294,7 @@ a {
   filter: brightness(0.9);
   box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .hero .buttons .whatsApp {
     padding: 10px 25px;
     border: 1px solid #30B5DF;
@@ -1311,7 +1311,7 @@ a {
     box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .hero .buttons {
     width: 100%;
     display: flex;
@@ -1336,7 +1336,7 @@ a {
   color: #fff;
   font-weight: 300;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .hero .check_tm {
     display: none;
   }
@@ -1427,7 +1427,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .hero .reklam {
     display: none;
   }
@@ -1454,12 +1454,12 @@ a {
   font-weight: 500;
   font-size: 1.875rem;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .skills h3 span {
     font-size: 1.125rem;
   }
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .skills h3 {
     font-size: 1.125rem;
     padding: 0 20px;
@@ -1471,7 +1471,7 @@ a {
   font-size: 3rem;
   margin-bottom: 30px;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .skills h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
@@ -1518,7 +1518,7 @@ a {
 .skills .parent__card .flex-card span {
   color: #30B5DF;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .skills .parent__card {
     width: 350px;
   }
@@ -1611,7 +1611,7 @@ a {
 .instruments__img img {
   width: 100%;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__img img {
     width: 100%;
     padding: 0 20px;
@@ -1623,7 +1623,7 @@ a {
 .instruments__form h1 {
   font-size: 3.75rem;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__form h1 {
     font-size: 1.875rem;
     text-align: center;
@@ -1636,7 +1636,7 @@ a {
   color: #384450;
   font-size: 1.375rem;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__form p {
     font-size: 1rem;
     text-align: center;
@@ -1681,12 +1681,12 @@ a {
   filter: brightness(0.9);
   box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__form .email .whatsApp {
     width: 50%;
   }
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__form .email {
     display: flex;
     justify-content: flex-start;
@@ -1720,7 +1720,7 @@ a {
 .instruments__form .gift .gift2 p {
   font-size: 1.125rem;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__form .gift .gift1 p,
   .instruments__form .gift .gift2 p {
     font-size: 1rem;
@@ -1728,7 +1728,7 @@ a {
     left: -30px;
   }
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__form .gift .gift1,
   .instruments__form .gift .gift2 {
     width: 350px;
@@ -1740,7 +1740,7 @@ a {
     gap: "";
   }
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments__form .gift {
     display: flex;
     justify-content: flex-start;
@@ -1750,7 +1750,7 @@ a {
     gap: 0.8rem;
   }
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .instruments {
     display: flex;
     justify-content: space-between;
@@ -1788,7 +1788,7 @@ a {
 .team__txt h1 span {
   color: #30B5DF;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .team__txt h1 {
     font-size: 1.5rem;
     width: 500px;
@@ -1802,13 +1802,13 @@ a {
   color: #384450;
   padding: 5px;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .team__txt .poragraph {
     position: relative;
     top: -430px;
   }
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .team__txt {
     display: flex;
     justify-content: center;
@@ -1827,18 +1827,13 @@ a {
   background-size: cover;
   border-radius: 20px;
 }
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 640px) {
   .team__image {
     background-position: center;
     background-size: 100%;
     height: 400px;
     position: relative;
     top: -40px;
-  }
-}
-@media only screen and (max-width: 878px) {
-  .team {
-    padding: 0 20px;
   }
 }
 
