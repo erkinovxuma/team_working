@@ -1598,6 +1598,77 @@ a {
   }
 }
 
+.vernut {
+  margin-top: 70px;
+  font-family: "Roboto";
+}
+.vernut h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.vernut h1 span {
+  color: #30B5DF;
+}
+.vernut__cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 15.5rem;
+}
+.vernut__cnt .vernut-img {
+  position: relative;
+  top: -130px;
+}
+.vernut__cnt .vernut-img .rectangle {
+  width: 400px;
+  height: 400px;
+  transform: rotate(45deg);
+  background-color: rgb(255, 64, 207);
+  border-radius: 80px;
+  margin-top: 180px;
+  position: relative;
+  left: 60px;
+  z-index: 1;
+}
+.vernut__cnt .vernut-img .alina {
+  width: 300px;
+  padding: 30px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  position: relative;
+  top: 600px;
+  left: 250px;
+  z-index: 300;
+}
+.vernut__cnt .vernut-txt {
+  width: 500px;
+}
+.vernut__cnt .vernut-txt h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+.vernut__cnt .vernut-txt p {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+.vernut__cnt .vernut-txt p span {
+  color: #30B5DF;
+}
+.vernut__cnt .vernut-txt ul {
+  list-style: disc;
+  color: #000;
+  position: relative;
+  left: 30px;
+  line-height: 2;
+}
+.vernut__cnt .vernut-txt ul li::marker {
+  color: #30B5DF;
+}
+
 .instruments {
   margin-top: 100px;
   display: flex;
@@ -1834,6 +1905,11 @@ a {
     height: 400px;
     position: relative;
     top: -40px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .team {
+    display: none;
   }
 }
 
