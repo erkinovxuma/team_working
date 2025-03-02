@@ -3,7 +3,7 @@
 
 .instruments {
     margin-top: 130px;
-    @include mixins.flexBox(space-between, center, row, '', 3rem);
+    @include mixins.flexBox(space-between, center, row, '', 1rem);
     font-family: $Roboto;
 
     &__img img {
@@ -11,55 +11,62 @@
 
         @media only screen and (max-width: 640px) {
             width: 110%;
-            padding: 0 20px;
         }
     }
 
     &__form {
-        width: 400px;
+        .txt {
+            width: 700px;
 
-        .txt{
-            width: 400px;
             h1 {
                 font-size: $fs-60;
+                line-height: 1;
 
                 @media only screen and (max-width: 640px) {
                     font-size: $fs-30;
                     text-align: center;
                     margin-top: -40px;
+
                 }
             }
 
             p {
                 margin-top: 10px;
-                width: 500px;
+                width: 550px;
                 color: $fc-gray;
                 font-size: $fs-22;
 
                 @media only screen and (max-width: 640px) {
                     font-size: $fs-16;
                     text-align: center;
-                    width: 370px;
-                    padding: 0 20px;
-                    // position: relative;
-                    // left: 160px;
+                }
+            }
+
+            span {
+                font-weight: $fw-4;
+                font-size: $fs-22;
+                width: 600px;
+
+                @media only screen and (max-width: 640px) {
+                    font-size: $fs-18;
+                    text-align: center;
                 }
             }
 
             .email {
-                @include mixins.flexBox(flex-start, center, '', wrap, 0.8rem);
+                @include mixins.flexBox(flex-start, center, row, wrap, 0.8rem);
                 margin-top: 20px;
 
                 .gmail {
-                    @include mixins.input(100%, 2.5rem, 1.5rem, 1px solid rgba(88, 88, 88, 0.322), 1rem, grey, white, 0.5rem);
+                    @include mixins.input(50%, 2.5rem, 1.5rem, 1px solid rgba(88, 88, 88, 0.322), 1rem, grey, white, 0.5rem);
                 }
 
                 .whatsApp {
-                    @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-22, $fw-5, $shadow-skyblue);
+                    @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-20, $fw-5, $shadow-skyblue);
 
                     @media only screen and (max-width: 640px) {
-                    @include mixins.button(15px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-22, $fw-5, $shadow-skyblue);
-                    width: 100%;
+                        @include mixins.button(15px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-22, $fw-5, $shadow-skyblue);
+                        width: 100%;
                     }
                 }
 
@@ -71,21 +78,29 @@
 
             .gift {
                 margin-top: 20px;
-                @include mixins.flexBox(flex-start, center, row, '', 0.8rem);
+                @include mixins.flexBox(flex-start, center, row, '', 1.4rem);
 
                 .gift1,
                 .gift2 {
-                    width: 280px;
-                    @include mixins.flexBox(space-between, center, row, '', 0.8rem);
-                    background-color: $bg-light-blue;
+                    width: 300px;
+                    @include mixins.flexBox(space-between, center, row, '', 0.5rem);
 
                     p {
-                        font-size: $fs-18;
+                        font-size: $fs-20;
 
                         @media only screen and (max-width: 640px) {
                             font-size: $fs-16;
                             position: relative;
-                            left: -30px;
+                            left: 10px;
+                            text-align: start;
+                        }
+                    }
+
+                    img {
+                        width: 50%;
+
+                        @media only screen and (max-width: 640px) {
+                            width: 20%;
                         }
                     }
 
@@ -99,6 +114,10 @@
                     @include mixins.flexBox(flex-start, center, column, '', 0.8rem);
                 }
 
+            }
+
+            @media only screen and (max-width: 640px) {
+                width: 400px;
             }
         }
     }

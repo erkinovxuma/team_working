@@ -1980,7 +1980,7 @@ a {
 }
 @media only screen and (max-width: 640px) {
   .doubt h1 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     line-height: 1;
     text-align: center;
   }
@@ -2070,7 +2070,7 @@ a {
   .doubt__card .card1__img img {
     width: 90%;
     top: 24px;
-    left: 160px;
+    left: 120px;
   }
 }
 .doubt__card .card1__img #img2 {
@@ -2083,14 +2083,82 @@ a {
   .doubt__card .card1__img #img2 {
     width: 70%;
     top: 14px;
-    left: 150px;
+    left: 130px;
   }
 }
-@media only screen and (max-width: 640px) {
-  .doubt__card {
-    padding: 0 20px;
-    width: 380px;
-  }
+
+.garand {
+  padding: 20px 80px;
+  font-family: "Roboto";
+  margin-top: 140px;
+  background-color: #F7F9FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 14rem;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 500px;
+}
+.garand__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: "";
+  width: 30rem;
+}
+.garand__img img {
+  width: 750px;
+  position: relative;
+  top: 50px;
+  right: 160px;
+  filter: brightness(110%);
+}
+.garand__img #tish {
+  width: 630px;
+  position: relative;
+  top: 50px;
+  left: 250px;
+  filter: brightness(110%);
+}
+.garand__txt h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.garand__txt .month {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 1rem;
+}
+.garand__txt .month .month1 {
+  padding: 10px 0;
+  line-height: 1;
+}
+.garand__txt .month .month1 h2 {
+  font-size: 1.5rem;
+}
+.garand__txt .month .month1 p {
+  font-size: 1.125rem;
+}
+.garand__txt p {
+  color: #384450;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+.garand__txt p span {
+  color: #30B5DF;
+}
+.garand__txt h4 {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 .instruments {
@@ -2100,7 +2168,7 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: "";
-  gap: 3rem;
+  gap: 1rem;
   font-family: "Roboto";
 }
 .instruments__img img {
@@ -2109,17 +2177,14 @@ a {
 @media only screen and (max-width: 640px) {
   .instruments__img img {
     width: 110%;
-    padding: 0 20px;
   }
 }
-.instruments__form {
-  width: 400px;
-}
 .instruments__form .txt {
-  width: 400px;
+  width: 700px;
 }
 .instruments__form .txt h1 {
   font-size: 3.75rem;
+  line-height: 1;
 }
 @media only screen and (max-width: 640px) {
   .instruments__form .txt h1 {
@@ -2130,7 +2195,7 @@ a {
 }
 .instruments__form .txt p {
   margin-top: 10px;
-  width: 500px;
+  width: 550px;
   color: #384450;
   font-size: 1.375rem;
 }
@@ -2138,21 +2203,30 @@ a {
   .instruments__form .txt p {
     font-size: 1rem;
     text-align: center;
-    width: 370px;
-    padding: 0 20px;
+  }
+}
+.instruments__form .txt span {
+  font-weight: 400;
+  font-size: 1.375rem;
+  width: 600px;
+}
+@media only screen and (max-width: 640px) {
+  .instruments__form .txt span {
+    font-size: 1.125rem;
+    text-align: center;
   }
 }
 .instruments__form .txt .email {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: "";
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 20px;
 }
 .instruments__form .txt .email .gmail {
-  width: 100%;
+  width: 50%;
   height: 2.5rem;
   padding: 1.5rem;
   border: 1px solid rgba(88, 88, 88, 0.322);
@@ -2168,7 +2242,7 @@ a {
   border-radius: 0.5rem;
   background-color: #30B5DF;
   color: #fff;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s;
@@ -2212,29 +2286,39 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: "";
-  gap: 0.8rem;
+  gap: 1.4rem;
 }
 .instruments__form .txt .gift .gift1,
 .instruments__form .txt .gift .gift2 {
-  width: 280px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: "";
-  gap: 0.8rem;
-  background-color: #F7F9FC;
+  gap: 0.5rem;
 }
 .instruments__form .txt .gift .gift1 p,
 .instruments__form .txt .gift .gift2 p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 @media only screen and (max-width: 640px) {
   .instruments__form .txt .gift .gift1 p,
   .instruments__form .txt .gift .gift2 p {
     font-size: 1rem;
     position: relative;
-    left: -30px;
+    left: 10px;
+    text-align: start;
+  }
+}
+.instruments__form .txt .gift .gift1 img,
+.instruments__form .txt .gift .gift2 img {
+  width: 50%;
+}
+@media only screen and (max-width: 640px) {
+  .instruments__form .txt .gift .gift1 img,
+  .instruments__form .txt .gift .gift2 img {
+    width: 20%;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2257,6 +2341,11 @@ a {
     flex-direction: column;
     flex-wrap: "";
     gap: 0.8rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .instruments__form .txt {
+    width: 400px;
   }
 }
 @media only screen and (max-width: 640px) {

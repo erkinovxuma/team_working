@@ -10,7 +10,7 @@
             color: $bg-skyblue;
         }
         @media only screen and (max-width: 640px) {
-        font-size: $fs-36;
+        font-size: $fs-24;
                     line-height: 1;
                     text-align: center;
         }
@@ -68,7 +68,7 @@
                 @media only screen and (max-width: 640px) {
                 width: 90%;
                 top: 24px;
-                left: 160px;
+                left: 120px;
 
                     }
             }
@@ -80,15 +80,11 @@
                 @media only screen and (max-width: 640px) {
                     width: 70%;
                     top: 14px;
-                    left: 150px;
+                    left: 130px;
 
                         }
             }
         }
     }
-    @media only screen and (max-width: 640px) {
-        padding: 0 20px;
-        width: 380px;
-        }
     }
 }
