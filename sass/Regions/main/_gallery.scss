@@ -1,0 +1,92 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.gallery {
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+
+h2{
+    // margin-top: 60px;
+    font-family: $Roboto;
+    font-size: $fs-36;
+    color: $bg-skyblue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    span{
+        color: $bg-dark;
+    }
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.grid1 {
+    border-radius: 15px;
+    height: 300px;
+    background-image: url(./../../../assets/img/ami\ clinic\ nurse.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    grid-column: span 6 / span 6;
+    grid-row: span 3 / span 3;
+}
+
+.grid2 {
+    background-image: url(./../../../assets/img/green\ chairs\ img.jpg);
+    background-position: center;
+    border-radius: 15px;
+    background-size: cover;
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 10;
+    grid-row-start: 1;
+}
+
+.grid3 {
+    background-image: url(./../../../assets/img/mexanika\ instrument.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 7;
+    grid-row-start: 1;
+}
+.grid4 {
+    background-image: url(./../../../assets/img/stamatolog\ \ koctor.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    grid-column: span 6 / span 6;
+    grid-row: span 3 / span 3;
+    grid-column-start: 7;
+    grid-row-start: 4;
+}
+
+.grid5 {
+    background-image: url(./../../../assets/img/stamatolog\ man.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+.grid6 {
+    background-image: url(./../../../assets/img/tish\ asboblari.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}

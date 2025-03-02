@@ -1810,7 +1810,7 @@ a {
   font-size: 1.875rem;
 }
 .doktor__txt p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 400;
   width: 450px;
   color: #384450;
@@ -1898,6 +1898,10 @@ a {
   left: 250px;
   z-index: 300;
 }
+.vernut__cnt .vernut-img .alina #h2 {
+  color: #000;
+  font-size: 22px;
+}
 @media only screen and (max-width: 640px) {
   .vernut__cnt .vernut-img .alina {
     width: 220px;
@@ -1907,7 +1911,7 @@ a {
     padding: 15px;
     top: 360px;
   }
-  .vernut__cnt .vernut-img .alina h2 {
+  .vernut__cnt .vernut-img .alina #h2 {
     font-size: 16px;
   }
   .vernut__cnt .vernut-img .alina p {
@@ -1917,14 +1921,14 @@ a {
 .vernut__cnt .vernut-txt {
   width: 500px;
 }
-.vernut__cnt .vernut-txt h2 {
-  font-size: 3rem;
+.vernut__cnt .vernut-txt #h2 {
+  font-size: 2.5rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 640px) {
-  .vernut__cnt .vernut-txt h2 {
+  .vernut__cnt .vernut-txt #h2 {
     text-align: center;
     font-size: 1.875rem;
     font-weight: 600;
@@ -2127,7 +2131,7 @@ a {
 }
 .garand__txt h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 .garand__txt .month {
   display: flex;
@@ -2135,16 +2139,17 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: "";
-  gap: 1rem;
+  gap: 3rem;
 }
 .garand__txt .month .month1 {
   padding: 10px 0;
-  line-height: 1;
 }
 .garand__txt .month .month1 h2 {
+  color: #000;
   font-size: 1.5rem;
 }
 .garand__txt .month .month1 p {
+  margin-top: -10px;
   font-size: 1.125rem;
 }
 .garand__txt p {
@@ -2183,7 +2188,7 @@ a {
   width: 700px;
 }
 .instruments__form .txt h1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 1;
 }
 @media only screen and (max-width: 640px) {
@@ -2357,6 +2362,97 @@ a {
     flex-wrap: "";
     gap: 3rem;
   }
+}
+
+.gallery {
+  position: relative;
+  top: 90px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 2.25rem;
+  color: #30B5DF;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+h2 span {
+  color: #000;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.grid1 {
+  border-radius: 15px;
+  height: 300px;
+  background-image: url(./../../../assets/img/ami\ clinic\ nurse.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  grid-column: span 6/span 6;
+  grid-row: span 3/span 3;
+}
+
+.grid2 {
+  background-image: url(./../../../assets/img/green\ chairs\ img.jpg);
+  background-position: center;
+  border-radius: 15px;
+  background-size: cover;
+  grid-column: span 3/span 3;
+  grid-row: span 3/span 3;
+  grid-column-start: 10;
+  grid-row-start: 1;
+}
+
+.grid3 {
+  background-image: url(./../../../assets/img/mexanika\ instrument.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  grid-column: span 3/span 3;
+  grid-row: span 3/span 3;
+  grid-column-start: 7;
+  grid-row-start: 1;
+}
+
+.grid4 {
+  background-image: url(./../../../assets/img/stamatolog\ \ koctor.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  grid-column: span 6/span 6;
+  grid-row: span 3/span 3;
+  grid-column-start: 7;
+  grid-row-start: 4;
+}
+
+.grid5 {
+  background-image: url(./../../../assets/img/stamatolog\ man.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  grid-column: span 3/span 3;
+  grid-row: span 3/span 3;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.grid6 {
+  background-image: url(./../../../assets/img/tish\ asboblari.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  grid-column: span 3/span 3;
+  grid-row: span 3/span 3;
+  grid-column-start: 4;
+  grid-row-start: 4;
 }
 
 .team {

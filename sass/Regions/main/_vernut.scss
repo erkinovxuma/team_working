@@ -66,6 +66,10 @@
                 top: 600px;
                 left: 250px;
                 z-index: 300;
+                #h2 {
+                    color: $bg-dark;
+                    font-size: 22px;
+                }
 
                 @media only screen and (max-width: 640px) {
                     width: 220px;
@@ -75,7 +79,7 @@
                     padding: 15px;
                     top: 360px;
 
-                    h2 {
+                    #h2 {
                         font-size: 16px;
                     }
 
@@ -94,8 +98,8 @@
         .vernut-txt {
             width: 500px;
 
-            h2 {
-                font-size: $fs-48;
+            #h2 {
+                font-size: $fs-40;
                 font-weight: 700;
                 color: $bg-dark;
                 margin-bottom: 20px;
