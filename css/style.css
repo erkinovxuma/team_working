@@ -339,7 +339,7 @@ a {
   width: 100%;
   max-width: 500px;
   text-transform: uppercase;
-  font-family: "Bebas Neue", monospace;
+  font-family: "Bebas Neue", sans-serif, monospace;
   font-weight: 700;
   font-size: 4.688rem;
   color: #fff;
@@ -1611,6 +1611,66 @@ a {
     background-repeat: no-repeat;
     background-size: 400%;
   }
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 2rem;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.win__card {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: "";
+  gap: "";
+  padding: 30px;
+  width: 500px;
+  height: 500px;
+  background-color: #F7F9FC;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+.win__card #f2 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+.win__card p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #384450;
+}
+.win__card img {
+  width: 290px;
+  transform: rotate(10deg);
+  position: relative;
+  top: 40px;
+  left: 140px;
+  filter: contrast(130%);
+}
+.win__card #img2 {
+  width: 210px;
+  transform: rotate(5deg);
+  position: relative;
+  top: 30px;
+  left: 180px;
+  filter: saturate(130%);
+}
+.win__card #img3 {
+  width: 230px;
+  position: relative;
+  top: 50px;
+  transform: rotate(-5deg);
+  left: 140px;
+  filter: contrast(150%);
 }
 
 .skills {
