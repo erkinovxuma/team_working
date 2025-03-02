@@ -40,7 +40,7 @@
         }
 
         p {
-            font-size: $fs-22;
+            font-size: $fs-18;
             color: $bg-gray;
             line-height: 1.2;
             a{
@@ -52,9 +52,12 @@
             @include mixins.flexBox(center, center, row, '', 0.5rem);
 
             h4 {
-                font-size: $fs-20;
+                font-size: $fs-22;
                 font-weight: $fw-6;
             }
         }
+    }
+    @media only screen and (max-width: 1024px) {
+        display: none;
     }
 }

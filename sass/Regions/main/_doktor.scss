@@ -6,9 +6,6 @@
     margin-top: 50px;
     margin-bottom: 50px;
     @include mixins.flexBox(center, center, row, '', 1rem);
-
-
-
     &__txt {
         font-family: $Roboto;
 
@@ -22,10 +19,12 @@
             font-weight: $fw-4;
             width: 450px;
             color: $fc-gray;
-
         }
-
-
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
     }
-
+    @media only screen and (max-width: 1024px) {
+    @include mixins.flexBox(right, center, row, '', 1rem);
+    }
 }

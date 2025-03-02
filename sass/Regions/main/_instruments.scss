@@ -5,52 +5,118 @@
     margin-top: 130px;
     @include mixins.flexBox(space-between, center, row, '', 1rem);
     font-family: $Roboto;
+
     &__img img {
         width: 100%;
     }
+
     &__form {
         .txt {
             width: 700px;
+
             h1 {
                 font-size: $fs-48;
                 line-height: 1;
+
+                @media only screen and (max-width: 1024px) {
+                    display: none;
+                }
             }
+
             p {
                 margin-top: 10px;
                 width: 550px;
                 color: $fc-gray;
                 font-size: $fs-22;
+
+                @media only screen and (max-width: 1024px) {
+                    width: 380px;
+                    font-size: $fs-18;
+                }
             }
+
             span {
                 font-weight: $fw-4;
                 font-size: $fs-22;
                 width: 600px;
+
+                @media only screen and (max-width: 1024px) {
+                    width: 380px;
+                    font-size: $fs-16;
+                    width: 0;
+                }
             }
+
             .email {
                 @include mixins.flexBox(flex-start, center, row, wrap, 0.8rem);
                 margin-top: 20px;
+
                 .gmail {
                     @include mixins.input(50%, 2.5rem, 1.5rem, 1px solid rgba(88, 88, 88, 0.322), 1rem, grey, white, 0.5rem);
+
+                    @media only screen and (max-width: 1024px) {
+                        @include mixins.input(100%, 2.5rem, 1.5rem, 1px solid rgba(88, 88, 88, 0.322), 1rem, grey, white, 0.5rem);
+                    }
                 }
+
                 .whatsApp {
                     @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-20, $fw-5, $shadow-skyblue);
+
+                    @media only screen and (max-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    @include mixins.flexBox(flex-start, center, row, wrap, 0.8rem);
+
                 }
             }
+
             .gift {
                 margin-top: 20px;
                 @include mixins.flexBox(flex-start, center, row, '', 1.4rem);
+
                 .gift1,
                 .gift2 {
                     width: 300px;
                     @include mixins.flexBox(space-between, center, row, '', 0.5rem);
+
                     p {
                         font-size: $fs-20;
+
+                        @media only screen and (max-width: 1024px) {
+                            font-size: $fs-16;
+                        }
                     }
+
                     img {
                         width: 50%;
+
+                        @media only screen and (max-width: 1024px) {
+                            width: 30%;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        @include mixins.flexBox(start, center, row, '', 0.5rem);
+                        width: 300px;
+                        margin-top: -20px;
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    @include mixins.flexBox(flex-start, center, column, '', .5rem);
+                    .gift1{
+                        display: none;
                     }
                 }
             }
+
+            @media only screen and (max-width: 1024px) {
+                width: 400px;
+            }
         }
     }
+
 }

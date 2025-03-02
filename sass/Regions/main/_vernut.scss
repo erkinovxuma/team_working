@@ -11,6 +11,10 @@
         span {
             color: $bg-skyblue;
         }
+        @media only screen and (max-width: 1024px) {
+            font-size: $fs-36;
+            line-height: 1;
+            }
     }
     &__cnt {
         @include mixins.flexBox(center, center, row, '', 15.5rem);
@@ -27,6 +31,16 @@
                 position: relative;
                 left: 60px;
                 z-index: 1;
+                @media only screen and (max-width: 1024px) {
+                    width: 270px;
+                    height: 270px;
+                border-radius: 500px 500px 500px 10px;
+                transform: rotate(0deg);
+                top: 30px;
+                left: 0px;
+                margin-top: 120px;
+
+                    }
             }
             .alina {
                 width: 300px;
@@ -39,11 +53,21 @@
                 z-index: 300;
                 #h2 {
                     color: $bg-dark;
-                    font-size: 22px;
+                    font-size: $fs-22;
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-20;
+                        }
                 }
                 p {
                     font-size: 18px;
                     margin-top: -10px;
+                }
+                @media only screen and (max-width: 1024px) {
+                width: 250px;
+                padding: 10px;
+                border-radius: 10px;
+                top: 290px;
+                left: 50px;
                 }
             }
         }
@@ -54,6 +78,11 @@
                 font-weight: 700;
                 color: $bg-dark;
                 margin-bottom: 20px;
+                @media only screen and (max-width: 1024px) {
+                    font-size: $fs-30;
+                margin-bottom: 10px;
+
+                    }
             }
             p {
                 font-size: $fs-18;
@@ -61,6 +90,9 @@
                 span {
                     color: $bg-skyblue;
                 }
+                @media only screen and (max-width: 1024px) {
+                    font-size: $fs-16;
+                    }
             }
             ul {
                 list-style: disc;
@@ -71,7 +103,21 @@
                 li::marker {
                     color: $bg-skyblue;
                 }
+                @media only screen and (max-width: 1024px) {
+                left: 20px;
+                line-height: 1.7;
+
+
+                }
             }
+
+            @media only screen and (max-width: 1024px) {
+width: 400px;
+                    }
         }
+        @media only screen and (max-width: 1024px) {
+        @include mixins.flexBox(center, center, row, '', 4rem);
+
+            }
     }
 }
