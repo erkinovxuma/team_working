@@ -59,7 +59,7 @@
 
             .alina {
                 width: 300px;
-                padding: 30px;
+                padding: 20px;
                 background-color: rgb(245, 245, 245);
                 border-radius: 20px;
                 position: relative;
@@ -69,6 +69,11 @@
                 #h2 {
                     color: $bg-dark;
                     font-size: 22px;
+                }
+                p{
+                    font-size: 18px;
+                    margin-top: -10px;
+
                 }
 
                 @media only screen and (max-width: 640px) {

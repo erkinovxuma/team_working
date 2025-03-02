@@ -1890,7 +1890,7 @@ a {
 }
 .vernut__cnt .vernut-img .alina {
   width: 300px;
-  padding: 30px;
+  padding: 20px;
   background-color: rgb(245, 245, 245);
   border-radius: 20px;
   position: relative;
@@ -1901,6 +1901,10 @@ a {
 .vernut__cnt .vernut-img .alina #h2 {
   color: #000;
   font-size: 22px;
+}
+.vernut__cnt .vernut-img .alina p {
+  font-size: 18px;
+  margin-top: -10px;
 }
 @media only screen and (max-width: 640px) {
   .vernut__cnt .vernut-img .alina {
