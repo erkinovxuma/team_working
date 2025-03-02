@@ -7,17 +7,7 @@
     margin-bottom: 50px;
     @include mixins.flexBox(center, center, row, '', 1rem);
 
-    @media only screen and (max-width: 640px) {
-        @include mixins.flexBox(center, center, column, '', 1rem);
-        margin-bottom: 10px;
 
-        &__img {
-            img {
-                width: 350px;
-
-            }
-        }
-    }
 
     &__txt {
         font-family: $Roboto;
@@ -35,20 +25,7 @@
 
         }
 
-        @media only screen and (max-width: 640px) {
-            h2 {
-                font-size: $fs-22;
-                text-align: center;
-            }
 
-            p {
-                font-size: $fs-16;
-                text-align: center;
-                ;
-            }
-
-
-        }
     }
 
 }

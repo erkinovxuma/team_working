@@ -6,11 +6,9 @@
     @include mixins.flexBox(center, flex-start, row, '', 2rem);
     margin-top: 90px;
     margin-bottom: 90px;
-
     &__card {
         font-family: $Roboto;
     @include mixins.flexBox(start, flex-start, column, '', '');
-
         padding: 30px;
         width: 500px;
         height: 500px;
@@ -34,7 +32,6 @@
             top: 40px;
             left: 140px;
             filter: contrast(130%);
-
         }
         #img2{
             width: 210px;
@@ -43,8 +40,6 @@
             top: 30px;
             left: 180px;
             filter: saturate(130%);
-
-
         }
         #img3{
             width: 230px;
@@ -52,8 +47,7 @@
             top: 50px;
             transform: rotate(-5deg);
             left: 140px;
-             filter: contrast(150%);
-
+            filter: contrast(150%);
         }
     }
 }
