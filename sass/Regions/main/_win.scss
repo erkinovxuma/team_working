@@ -36,6 +36,7 @@
             top: 40px;
             left: 140px;
             filter: contrast(130%);
+
         }
 
         #img2 {
@@ -54,14 +55,13 @@
             transform: rotate(-5deg);
             left: 140px;
             filter: contrast(150%);
+
         }
-        // @media only screen and (max-width: 1024px) {
-        //     width: 400px;
-        //     height: 400px;
-        // }
+
+    }
+    @media only screen and (max-width: 1024px) {
+        @include mixins.flexBox(center, center, column, wrap, 2rem);
+
     }
 
-    @media only screen and (max-width: 1024px) {
-        overflow: scroll;
-    }
 }
