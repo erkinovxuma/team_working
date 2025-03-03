@@ -3,7 +3,7 @@
 
 
 .win {
-    @include mixins.flexBox(center, flex-start, row, '', 2rem);
+    @include mixins.flexBox(center, flex-start, row, wrap, 2rem);
     margin-top: 90px;
     margin-bottom: 90px;
 
@@ -55,6 +55,10 @@
             transform: rotate(-5deg);
             left: 140px;
             filter: contrast(150%);
+
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 100px;
 
         }
 

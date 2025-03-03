@@ -1,0 +1,33 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+
+.doctor{
+    margin-top: 150px;
+    @include mixins.flexBox(space-between, center, row, '', 2rem);
+
+    &__txt{
+        width: 700px;
+    @include mixins.flexBox(center, flex-start, column, '', 2rem);
+
+h1{
+    font-size: $fs-60;
+span{
+    color: $bg-skyblue;
+}
+}
+p{
+font-size: $fs-20;
+color: $bg-gray;
+}
+.number{
+    @include mixins.flexBox(center, flex-start, row, '', 2rem);
+
+}
+    }
+    &__img{
+        img{
+            width: 600px;
+        }
+    }
+}

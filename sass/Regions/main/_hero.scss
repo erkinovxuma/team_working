@@ -28,7 +28,6 @@
             @media only screen and (max-width: 1024px) {
                 font-size: $fs-38;
                 line-height: 1;
-
             }
         }
 
@@ -52,8 +51,8 @@
         width: 100%;
         @include mixins.flexBox(start, center, row, '', 1rem);
 
-        .input {
-            @include mixins.input(100%, 2.5rem, 0.25rem, 1px solid transparent, 1rem, grey, white, 0.5rem);
+        .tel {
+            @include mixins.input(100%, 2.5rem, '', 1px solid transparent, 1rem, grey, white, 0.5rem);
         }
 
         .whatsApp {
