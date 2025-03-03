@@ -1,13 +1,25 @@
 .podcast_sec {
+  width: 100%;
   font-family: "Roboto";
   padding: 2rem 0;
 }
+@media only screen and (max-width: 768px) {
+  .podcast_sec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
 .podcast_sec .cont {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .podcast_sec .cont .card {
@@ -46,4 +58,9 @@
 }
 .podcast_sec .cont .card .img .img_rotate {
   transform: rotate(35deg);
+}
+@media only screen and (max-width: 420px) {
+  .podcast_sec .cont .card .img img {
+    width: 40%;
+  }
 }/*# sourceMappingURL=podcast_sec.css.map */

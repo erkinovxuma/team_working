@@ -1,0 +1,105 @@
+@use "../../roots" as *;
+@use "../../mixins";
+
+.main {
+  width: 100%;
+  .section_department {
+    .department_top {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+      width: 100%;
+      max-width: 557px;
+      h5 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: $fw-7;
+        font-size: 60px;
+        text-transform: uppercase;
+        line-height: 55.8px;
+        letter-spacing: 0%;
+        color: rgba(17, 24, 39, 1);
+        margin-bottom: 28px;
+        span {
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: $fw-7;
+          font-size: 60px;
+          text-transform: uppercase;
+          line-height: 55.8px;
+          letter-spacing: 0%;
+          color: rgba(48, 181, 223, 1);
+        }
+      }
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 437px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25.5px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: rgba(56, 68, 80, 1);
+      }
+    }
+    .active_buttons {
+      margin-bottom: 32px;
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      .xirurgiya {
+        width: 100%;
+        max-width: 115px;
+        @include mixins.button(
+          8px 20px,
+          none,
+          60px,
+          rgba(48, 181, 223, 1),
+          rgba(255, 255, 255, 1),
+          15px,
+          500,
+          ""
+        );
+        line-height: 19.5px;
+        letter-spacing: 0%;
+      }
+      .ortopediya {
+        background-color: rgba(243, 244, 246, 1);
+        width: 100%;
+        max-width: 127px;
+        border: none;
+        border-radius: 60px;
+        padding: 8px 20px;
+        max-width: 248px;
+        font-family: "Roboto", serif;
+        color: rgba(17, 24, 39, 1);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17.58px;
+        letter-spacing: 0%;
+      }
+      .zubotexnika {
+        background-color: rgba(243, 244, 246, 1);
+        width: 100%;
+        max-width: 142px;
+        border: none;
+        border-radius: 60px;
+        padding: 8px 20px;
+        max-width: 248px;
+        font-family: "Roboto", serif;
+        color: rgba(17, 24, 39, 1);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17.58px;
+        letter-spacing: 0%;
+      }
+    }
+    
+  }
+}

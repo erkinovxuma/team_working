@@ -456,7 +456,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .main .heading_section .reklame .card:last-child {
   padding: 0.6rem;
@@ -587,7 +588,7 @@ a {
 }
 @media only screen and (max-width: 600px) {
   .main .heading_section {
-    background-image: url("../../../assets/img/heading_section-media-img.png");
+    background-image: url("../../../assets/img/heading_section_media.png");
     background-size: cover;
     padding: 318px 16px 40px 16px;
   }
@@ -601,6 +602,148 @@ a {
   }
 }
 
+.videoSlider {
+  margin: 0 auto;
+}
+.videoSlider .videos {
+  position: relative;
+  overflow-x: auto;
+  display: grid;
+  gap: 16px;
+  grid-auto-flow: column;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.videoSlider .videos .video {
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  width: 393px;
+  height: 268px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videoSlider .videos .video video {
+  height: 100%;
+}
+.videoSlider .videos .video .player {
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.5));
+}
+.videoSlider .videos .video .player .info {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.videoSlider .videos .video .player .info .play {
+  cursor: pointer;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background: #16a3d0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoSlider .videos .video .player .info .play:hover {
+  background-color: #30b5df;
+}
+.videoSlider .videos .video .player .info p {
+  font-size: 15px;
+  line-height: 150%;
+  color: #fff;
+}
+.videoSlider .videos .video:hover .player {
+  opacity: 1;
+}
+.videoSlider .videos .pause .player {
+  opacity: 1;
+}
+.videoSlider .sliderControl {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.videoSlider .sliderControl .calcSliders {
+  font-size: 15px;
+  line-height: 133%;
+  color: #6b7680;
+}
+.videoSlider .sliderControl .controlButtons {
+  display: flex;
+  gap: 12px;
+}
+.videoSlider .sliderControl .controlButtons button {
+  border: 0.5px solid #d1d6db;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+  color: #111c27;
+  opacity: 0.5;
+}
+.videoSlider .sliderControl .controlButtons .active {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+.videoSlider .sliderControl .controlButtons .active:hover {
+  border-color: #30b5df;
+  color: #30b5df;
+}
+.videoSlider .pageNation {
+  display: none;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: 0.5px solid #d1d6db;
+  border-radius: 8px;
+  padding: 18px 24px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #111827;
+  transition: 0.3s;
+}
+.videoSlider .pageNation:active {
+  border-color: #30b5df;
+  color: #30b5df;
+}
+
+@media (max-width: 440px) {
+  .videoSlider {
+    padding: 0 17px;
+  }
+  .videoSlider .videos {
+    display: flex;
+    flex-direction: column;
+  }
+  .videoSlider .videos .video {
+    width: 100%;
+  }
+  .videoSlider .sliderControl {
+    display: none;
+  }
+  .videoSlider .pageNation {
+    display: block;
+  }
+}
 .main {
   width: 100%;
 }
@@ -632,7 +775,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .main .section_dental_metod .dental_method .dental_method_left {
   width: 100%;
@@ -704,7 +848,8 @@ a {
   row-gap: 20px;
 }
 .main .section_dental_metod .dental_method .dental_method_left ul li {
-  column-gap: 11px;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -744,7 +889,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   margin-bottom: 32px;
 }
 .main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top .slide {
@@ -752,6 +898,10 @@ a {
   flex-direction: column;
   align-items: center;
   row-gap: 16px;
+}
+.main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top .slide img {
+  width: 213px;
+  height: 200px;
 }
 .main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top .slide p {
   font-family: "Raleway", sans-serif;
@@ -796,6 +946,150 @@ a {
 .main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_buttons button:hover {
   filter: brightness(0.9);
   box-shadow: 0 0 5px 7px "";
+}
+@media only screen and (max-width: 1023px) {
+  .main .section_dental_metod h2 {
+    display: none;
+  }
+  .main .section_dental_metod .dental_method {
+    flex-direction: column;
+  }
+  .main .section_dental_metod .dental_method .dental_method_left {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .main .section_dental_metod h2 {
+    display: none;
+  }
+  .main .section_dental_metod .dental_method {
+    flex-direction: column;
+  }
+  .main .section_dental_metod .dental_method .dental_method_left {
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .section_dental_metod .dental_method .dental_method_right {
+    padding: 40px 16px;
+  }
+  .main .section_dental_metod .dental_method .dental_method_right h4 {
+    text-align: center;
+  }
+  .main .section_dental_metod .dental_method .dental_method_right .method_slider .slider_top {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+
+.main {
+  width: 100%;
+}
+.main .section_department .department_top {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 557px;
+}
+.main .section_department .department_top h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 55.8px;
+  letter-spacing: 0%;
+  color: rgb(17, 24, 39);
+  margin-bottom: 28px;
+}
+.main .section_department .department_top h5 span {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 55.8px;
+  letter-spacing: 0%;
+  color: rgb(48, 181, 223);
+}
+.main .section_department .department_top p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 437px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25.5px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(56, 68, 80);
+}
+.main .section_department .active_buttons {
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main .section_department .active_buttons .xirurgiya {
+  width: 100%;
+  max-width: 115px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 60px;
+  background-color: rgb(48, 181, 223);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+}
+.main .section_department .active_buttons .xirurgiya:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 5px 7px "";
+}
+.main .section_department .active_buttons .ortopediya {
+  background-color: rgb(243, 244, 246);
+  width: 100%;
+  max-width: 127px;
+  border: none;
+  border-radius: 60px;
+  padding: 8px 20px;
+  max-width: 248px;
+  font-family: "Roboto", serif;
+  color: rgb(17, 24, 39);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 0%;
+}
+.main .section_department .active_buttons .zubotexnika {
+  background-color: rgb(243, 244, 246);
+  width: 100%;
+  max-width: 142px;
+  border: none;
+  border-radius: 60px;
+  padding: 8px 20px;
+  max-width: 248px;
+  font-family: "Roboto", serif;
+  color: rgb(17, 24, 39);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 0%;
 }
 
 .heading_sec {
@@ -1051,7 +1345,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .heading_sec .reklam .card:last-child {
   padding: 0.6rem;
@@ -1153,9 +1448,11 @@ a {
   }
   .heading_sec .reklam .card:last-child img {
     height: 1rem;
+    width: 100%;
   }
   .heading_sec .reklam .card img {
     height: 0.6rem;
+    width: 100%;
   }
   .heading_sec .reklam .card_1 {
     position: relative;
@@ -1317,15 +1614,27 @@ a {
 }
 
 .podcast_sec {
+  width: 100%;
   font-family: "Roboto";
   padding: 2rem 0;
 }
+@media only screen and (max-width: 768px) {
+  .podcast_sec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
 .podcast_sec .cont {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .podcast_sec .cont .card {
@@ -1364,6 +1673,58 @@ a {
 }
 .podcast_sec .cont .card .img .img_rotate {
   transform: rotate(35deg);
+}
+@media only screen and (max-width: 420px) {
+  .podcast_sec .cont .card .img img {
+    width: 40%;
+  }
+}
+
+.calculate_sec {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 1rem;
+}
+.calculate_sec .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.calculate_sec .cont .margarita_card {
+  width: 35%;
+}
+.calculate_sec .cont .margarita_card .margarita .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 1rem;
+}
+.calculate_sec .cont .margarita_card .margarita .img .img_women {
+  width: 80px;
+  height: 80px;
+  background-image: url("../../../assets/img/opoqi.png");
+  background-size: 180%;
+  background-position: 60% 0%;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  border: 5px solid rgba(209, 213, 219, 0.4);
+}
+.calculate_sec .cont .margarita_card .margarita .img .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 0.4rem;
 }
 
 .hero {
@@ -1501,7 +1862,8 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.4);
   position: relative;
   background-image: linear-gradient(135deg rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .hero .reklam .card:last-child {
   padding: 0.6rem;
@@ -2586,4 +2948,90 @@ h2 span {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  padding-top: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: linear-gradient(72.47deg, #DEEFFF -65.52%, #F9FAFB 69.16%);
+}
+
+.text-content1 {
+  flex: 1;
+  text-align: left;
+}
+
+.btn1 {
+  display: inline-block;
+  background: rgb(48, 181, 223);
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+input[type=text] {
+  width: 300px;
+  padding: 18px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox1 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox1 input {
+  margin-right: 5px;
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.image1 {
+  max-width: 250px;
+  max-height: auto;
+  border-radius: 10px;
+  margin-left: 0px;
+}
+
+@media (max-width: 600px) {
+  .container1 {
+    width: 90%;
+  }
+  .section1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  input[type=checkbox] {
+    max-width: 100px;
+  }
+  .image1 {
+    margin: 0px 0 0;
+    max-width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
