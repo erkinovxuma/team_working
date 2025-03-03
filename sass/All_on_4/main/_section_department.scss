@@ -43,63 +43,259 @@
         color: rgba(56, 68, 80, 1);
       }
     }
-    .active_buttons {
-      margin-bottom: 32px;
-      width: 100%;
-      max-width: 400px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      column-gap: 8px;
-      margin-left: auto;
-      margin-right: auto;
-      .xirurgiya {
+    .department_bottom {
+      .active_buttons {
+        margin-bottom: 32px;
         width: 100%;
-        max-width: 115px;
-        @include mixins.button(
-          8px 20px,
-          none,
-          60px,
-          rgba(48, 181, 223, 1),
-          rgba(255, 255, 255, 1),
-          15px,
-          500,
-          ""
-        );
-        line-height: 19.5px;
-        letter-spacing: 0%;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        .xirurgiya {
+          width: 100%;
+          max-width: 115px;
+          @include mixins.button(
+            8px 20px,
+            none,
+            60px,
+            rgba(48, 181, 223, 1),
+            rgba(255, 255, 255, 1),
+            15px,
+            500,
+            ""
+          );
+          line-height: 19.5px;
+          letter-spacing: 0%;
+        }
+        .ortopediya {
+          background-color: rgba(243, 244, 246, 1);
+          width: 100%;
+          max-width: 127px;
+          border: none;
+          border-radius: 60px;
+          padding: 8px 20px;
+          max-width: 248px;
+          font-family: "Roboto", serif;
+          color: rgba(17, 24, 39, 1);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 17.58px;
+          letter-spacing: 0%;
+        }
+        .zubotexnika {
+          background-color: rgba(243, 244, 246, 1);
+          width: 100%;
+          max-width: 142px;
+          border: none;
+          border-radius: 60px;
+          padding: 8px 20px;
+          max-width: 248px;
+          font-family: "Roboto", serif;
+          color: rgba(17, 24, 39, 1);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 17.58px;
+          letter-spacing: 0%;
+        }
       }
-      .ortopediya {
-        background-color: rgba(243, 244, 246, 1);
-        width: 100%;
-        max-width: 127px;
-        border: none;
-        border-radius: 60px;
-        padding: 8px 20px;
-        max-width: 248px;
-        font-family: "Roboto", serif;
-        color: rgba(17, 24, 39, 1);
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 17.58px;
-        letter-spacing: 0%;
+      .department {
+        margin-bottom: 32px;
+        h6 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: 32px;
+          color: rgba(17, 24, 39, 1);
+          line-height: 40px;
+          letter-spacing: 0%;
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 17px;
+          color: rgba(107, 114, 128, 1);
+          line-height: 25.5px;
+          letter-spacing: 0%;
+        }
       }
-      .zubotexnika {
-        background-color: rgba(243, 244, 246, 1);
-        width: 100%;
-        max-width: 142px;
-        border: none;
-        border-radius: 60px;
-        padding: 8px 20px;
-        max-width: 248px;
-        font-family: "Roboto", serif;
-        color: rgba(17, 24, 39, 1);
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 17.58px;
-        letter-spacing: 0%;
+      .department_slider {
+        .department_slider_top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          column-gap: 16px;
+
+          .slider_left {
+            width: 100%;
+            max-width: 653px;
+            padding: 72px;
+            border-radius: 24px;
+            background-color: rgba(247, 249, 252, 1);
+            h4 {
+              font-family: "Roboto", sans-serif;
+              font-weight: 500;
+              font-size: 28px;
+              // leading-trim: Cap height;
+              color: rgba(17, 28, 39, 1);
+              line-height: 32.64px;
+              letter-spacing: 0%;
+              margin-bottom: 32px;
+            }
+            .slider_left_p1 {
+              width: 100%;
+              max-width: 433px;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 17px;
+              color: rgba(56, 68, 80, 1);
+              line-height: 25.5px;
+              letter-spacing: 0%;
+              margin-bottom: 24px;
+            }
+            .slider_left_p2 {
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 17px;
+              color: rgba(56, 68, 80, 1);
+              line-height: 25.5px;
+              letter-spacing: 0%;
+              margin-bottom: 32px;
+              a {
+                text-decoration: underline;
+                color: rgba(17, 28, 39, 1);
+              }
+            }
+            .p__icon {
+              width: 322px;
+              display: flex;
+              align-items: center;
+              column-gap: 8px;
+            }
+          }
+        }
+      }
+      .department_slider_bottom {
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .slider_bottom_p {
+          font-size: 15px;
+          line-height: 133%;
+          color: #6b7680;
+        }
+        .slider_bottom_buttons {
+          display: flex;
+          gap: 12px;
+          button {
+            border: 0.5px solid #d1d6db;
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 133%;
+            color: #111c27;
+            opacity: 0.5;
+          }
+          .active {
+            cursor: pointer;
+            opacity: 1;
+            transition: 0.3s;
+            &:hover {
+              border-color: #30b5df;
+              color: #30b5df;
+            }
+          }
+        }
       }
     }
-    
+  }
+  @media only screen and (max-width: 768px) {
+    .section_department {
+      .department_top {
+        text-align: center;
+        h5 {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 16px;
+          max-width: 350px;
+        }
+      }
+
+      .department_bottom {
+        .active_buttons {
+          flex-wrap: wrap;
+          justify-content: center;
+          row-gap: 10px;
+        }
+
+        .department_slider {
+          .department_slider_top {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            .slider_left {
+              max-width: 90%;
+              padding: 40px;
+              h4 {
+                font-size: 24px;
+                line-height: 30px;
+              }
+              .slider_left_p1,
+              .slider_left_p2 {
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+
+        .department_slider_bottom {
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+          gap: 8px;
+          .slider_bottom_p {
+            text-align: center;
+            font-size: 14px;
+          }
+          .slider_bottom_buttons {
+            button {
+              font-size: 14px;
+              padding: 6px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 720px) {
+    .section_department {
+      .department_bottom {
+        .department_slider {
+          .department_slider_top {
+            display: flex;
+            justify-content: center;
+            .slider_left {
+              padding: 10px;
+            }
+          }
+        }
+
+        .department_slider_bottom {
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+          gap: 8px;
+        }
+      }
+    }
   }
 }
