@@ -162,14 +162,345 @@
           </div>
         </div>
       </section>
-      <section class="section_dental_metod container">
+      <section class="videoSlider container">
+        <ul class="videos"></ul>
+        <div class="sliderControl">
+          <p class="calcSliders"><span></span> из <span></span></p>
+          <div class="controlButtons">
+            <button class="backButton">Назад</button>
+            <button class="nextButton active">Далее</button>
+          </div>
+        </div>
+        <button class="pageNation">Cмотреть все</button>
+      </section>
+      <section class="podcast_sec container">
+        <div class="cont">
+          <div class="card card_1">
+            <div class="txt">
+              <h5>Лечение у специалистов с 20-ти летнем опытом.</h5>
+              <p>
+                500+ отзывов на независимых ресурсах а так же видео отзывы и
+                отзывы с результатами у нас на сайте.
+              </p>
+            </div>
+            <div class="img">
+              <img src="../assets/img/cup.png" alt="This is a cup image" />
+            </div>
+          </div>
+          <div class="card card_2">
+            <div class="txt">
+              <h5>Оптимальное решение од ваш бюджет</h5>
+              <p>
+                Озвученная на приёме стоимость окончательная. Вам не придётся
+                доплачивать ни за какие доп.услуги или материалы в процессе
+              </p>
+            </div>
+            <div class="img">
+              <img
+                class="img_rotate"
+                src="../assets/img/coins.png"
+                alt="This is coins image"
+              />
+            </div>
+          </div>
+          <div class="card card_3">
+            <div class="txt">
+              <h5>Вы полностью контролируете процесс</h5>
+              <p>
+                Личный куратор на связи 24/7: отвечает на ваши вопросы понятным
+                языком и «ведет за руку» по плану лечения.
+              </p>
+            </div>
+            <div class="img">
+              <img src="../assets/img/note.png" alt="This is note image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_dental_metod">
         <h2>
           Узнайте, подходит ли вам метод <br />
           All-on-4 -
           <span>восстановление зубов за 1 день</span>
         </h2>
-        <div class="dental_method"></div>
+        <div class="dental_method">
+          <div class="dental_method_left">
+            <div class="woman">
+              <div class="woman_top">
+                <img src="../assets/svg/woman-image.svg" alt="woman-image" />
+                <p>
+                  <span class="woman-name">Маргарита</span>
+                  <span class="woman-work">Куратор лечения</span>
+                </p>
+              </div>
+              <p>
+                После прохождения сориентирует по стоимости и ответит на все
+                вопросы.
+              </p>
+            </div>
+            <div class="woman-bottom">
+              <b>Ответьте на 5 вопросов и получите:</b>
+              <ul>
+                <li>
+                  <img src="../assets/svg/Сheck-icon.svg" alt="Check-icon" />
+                  Бесплатную консультацию <br />
+                  от стоматолога-кандидата наук
+                </li>
+                <li>
+                  <img src="../assets/svg/Сheck-icon.svg" alt="Check-icon" /> 3
+                  варианта стоимости
+                </li>
+                <li>
+                  <img src="../assets/svg/Сheck-icon.svg" alt="Check-icon" />
+                  Сюрприз от стоматологии
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dental_method_right">
+            <h4>Вам нужна имлантация:</h4>
+            <div class="method_slider">
+              <div class="slider_top">
+                <div class="slide">
+                  <img src="../assets/img/teeth-1.png" alt="teeth-1" />
+                  <p>Верхней челюсти</p>
+                </div>
+                <div class="slide">
+                  <img src="../assets/img/teeth-2.png" alt="teeth-1" />
+                  <p>Нижней челюсти</p>
+                </div>
+                <div class="slide">
+                  <img src="../assets/img/teeth-3.png" alt="teeth-1" />
+                  <p>Обеих челюстей</p>
+                </div>
+                <div class="slide">
+                  <img src="../assets/img/teeth-4.png" alt="teeth-4" />
+                  <p>Нижней челюстей</p>
+                </div>
+                <div class="slide">
+                  <img src="../assets/img/teeth-5.png" alt="teeth-5" />
+                  <p>Обеих челюстей</p>
+                </div>
+              </div>
+              <div class="slider_buttons">
+                <p>1 из 5</p>
+                <button>Далее</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- protez slider -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const slides = document.querySelectorAll(".slider_top .slide");
+          const nextButton = document.querySelector(".slider_buttons button");
+          const counterText = document.querySelector(".slider_buttons p");
+          let currentIndex = 0;
+          const visibleSlides = 3;
+          const totalSlides = slides.length;
+          function updateSlider() {
+            slides.forEach((slide, index) => {
+              slide.style.display =
+                index >= currentIndex && index < currentIndex + visibleSlides
+                  ? "flex"
+                  : "none";
+            });
+            counterText.textContent = `${currentIndex + 1}-${Math.min(
+              currentIndex + visibleSlides,
+              totalSlides
+            )} из ${totalSlides}`;
+          }
+          updateSlider();
+          nextButton.addEventListener("click", function () {
+            currentIndex += 1;
+            if (currentIndex + visibleSlides > totalSlides) {
+              currentIndex = 0;
+            }
+            updateSlider();
+          });
+        });
+      </script>
+      <!-- protez slider -->
+
+      <!-- video slider -->
+      <script>
+        const slider = document.querySelector(".videos"),
+          pauseIconUrl = "../../assets/svg/pauseIcon.svg",
+          playIconUrl = "../../assets/svg/playIcon.svg";
+        let videos;
+
+        let videosArr = [
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image1.png",
+            text: "Борис, 52 года",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image2.png",
+            text: "Нина, 60 лет",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image3.png",
+            text: "Анатолий, 65 лет",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image1.png",
+            text: "Борис, 52 года",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image2.png",
+            text: "Нина, 60 лет",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image3.png",
+            text: "Анатолий, 65 лет",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image1.png",
+            text: "Борис, 52 года",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image2.png",
+            text: "Нина, 60 лет",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image3.png",
+            text: "Анатолий, 65 лет",
+          },
+          {
+            src: "../../assets/video/video.mp4",
+            poster: "../assets/img/video-image1.png",
+            text: "Борис, 52 года",
+          },
+        ]; // video malumotlari
+
+        function setVideo(src, poster, text) {
+          return ` <li class="video pause">
+          <video
+            src=${src}
+            poster=${poster}
+          ></video>
+          <div class="player">
+            <div class="info">
+              <div class="play">
+                <img src="../../assets/svg/playIcon.svg" alt="player" />
+              </div>
+              <p>${text}</p>
+            </div>
+          </div>
+        </li>`;
+        } // video HTML strukturasi
+
+        function numberOfVideo() {
+          if (window.innerWidth <= 440) {
+            slider.innerHTML = videosArr
+              .slice(0, 4)
+              .map((e) => {
+                return setVideo(e.src, e.poster, e.text);
+              })
+              .join("");
+          } else {
+            slider.innerHTML = videosArr
+              .map((e) => {
+                return setVideo(e.src, e.poster, e.text);
+              })
+              .join("");
+          }
+          // videolar quyilganda vidolarni olib playerlargaham eventlari quyiladi
+          videos = document.querySelectorAll(".video");
+          playerButtons();
+        } // mediasida videolar soni har xil bulgani uchun
+
+        numberOfVideo(); // videolarni chiqarish uchun
+
+        window.addEventListener("resize", numberOfVideo); //ekran uzgarsa videolar sonini nazorat qilish uchun
+
+        function playerButtons() {
+          videos.forEach((e, i, a) => {
+            e.querySelector(".play").addEventListener("click", () => {
+              let video = e.querySelector("video");
+              e.classList.toggle("pause");
+              if (video.paused) {
+                a.forEach((element) => {
+                  element.querySelector("video").pause();
+                  element.querySelector("img").src = playIconUrl;
+                });
+                video.play();
+                e.querySelector("img").src = pauseIconUrl;
+              } else {
+                video.pause();
+                e.querySelector("img").src = playIconUrl;
+              }
+            });
+          });
+        } //video player tugmasiniki
+
+        //perv and next buttons slider
+        const backButton = document.querySelector(".backButton"),
+          nextButton = document.querySelector(".nextButton"),
+          calcSliders = document.querySelector(".calcSliders");
+        let sliderIndex = 1,
+          slidersOfNum = videos.length;
+
+        calcSliders.lastChild.innerText = slidersOfNum;
+        calcSliders.firstChild.innerText = sliderIndex;
+
+        nextButton.addEventListener("click", onClickNext); // birinchi next tugma ishlagani uchun
+
+        function onClickNext(e) {
+          if (sliderIndex === 1) {
+            backButton.addEventListener("click", onClickBack);
+            backButton.classList.add("active");
+          }
+          if (sliderIndex <= slidersOfNum) {
+            sliderIndex += 1;
+            calcSliders.firstChild.innerText = sliderIndex;
+            if (sliderIndex === slidersOfNum) {
+              e.target.removeEventListener("click", onClickNext);
+              e.target.classList.remove("active");
+            }
+          }
+          slider.scrollLeft = videos[sliderIndex - 1].offsetLeft;
+        } // next tugmasini funksiyasi
+
+        function onClickBack(e) {
+          if (sliderIndex === slidersOfNum) {
+            nextButton.addEventListener("click", onClickNext);
+            nextButton.classList.add("active");
+          }
+          if (sliderIndex > 0) {
+            sliderIndex -= 1;
+            calcSliders.firstChild.innerText = sliderIndex;
+            if (sliderIndex === 1) {
+              e.target.removeEventListener("click", onClickBack);
+              e.target.classList.remove("active");
+            }
+          }
+          slider.scrollLeft = videos[sliderIndex - 1].offsetLeft;
+        } // back tugmasini funksiyasi
+
+        // see all button
+        const seeAllButton = document.querySelector(".pageNation");
+
+        seeAllButton.addEventListener("click", (e) => {
+          e.target.style.display = "none";
+          slider.innerHTML = videosArr
+            .map((e) => {
+              return setVideo(e.src, e.poster, e.text);
+            })
+            .join("");
+        });
+      </script>
+      <!-- video slider -->
     </main>
   </body>
 </html>

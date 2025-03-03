@@ -1,0 +1,67 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+
+.win {
+    @include mixins.flexBox(center, flex-start, row, '', 2rem);
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    &__card {
+        font-family: $Roboto;
+        @include mixins.flexBox(start, flex-start, column, '', '');
+        padding: 30px;
+        width: 500px;
+        height: 500px;
+        background-color: #F7F9FC;
+        margin-bottom: 40px;
+        border-radius: 15px;
+
+        #f2 {
+            color: $bg-dark;
+            font-size: 22px;
+            font-weight: $fw-6;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: $bg-gray;
+        }
+
+        img {
+            width: 290px;
+            transform: rotate(10deg);
+            position: relative;
+            top: 40px;
+            left: 140px;
+            filter: contrast(130%);
+        }
+
+        #img2 {
+            width: 210px;
+            transform: rotate(5deg);
+            position: relative;
+            top: 30px;
+            left: 180px;
+            filter: saturate(130%);
+        }
+
+        #img3 {
+            width: 230px;
+            position: relative;
+            top: 50px;
+            transform: rotate(-5deg);
+            left: 140px;
+            filter: contrast(150%);
+        }
+        // @media only screen and (max-width: 1024px) {
+        //     width: 400px;
+        //     height: 400px;
+        // }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        overflow: scroll;
+    }
+}

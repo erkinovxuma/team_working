@@ -6,43 +6,36 @@
     margin-bottom: 60px;
     @include mixins.flexBox(center, center, column, '', 0.5rem);
     font-family: $Roboto, sans-serif;
-
     h3 {
         text-align: center;
         font-weight: $fw-5;
         font-size: $fs-30;
-
         span {
             color: $fc-skyblue;
             font-weight: $fw-5;
             font-size: $fs-30;
-            @media only screen and (max-width: 640px){
-                font-size: $fs-18;
 
-                    }
         }
-        @media only screen and (max-width: 640px){
-            font-size: $fs-18;
-            padding: 0 20px;
-            line-height: 1;
-                }
-    }
-
-    h1 {
-        text-align: center;
-        font-size: $fs-48;
-        margin-bottom: 30px;
-        @media only screen and (max-width: 640px){
+        @media only screen and (max-width: 1024px) {
         font-size: $fs-24;
-        margin-bottom: 20px;
         line-height: 1;
 
             }
     }
+    h1 {
+        text-align: center;
+        font-size: $fs-48;
+        margin-bottom: 30px;
+        @media only screen and (max-width: 1024px) {
+        font-size: $fs-36;
+        line-height: 1;
+        margin-bottom: -10px;
 
+
+                }
+    }
     .parent {
         @include mixins.flexBox(center, flex-start, row, wrap, 1rem);
-
         &__card {
             width: 500px;
             @include mixins.flexBox(center, flex-start, column, '', 1rem);
@@ -53,24 +46,29 @@
                 font-size: $fs-20;
             color: $bg-gray;
                 line-height: 1.5;
-            }
+                @media only screen and (max-width: 1024px) {
+                font-size: $fs-18;
 
+                }
+            }
             .flex-card {
                 @include mixins.flexBox(center, center, row, '', 0.5rem);
-
                 h4 {
                     font-size: $fs-20;
                     font-weight: $fw-6;
                 }
-
                 span {
                     color: $bg-skyblue;
                 }
             }
-            @media only screen and (max-width: 640px){
-            width: 350px;
-
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                padding:  30px 50px;
             }
         }
+        @media only screen and (max-width: 1024px) {
+            @include mixins.flexBox(center, flex-start, column, '', 1rem);
+        }
     }
+
 }

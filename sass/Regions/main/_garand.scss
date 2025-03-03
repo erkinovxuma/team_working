@@ -1,0 +1,77 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.garand {
+    padding: 20px 80px;
+    font-family: $Roboto;
+    margin-top: 140px;
+    background-color: $bg-light-blue;
+    @include mixins.flexBox(center, center, row, '', 14rem);
+    overflow: hidden;
+    border-radius: 20px;
+    height: 500px;
+
+    &__img {
+        @include mixins.flexBox(center, center, row, '', '');
+        width: 30rem;
+
+        img {
+            width: 750px;
+            position: relative;
+            top: 50px;
+            right: 160px;
+            filter: brightness(110%);
+
+        }
+
+        #tish {
+            width: 630px;
+            position: relative;
+            top: 50px;
+            left: 250px;
+            filter: brightness(110%);
+        }
+    }
+
+    &__txt {
+        h1 {
+            font-size: $fs_48;
+            padding-bottom: 15px
+        }
+
+        .month {
+            @include mixins.flexBox(start, center, row, '', 3rem);
+
+            .month1 {
+                padding: 10px 0;
+
+                h2 {
+                    color: $bg-dark;
+                    font-size: $fs_24;
+                }
+
+                p {
+                    margin-top: -10px;
+                    font-size: $fs_18;
+
+                }
+            }
+        }
+
+        p {
+            color: $bg-gray;
+            font-size: $fs_18;
+            line-height: 1.7;
+
+            span {
+                color: $bg-skyblue;
+            }
+        }
+
+        h4 {
+            margin-top: 20px;
+            font-weight: $fw-5;
+            font-size: $fs-20;
+        }
+    }
+}

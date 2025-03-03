@@ -1,0 +1,30 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+
+.doktor {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include mixins.flexBox(center, center, row, '', 1rem);
+    &__txt {
+        font-family: $Roboto;
+
+        h2 {
+            color: $bg-skyblue;
+            font-size: $fs-30;
+        }
+
+        p {
+            font-size: $fs-20;
+            font-weight: $fw-4;
+            width: 450px;
+            color: $fc-gray;
+        }
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+    @include mixins.flexBox(right, center, row, '', 1rem);
+    }
+}
