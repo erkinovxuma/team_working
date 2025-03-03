@@ -2,10 +2,17 @@
 @use '../../mixins';
 
 .podcast_sec{
+    width: 100%;
     font-family: $Roboto;
     padding: 2rem 0;
+
+    @media only screen and (max-width: 768px){
+        @include mixins.flexBox(center, flex-start, column, wrap, 2rem);
+    }
+
     .cont{
-        @include mixins.flexBox(center, center, row, no-wrap, 2rem);
+        width: 100%;
+        @include mixins.flexBox(center, center, row, wrap, 2rem);
         .card{
             @include mixins.flexBox(space-between, center, column, no-wrap, 2rem);
             width: 440px;
@@ -30,6 +37,11 @@
                 @include mixins.flexBox(end, center, row, no-wrap, 1rem);
                 .img_rotate{
                     transform: rotate(35deg);
+                }
+                img{
+                    @media only screen and (max-width: 420px){
+                        width: 40%;
+                    }
                 }
             }
         }
