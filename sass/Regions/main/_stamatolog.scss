@@ -1,0 +1,107 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+
+.stamatolog {
+    margin-top: 100px;
+    background-color: $bg-light-blue;
+    padding: 50px;
+    border-radius: $br-24;
+    &__txt {
+        width: 50%;
+        h1{
+            font-size: $fs-48;
+            line-height: 1;
+            span{
+                color: $bg-skyblue;
+            }
+        }
+        h4{
+            margin: 10px 0;
+            font-size: $fs-20;
+            font-weight: $fw-5;
+        }
+        ul {
+            list-style: disc;
+            color: $bg-dark;
+            position: relative;
+            left: 20px;
+            line-height: 2;
+
+            li::marker {
+                color: $bg-skyblue;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                left: 20px;
+                line-height: 1.7;
+
+
+            }
+        }
+        .email {
+            @include mixins.flexBox(flex-start, center, row, wrap, 0.8rem);
+            margin-top: 10px;
+
+            .google {
+                @include mixins.input(50%, 2.5rem, 1.5rem, 1px solid rgba(88, 88, 88, 0.322), 1rem, grey, white, 0.5rem);
+
+                @media only screen and (max-width: 1024px) {
+                    @include mixins.input(100%, 2.5rem, 1.5rem, 1px solid rgba(88, 88, 88, 0.322), 1rem, grey, white, 0.5rem);
+                }
+            }
+
+            .whatsApp {
+                @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-20, $fw-5, $shadow-skyblue);
+
+                @media only screen and (max-width: 1024px) {
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                @include mixins.flexBox(flex-start, center, row, wrap, 0.8rem);
+
+            }
+            .gift {
+                margin-top: 20px;
+                @include mixins.flexBox(flex-start, center, row, '', 1.4rem);
+
+                .gift1,
+                .gift2 {
+                    width: 300px;
+                    @include mixins.flexBox(space-between, center, row, '', 0.5rem);
+
+                    p {
+                        font-size: $fs-18;
+
+                        @media only screen and (max-width: 1024px) {
+                            font-size: $fs-16;
+                        }
+                    }
+
+                    img {
+                        width: 30%;
+
+                        @media only screen and (max-width: 1024px) {
+                            width: 30%;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        @include mixins.flexBox(start, center, row, '', 0.5rem);
+                        width: 300px;
+                        margin-top: -20px;
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    @include mixins.flexBox(flex-start, center, column, '', .5rem);
+
+                }
+            }
+        }
+
+
+    }
+}
