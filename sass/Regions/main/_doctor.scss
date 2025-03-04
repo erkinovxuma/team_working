@@ -2,32 +2,75 @@
 @use '../../mixins';
 
 
-.doctor{
+.doctor {
     margin-top: 150px;
     @include mixins.flexBox(space-between, center, row, '', 2rem);
 
-    &__txt{
+    &__txt {
         width: 700px;
-    @include mixins.flexBox(center, flex-start, column, '', 2rem);
+        @include mixins.flexBox(center, flex-start, column, '', 2rem);
 
-h1{
-    font-size: $fs-60;
-span{
-    color: $bg-skyblue;
-}
-}
-p{
-font-size: $fs-20;
-color: $bg-gray;
-}
-.number{
-    @include mixins.flexBox(center, flex-start, row, '', 2rem);
+        h1 {
+            font-size: $fs-60;
 
-}
-    }
-    &__img{
-        img{
-            width: 600px;
+            span {
+                color: $bg-skyblue;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                font-size: $fs-48;
+                line-height: 1;
+            }
         }
+
+        p {
+            font-size: $fs-20;
+            color: $bg-gray;
+
+            @media only screen and (max-width: 1024px) {
+                font-size: $fs-18;
+
+            }
+        }
+
+        .number {
+            @include mixins.flexBox(center, flex-start, row, '', 2rem);
+
+            @media only screen and (max-width: 1024px) {}
+
+            h2 {
+                font-size: $fs-26;
+            }
+
+            p {
+                margin-top: -10px;
+                font-size: $fs-16;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                @include mixins.flexBox(center, flex-start, row, '', 1rem);
+                width: 500px;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            @include mixins.flexBox(start, flex-start, column, '', 2rem);
+        }
+    }
+
+    &__img {
+        img {
+            width: 600px;
+
+            @media only screen and (max-width: 1024px) {
+                width: 480px;
+
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        @include mixins.flexBox(right, center, column-reverse, '', 1rem);
+        margin-top: 100px;
     }
 }

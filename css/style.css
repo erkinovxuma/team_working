@@ -1955,10 +1955,10 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: "";
-  gap: 1rem;
+  gap: 5rem;
 }
 .hero .buttons .tel {
-  width: 100%;
+  width: 130%;
   height: 2.5rem;
   padding: "";
   border: 1px solid transparent;
@@ -1967,9 +1967,10 @@ a {
   color: grey;
   background: white;
   border-radius: 0.5rem;
+  margin-top: 0px;
 }
 .hero .buttons .whatsApp {
-  padding: 10px 15px;
+  padding: 10px 25px;
   border: 1px solid #30B5DF;
   border-radius: 0.5rem;
   background-color: #30B5DF;
@@ -2102,7 +2103,7 @@ a {
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: "";
   gap: 2rem;
   margin-top: 90px;
   margin-bottom: 90px;
@@ -2124,13 +2125,23 @@ a {
 }
 .win__card #f2 {
   color: #000;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
 }
+@media only screen and (max-width: 1024px) {
+  .win__card #f2 {
+    font-size: 1.125rem;
+  }
+}
 .win__card p {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 10px;
   color: #384450;
+}
+@media only screen and (max-width: 1024px) {
+  .win__card p {
+    font-size: 1rem;
+  }
 }
 .win__card img {
   width: 290px;
@@ -2140,6 +2151,12 @@ a {
   left: 140px;
   filter: contrast(130%);
 }
+@media only screen and (max-width: 1024px) {
+  .win__card img {
+    width: 200px;
+    top: 10px;
+  }
+}
 .win__card #img2 {
   width: 210px;
   transform: rotate(5deg);
@@ -2147,6 +2164,12 @@ a {
   top: 30px;
   left: 180px;
   filter: saturate(130%);
+}
+@media only screen and (max-width: 1024px) {
+  .win__card #img2 {
+    width: 138px;
+    top: 5px;
+  }
 }
 .win__card #img3 {
   width: 230px;
@@ -2157,8 +2180,20 @@ a {
   filter: contrast(150%);
 }
 @media only screen and (max-width: 1024px) {
+  .win__card #img3 {
+    width: 160px;
+    top: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .win__card {
     width: 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .win__card {
+    width: 400px;
+    height: 350px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -2166,7 +2201,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
   }
@@ -2460,13 +2495,40 @@ a {
 .testamonial__news .item__txt h2 span {
   color: #30B5DF;
 }
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item__txt h2 {
+    font-size: 1.5rem;
+  }
+}
 .testamonial__news .item__txt h4 {
   font-size: 1.25rem;
   font-weight: 400;
 }
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item__txt h4 {
+    font-size: 1.25rem;
+  }
+}
 .testamonial__news .item__txt p {
   font-size: 1.125rem;
   color: #384450;
+}
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item__txt p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: "";
+    gap: 2rem;
+  }
 }
 .testamonial__news .item2 {
   padding: 20px;
@@ -2496,13 +2558,33 @@ a {
 .testamonial__news .item2__txt h2 span {
   color: #30B5DF;
 }
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item2__txt h2 {
+    font-size: 1.5rem;
+  }
+}
 .testamonial__news .item2__txt h4 {
   font-size: 1.25rem;
   font-weight: 400;
 }
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item2__txt h4 {
+    font-size: 1.25rem;
+  }
+}
 .testamonial__news .item2__txt p {
   font-size: 1.125rem;
   color: #384450;
+}
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item2__txt p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .testamonial__news .item2 {
+    width: 100%;
+  }
 }
 
 .doktor {
@@ -2545,40 +2627,63 @@ a {
 }
 
 .stamatolog {
-  margin-top: 100px;
+  width: 70%;
+  height: 600px;
+  margin-top: 170px;
+  margin-bottom: 100px;
   background-color: #F7F9FC;
-  padding: 50px;
+  padding: 60px 60px;
   border-radius: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 1.4rem;
 }
 .stamatolog__txt {
   width: 50%;
 }
 .stamatolog__txt h1 {
-  font-size: 3rem;
+  font-size: 3.25rem;
   line-height: 1;
 }
 .stamatolog__txt h1 span {
   color: #30B5DF;
 }
+@media only screen and (max-width: 1024px) {
+  .stamatolog__txt h1 {
+    font-size: 2.235rem;
+    margin-bottom: 20px;
+  }
+}
 .stamatolog__txt h4 {
   margin: 10px 0;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 1024px) {
+  .stamatolog__txt h4 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 }
 .stamatolog__txt ul {
   list-style: disc;
-  color: #000;
+  color: #384450;
   position: relative;
   left: 20px;
   line-height: 2;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
 }
 .stamatolog__txt ul li::marker {
   color: #30B5DF;
 }
 @media only screen and (max-width: 1024px) {
   .stamatolog__txt ul {
-    left: 20px;
-    line-height: 1.7;
+    line-height: 1.2;
+    width: 350px;
   }
 }
 .stamatolog__txt .email {
@@ -2586,11 +2691,12 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: "";
   gap: 0.8rem;
   margin-top: 10px;
 }
 .stamatolog__txt .email .google {
+  margin-top: 0px;
   width: 50%;
   height: 2.5rem;
   padding: 1.5rem;
@@ -2603,19 +2709,21 @@ a {
 }
 @media only screen and (max-width: 1024px) {
   .stamatolog__txt .email .google {
-    width: 100%;
+    width: 50%;
     height: 2.5rem;
-    padding: 1.5rem;
+    padding: "";
     border: 1px solid rgba(88, 88, 88, 0.322);
     outline: none;
     font-size: 1rem;
     color: grey;
     background: white;
     border-radius: 0.5rem;
+    padding: 0 20px;
+    text-align: center;
   }
 }
 .stamatolog__txt .email .whatsApp {
-  padding: 10px 15px;
+  padding: 12px 15px;
   border: 1px solid #30B5DF;
   border-radius: 0.5rem;
   background-color: #30B5DF;
@@ -2631,17 +2739,21 @@ a {
 }
 @media only screen and (max-width: 1024px) {
   .stamatolog__txt .email .whatsApp {
-    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #30B5DF;
+    border-radius: 0.5rem;
+    background-color: #30B5DF;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 60%;
+    font-size: 1rem;
   }
-}
-@media only screen and (max-width: 1024px) {
-  .stamatolog__txt .email {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.8rem;
+  .stamatolog__txt .email .whatsApp:hover {
+    filter: brightness(0.9);
+    box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
   }
 }
 .stamatolog__txt .email .gift {
@@ -2650,7 +2762,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  flex-wrap: "";
+  flex-wrap: wrap;
   gap: 1.4rem;
 }
 .stamatolog__txt .email .gift .gift1,
@@ -2668,8 +2780,8 @@ a {
   font-size: 1.125rem;
 }
 @media only screen and (max-width: 1024px) {
-  .stamatolog__txt .email .gift .gift1 p,
-  .stamatolog__txt .email .gift .gift2 p {
+  .stamatolog__txt .email .gift .gift1 p p,
+  .stamatolog__txt .email .gift .gift2 p p {
     font-size: 1rem;
   }
 }
@@ -2680,20 +2792,7 @@ a {
 @media only screen and (max-width: 1024px) {
   .stamatolog__txt .email .gift .gift1 img,
   .stamatolog__txt .email .gift .gift2 img {
-    width: 30%;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .stamatolog__txt .email .gift .gift1,
-  .stamatolog__txt .email .gift .gift2 {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: "";
-    gap: 0.5rem;
-    width: 300px;
-    margin-top: -20px;
+    width: 15%;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -2703,7 +2802,54 @@ a {
     align-items: center;
     flex-direction: column;
     flex-wrap: "";
-    gap: 0.5rem;
+    gap: 1.4rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .stamatolog__txt .email .gift .gift1 {
+    display: none;
+  }
+}
+.stamatolog__txt .email .gift .gift1 {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .stamatolog__txt {
+    width: 60%;
+  }
+}
+.stamatolog__img {
+  width: 600px;
+}
+.stamatolog__img img {
+  width: 650px;
+  position: relative;
+  top: -87px;
+}
+@media only screen and (max-width: 1024px) {
+  .stamatolog__img img {
+    width: 490px;
+    top: 0px;
+    right: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .stamatolog__img {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .stamatolog {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: "";
+    gap: 1rem;
+    overflow: hidden;
+    height: 500px;
+    padding: 30px 30px;
+    width: 100%;
   }
 }
 
@@ -3111,6 +3257,7 @@ a {
     flex-wrap: "";
     gap: 1rem;
     padding: 20px 40px;
+    margin-top: 80px;
   }
 }
 
@@ -3321,9 +3468,20 @@ a {
 .doctor__txt h1 span {
   color: #30B5DF;
 }
+@media only screen and (max-width: 1024px) {
+  .doctor__txt h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
 .doctor__txt p {
   font-size: 1.25rem;
   color: #384450;
+}
+@media only screen and (max-width: 1024px) {
+  .doctor__txt p {
+    font-size: 1.125rem;
+  }
 }
 .doctor__txt .number {
   display: flex;
@@ -3333,8 +3491,52 @@ a {
   flex-wrap: "";
   gap: 2rem;
 }
+.doctor__txt .number h2 {
+  font-size: 1.625rem;
+}
+.doctor__txt .number p {
+  margin-top: -10px;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 1024px) {
+  .doctor__txt .number {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: "";
+    gap: 1rem;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .doctor__txt {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 2rem;
+  }
+}
 .doctor__img img {
   width: 600px;
+}
+@media only screen and (max-width: 1024px) {
+  .doctor__img img {
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .doctor {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: "";
+    gap: 1rem;
+    margin-top: 100px;
+  }
 }
 
 .gallery {

@@ -49,14 +49,16 @@
 
     .buttons {
         width: 100%;
-        @include mixins.flexBox(start, center, row, '', 1rem);
+        @include mixins.flexBox(start, center, row, '', 5rem);
 
         .tel {
-            @include mixins.input(100%, 2.5rem, '', 1px solid transparent, 1rem, grey, white, 0.5rem);
+            @include mixins.input(130%, 2.5rem, '', 1px solid transparent, 1rem, grey, white, 0.5rem);
+            margin-top: -0px;
+            // width: 140%;
         }
 
         .whatsApp {
-            @include mixins.button(10px 15px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
+            @include mixins.button(10px 25px, 1px solid $bg-skyblue, $br-8, $bg-skyblue, $fc-white, $fs-16, $fw-5, $shadow-skyblue);
         }
     }
 

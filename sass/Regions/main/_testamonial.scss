@@ -39,18 +39,36 @@
                     span {
                         color: $bg-skyblue;
                     }
+
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-24;
+                    }
                 }
 
                 h4 {
                     font-size: $fs-20;
                     font-weight: $fw-4;
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-20;
+                    }
                 }
 
                 p {
                     font-size: $fs-18;
                     color: $bg-gray;
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-16;
+                    }
                 }
             }
+
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                padding: 20px;
+            @include mixins.flexBox(start, center, row, '', 2rem);
+
+            }
+
         }
 
         .item2 {
@@ -71,17 +89,30 @@
                     span {
                         color: $bg-skyblue;
                     }
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-24;
+                    }
                 }
 
                 h4 {
                     font-size: $fs-20;
                     font-weight: $fw-4;
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-20;
+                    }
                 }
 
                 p {
                     font-size: $fs-18;
                     color: $bg-gray;
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-16;
+                    }
                 }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
             }
         }
     }
