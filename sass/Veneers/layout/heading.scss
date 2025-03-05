@@ -1,0 +1,81 @@
+@use'../../mixins';
+@use'../../roots'as*;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.veneers-back-img{
+    width: 100%;
+    font-family: $Roboto;
+    height: 600px;
+    background-color: $bg-darker-white;
+    background-image:linear-gradient(48deg,rgba(0, 0, 0, 0.805),rgba(233, 233, 233, 0.241)), url('../../../assets/img/veneers_woman.jpg');
+    background-repeat: no-repeat;
+    background-size: 98rem;
+    border-radius: $br-20;
+    padding: 7rem;
+    font-weight: 100;
+    .veneers_txt{
+        .h1{
+            text-transform: uppercase;
+            font-size: 50px;
+            color: $bg-white;
+        }
+        p{
+            color: $bg-white;
+            font-size: 18px;
+        }
+    }
+    .btn{
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    .btn-1{
+        @include mixins.button(15px 22px, none,$br-8, $bg-skyblue, $bg-white, 18px, 300, none);
+    }    
+    .btn-2{
+        @include mixins.button(15px 22px, none,$br-8, $bg-green, $bg-white, 18px, 300, none);
+   
+    }
+    }
+}
+.veneers_txt_vinirs{
+    display: flex;
+    padding: 1rem;
+    .giftes{
+        display: flex;
+        .veneers_gift_txt{
+            padding: 1rem;
+            padding-left: -10px;
+        }
+    }
+    .veneers_gift_txt2{
+        padding: 1rem;
+        padding-left: -10px;
+    }
+}
+ .venners_bg-blur{
+    display: flex;
+    position: absolute;
+    right: 11rem;
+    padding-top: 40px;
+    gap: 2rem;
+    .bg-blur{
+        background-color: rgba(255, 255, 255, 0.533);
+        backdrop-filter: blur(10);
+        padding: 30px;
+        border-radius: $br-8;
+    }
+    .bg-blur1{
+        background-color: rgba(255, 255, 255, 0.532);
+        backdrop-filter: blur(10);
+        padding: 30px;
+        border-radius: $br-8;
+    }.bg-blur2{
+        background-color: rgba(255, 255, 255, 0.525);
+        backdrop-filter: blur(10);
+        padding: 30px;
+        border-radius: $br-8;
+    }
+} 
