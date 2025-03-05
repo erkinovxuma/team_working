@@ -10,6 +10,9 @@
 
         h1 {
             font-size: $fs-48;
+            @media only screen and (max-width: 425px) {
+            font-size: $fs-36;
+            }
         }
 
         p {
@@ -48,6 +51,7 @@
                 h4 {
                     font-size: $fs-20;
                     font-weight: $fw-4;
+
                     @media only screen and (max-width: 1024px) {
                         font-size: $fs-20;
                     }
@@ -56,19 +60,28 @@
                 p {
                     font-size: $fs-18;
                     color: $bg-gray;
+
                     @media only screen and (max-width: 1024px) {
                         font-size: $fs-16;
                     }
+                }
+
+                @media only screen and (max-width: 425px) {
+                    @include mixins.flexBox(center, center, column, '', 0.7rem);
                 }
             }
 
             @media only screen and (max-width: 1024px) {
                 width: 100%;
                 padding: 20px;
-            @include mixins.flexBox(start, center, row, '', 2rem);
+                @include mixins.flexBox(start, center, row, '', 2rem);
 
             }
 
+            @media only screen and (max-width: 425px) {
+                @include mixins.flexBox(start, center, column, '', 4rem);
+                padding: 20px;
+            }
         }
 
         .item2 {
@@ -77,15 +90,12 @@
             width: 70%;
             background-color: $bg-light-blue;
             @include mixins.flexBox(end, center, row, '', 4rem);
-
             &__txt {
                 @include mixins.flexBox(start, flex-start, column, '', 0.7rem);
                 width: 500px;
-
                 h2 {
                     color: $bg-dark;
                     font-size: $fs-24;
-
                     span {
                         color: $bg-skyblue;
                     }
@@ -93,7 +103,6 @@
                         font-size: $fs-24;
                     }
                 }
-
                 h4 {
                     font-size: $fs-20;
                     font-weight: $fw-4;
@@ -101,7 +110,6 @@
                         font-size: $fs-20;
                     }
                 }
-
                 p {
                     font-size: $fs-18;
                     color: $bg-gray;

@@ -1934,6 +1934,12 @@ a {
     line-height: 1;
   }
 }
+@media only screen and (max-width: 425px) {
+  .hero .txt h1 {
+    font-size: 1.875rem;
+    width: 100%;
+  }
+}
 .hero .txt p {
   color: #fff;
   font-size: 1.125rem;
@@ -1948,6 +1954,11 @@ a {
     line-height: 1;
   }
 }
+@media only screen and (max-width: 425px) {
+  .hero .txt p {
+    display: none;
+  }
+}
 .hero .buttons {
   width: 100%;
   display: flex;
@@ -1958,7 +1969,7 @@ a {
   gap: 5rem;
 }
 .hero .buttons .tel {
-  width: 130%;
+  width: 100%;
   height: 2.5rem;
   padding: "";
   border: 1px solid transparent;
@@ -1968,6 +1979,11 @@ a {
   background: white;
   border-radius: 0.5rem;
   margin-top: 0px;
+}
+@media only screen and (max-width: 425px) {
+  .hero .buttons .tel {
+    width: 100%;
+  }
 }
 .hero .buttons .whatsApp {
   padding: 10px 25px;
@@ -1983,6 +1999,17 @@ a {
 .hero .buttons .whatsApp:hover {
   filter: brightness(0.9);
   box-shadow: 0 0 5px 7px rgba(48, 181, 223, 0.4);
+}
+@media only screen and (max-width: 425px) {
+  .hero .buttons {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 1rem;
+    margin-bottom: 30px;
+  }
 }
 .hero .check_tm {
   position: relative;
@@ -2009,6 +2036,11 @@ a {
   .hero .check_tm p {
     font-size: 1rem;
     line-height: 1;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hero .check_tm {
+    display: none;
   }
 }
 .hero .reklam {
@@ -2097,6 +2129,22 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 425px) {
+  .hero .reklam {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hero {
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 2rem;
+  }
+}
 
 .win {
   display: flex;
@@ -2157,6 +2205,12 @@ a {
     top: 10px;
   }
 }
+@media only screen and (max-width: 425px) {
+  .win__card img {
+    width: 190px;
+    right: 10px;
+  }
+}
 .win__card #img2 {
   width: 210px;
   transform: rotate(5deg);
@@ -2169,6 +2223,12 @@ a {
   .win__card #img2 {
     width: 138px;
     top: 5px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .win__card #img2 {
+    width: 130px;
+    right: 10px;
   }
 }
 .win__card #img3 {
@@ -2185,6 +2245,12 @@ a {
     top: 30px;
   }
 }
+@media only screen and (max-width: 425px) {
+  .win__card #img3 {
+    width: 160px;
+    top: 0px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .win__card {
     width: 100px;
@@ -2194,6 +2260,11 @@ a {
   .win__card {
     width: 400px;
     height: 350px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .win__card {
+    width: 370px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -2228,9 +2299,21 @@ a {
   font-weight: 500;
   font-size: 1.875rem;
 }
+@media only screen and (max-width: 425px) {
+  .skills h3 span {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .skills h3 {
     font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .skills h3 {
+    font-size: 1.25rem;
     line-height: 1;
   }
 }
@@ -2244,6 +2327,12 @@ a {
     font-size: 2.25rem;
     line-height: 1;
     margin-bottom: -10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .skills h1 {
+    font-size: 1.625rem;
+    line-height: 1;
   }
 }
 .skills .parent {
@@ -2274,6 +2363,11 @@ a {
 @media only screen and (max-width: 1024px) {
   .skills .parent__card p {
     font-size: 1.125rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .skills .parent__card p {
+    font-size: 1rem;
   }
 }
 .skills .parent__card .flex-card {
@@ -2457,6 +2551,11 @@ a {
 .testamonial .tes-txt h1 {
   font-size: 3rem;
 }
+@media only screen and (max-width: 425px) {
+  .testamonial .tes-txt h1 {
+    font-size: 2.25rem;
+  }
+}
 .testamonial .tes-txt p {
   font-size: 1.125rem;
 }
@@ -2518,6 +2617,16 @@ a {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 425px) {
+  .testamonial__news .item__txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 0.7rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .testamonial__news .item {
     width: 100%;
@@ -2528,6 +2637,17 @@ a {
     flex-direction: row;
     flex-wrap: "";
     gap: 2rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .testamonial__news .item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: "";
+    gap: 4rem;
+    padding: 20px;
   }
 }
 .testamonial__news .item2 {
@@ -3329,6 +3449,7 @@ a {
   color: grey;
   background: white;
   border-radius: 0.5rem;
+  margin-top: 0px;
 }
 @media only screen and (max-width: 1024px) {
   .instruments__form .txt .email .google {
@@ -3344,7 +3465,7 @@ a {
   }
 }
 .instruments__form .txt .email .whatsApp {
-  padding: 10px 15px;
+  padding: 12px 15px;
   border: 1px solid #30B5DF;
   border-radius: 0.5rem;
   background-color: #30B5DF;
@@ -3394,7 +3515,7 @@ a {
 }
 .instruments__form .txt .gift .gift1 p,
 .instruments__form .txt .gift .gift2 p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 @media only screen and (max-width: 1024px) {
   .instruments__form .txt .gift .gift1 p,
@@ -3678,6 +3799,58 @@ h2 span {
 @media only screen and (max-width: 1024px) {
   .team {
     display: none;
+  }
+}
+
+.question {
+  margin-bottom: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 2rem;
+}
+.question .savol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: "";
+  gap: 2rem;
+}
+.question .savol__txt {
+  background-color: #F7F9FC;
+  padding: 80px 100px;
+  border-radius: 1.5rem;
+}
+.question .savol__txt h2 {
+  font-size: 2.25rem;
+  color: #000;
+}
+.question .savol__txt p {
+  font-size: 1.125rem;
+}
+.question .savol__txt .whatsapp-btn {
+  padding: 12px 15px;
+  border: 1px solid #25D366;
+  border-radius: 0.5rem;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 30px;
+}
+.question .savol__txt .whatsapp-btn:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 5px 7px rgba(37, 211, 102, 0.4);
+}
+@media only screen and (max-width: 1024px) {
+  .question .savol__txt .whatsapp-btn {
+    width: 100%;
   }
 }
 
