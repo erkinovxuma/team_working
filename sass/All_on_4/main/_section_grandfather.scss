@@ -1,0 +1,228 @@
+@use "../../roots" as *;
+@use "../../mixins";
+
+.main {
+  width: 100%;
+  .section_grandfather {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 155px 144px 155px;
+    .grandfather_top {
+      width: 100%;
+      max-width: 100%;
+      background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+      background-image: url("../../../assets/img/grandfather_background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 98px 48px 48px 48px;
+      margin-bottom: 16px;
+      h6 {
+        margin-bottom: 24px;
+        span {
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: 32px;
+          // leading-trim: Cap height;
+          color: rgba(22, 163, 208, 1);
+          line-height: 38.4px;
+          letter-spacing: 0%;
+        }
+        color: rgba(17, 28, 39, 1);
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        // leading-trim: Cap height;
+        line-height: 26.4px;
+        letter-spacing: 0%;
+      }
+      ul {
+        width: 100%;
+        max-width: 347px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+        li {
+          font-family: "Roboto", sans-serif;
+          color: rgba(17, 28, 39, 1);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22.5px;
+          letter-spacing: 0%;
+          list-style: disc;
+          &::marker {
+            color: rgba(48, 181, 223, 1);
+          }
+          a {
+            font-family: "Roboto", sans-serif;
+            color: rgba(17, 28, 39, 1);
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22.5px;
+            letter-spacing: 0%;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .grandfather_middle {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 16px;
+      .grandfather_middle_left {
+        width: 100%;
+        max-width: 557px;
+        padding: 32px;
+        border-radius: 22px;
+        background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+        .left_infos {
+          width: 100%;
+          max-width: 302px;
+          h3 {
+            display: block;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: rgba(17, 28, 39, 1);
+            line-height: 26px;
+            margin-bottom: 16px;
+            letter-spacing: 0%;
+          }
+          p {
+            width: 100%;
+            max-width: 260px;
+            font-family: "Roboto", sans-serif;
+            color: rgba(17, 28, 39, 1);
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 0%;
+          }
+        }
+        img {
+          transform: translateY(-50px);
+          display: block;
+          margin-left: auto;
+        }
+      }
+      .grandfather_middle_right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        .right_infos {
+          width: 100%;
+          max-width: 557px;
+          background-color: rgba(249, 250, 251, 1);
+          padding: 32px;
+          border-radius: 22px;
+          display: flex;
+          justify-content: space-between;
+
+          .right_infos_style {
+            h3 {
+              display: block;
+              font-family: "Roboto", sans-serif;
+              font-weight: 600;
+              font-size: 20px;
+              color: rgba(17, 28, 39, 1);
+              line-height: 26px;
+              margin-bottom: 16px;
+              letter-spacing: 0%;
+            }
+            p {
+              width: 100%;
+              max-width: 260px;
+              font-family: "Roboto", sans-serif;
+              color: rgba(17, 28, 39, 1);
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 21px;
+              letter-spacing: 0%;
+            }
+          }
+          img {
+            width: 238px;
+            transform: translate(30px, 30px);
+          }
+        }
+      }
+    }
+    .section_grandfather__P {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      color: rgba(107, 118, 128, 1);
+      line-height: 26.35px;
+      letter-spacing: 0%;
+      text-align: center;
+      width: 100%;
+      max-width: 401px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media only screen and (max-width: 1320px) {
+    .section_grandfather {
+      padding: 50px;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    .section_grandfather {
+      padding: 20px;
+      .grandfather_top {
+        background-position: center center;
+        padding: 88px 30px 30px 30px;
+      }
+      .grandfather_middle {
+        flex-direction: column;
+        row-gap: 16px;
+        .grandfather_middle_left {
+          width: 100%;
+          max-width: 100%;
+        }
+        .grandfather_middle_right {
+          width: 100%;
+          max-width: 100%;
+          .right_infos {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .section_grandfather {
+      padding: 10px;
+
+      .grandfather_middle {
+        .grandfather_middle_left {
+          flex-direction: column;
+          align-items: center;
+        }
+        .grandfather_middle_right {
+          width: 100%;
+          max-width: 100%;
+          .right_infos {
+            flex-direction: column;
+            align-items: center;
+            .right_infos_style {
+              h3 {
+                text-align: center;
+              }
+              p {
+                text-align: center;
+              }
+            }
+            img {
+              transform: translate(0px, 0px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

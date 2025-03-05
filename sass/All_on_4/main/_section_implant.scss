@@ -1,0 +1,252 @@
+@use "../../roots" as *;
+@use "../../mixins";
+
+
+
+.main {
+  width: 100%;
+  .section_implantatsiya {
+    .section_implant_top {
+      margin-bottom: 32px;
+      width: 100%;
+      max-width: 953px;
+      h5 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        color: rgba(17, 24, 39, 1);
+        line-height: 46px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 32px;
+        span {
+          color: rgba(48, 181, 223, 1);
+        }
+      }
+      p {
+        margin-bottom: 40px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: rgba(77, 85, 97, 1);
+        line-height: 25.5px;
+        letter-spacing: 0%;
+        text-align: center;
+        span {
+          color: rgba(48, 181, 223, 1);
+        }
+      }
+      .section_implant_buttons {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 790px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 12px;
+        align-items: center;
+        .white_button {
+          width: 100%;
+          max-width: 240px;
+          border: none;
+          border-radius: 10px;
+          padding: 8px 20px;
+          font-family: "Roboto", serif;
+          color: rgba(17, 24, 39, 1);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 17.58px;
+          letter-spacing: 0%;
+        }
+        .width_281 {
+          width: 100%;
+          max-width: 281px;
+        }
+        .width_258 {
+          width: 100%;
+          max-width: 258px;
+        }
+        .width_208 {
+          width: 100%;
+          max-width: 208px;
+        }
+        .width_285 {
+          width: 100%;
+          max-width: 285px;
+        }
+        .blue_button {
+          width: 100%;
+          max-width: 258px;
+          @include mixins.button(
+            8px 25px,
+            none,
+            60px,
+            rgba(48, 181, 223, 1),
+            rgba(255, 255, 255, 1),
+            15px,
+            500,
+            ""
+          );
+          line-height: 19.5px;
+          letter-spacing: 0%;
+        }
+      }
+    }
+    .section_implant_bottom {
+      width: 100%;
+      .implant_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 8px;
+        .implant_wrapper_left {
+          width: 100%;
+          max-width: 674px;
+          padding: 48px 63px;
+          border-radius: 20px;
+          border: 1px solid rgba(209, 213, 219, 1);
+          background: linear-gradient(119deg, #deefff 0%, #f9fafb 96.64%);
+          display: flex;
+          flex-direction: column;
+          row-gap: 32px;
+          h6 {
+            font-family: "Roboto", serif;
+            font-weight: 500;
+            font-size: 24px;
+            color: rgba(17, 24, 39, 1);
+            line-height: 32.64px;
+            letter-spacing: 0%;
+          }
+          .implant_wrapper_left_info {
+            b {
+              display: block;
+              margin-bottom: 16px;
+              font-family: "Roboto", sans-serif;
+              font-weight: 500;
+              font-size: 17px;
+              color: rgba(17, 24, 39, 1);
+              line-height: 25.5px;
+              letter-spacing: 0%;
+            }
+            a {
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 22.5px;
+              letter-spacing: 0%;
+              color: rgba(17, 24, 39, 1);
+              text-decoration: underline;
+              text-decoration-style: solid;
+              text-decoration-thickness: Auto;
+            }
+            p {
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              color: rgba(77, 85, 97, 1);
+              line-height: 22.5px;
+              letter-spacing: 0%;
+            }
+          }
+        }
+        .implant_wrapper_right {
+          width: 100%;
+
+
+          max-width: 448px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          column-gap: 4px;
+          .right_bck {
+            background-color: rgba(209, 214, 219, 1);
+            width: 100%;
+            max-width: 220px;
+            height: 500px;
+          }
+        }
+      }
+      .implant_slider_bottom {
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .slider_bottom_p {
+          font-size: 15px;
+          line-height: 133%;
+          color: #6b7680;
+        }
+        .slider_bottom_buttons {
+          display: flex;
+          gap: 12px;
+          button {
+            border: 0.5px solid #d1d6db;
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 133%;
+            color: #111c27;
+            opacity: 0.5;
+          }
+          .active {
+            cursor: pointer;
+            opacity: 1;
+            transition: 0.3s;
+            &:hover {
+              border-color: #30b5df;
+              color: #30b5df;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .section_implantatsiya {
+      .section_implant_top {
+        .section_implant_buttons {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+      .section_implant_bottom {
+        .implant_wrapper {
+          flex-direction: column-reverse;
+          row-gap: 16px;
+          .implant_wrapper_right {
+            width: 100%;
+            max-width: 100%;
+            row-gap: 5px;
+            .right_bck {
+              border-radius: 20px;
+              width: 100%;
+              max-width: 100%;
+              height: 150px;
+              padding: 1px;
+            }
+          }
+          .implant_wrapper_left {
+            width: 100%;
+            max-width: 100%;
+            padding: 40px 24px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .section_implantatsiya {
+      .section_implant_bottom {
+        .implant_wrapper {
+          .implant_wrapper_right {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}
