@@ -1,0 +1,66 @@
+.podcast_sec {
+  width: 100%;
+  font-family: "Roboto";
+  padding: 2rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .podcast_sec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+.podcast_sec .cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.podcast_sec .cont .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 2rem;
+  width: 440px;
+  height: 500px;
+  background-color: #F3F4F6;
+  padding: 2.5rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+}
+.podcast_sec .cont .card h5 {
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.podcast_sec .cont .card p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+}
+.podcast_sec .cont .card .img {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 1rem;
+}
+.podcast_sec .cont .card .img .img_rotate {
+  transform: rotate(35deg);
+}
+@media only screen and (max-width: 420px) {
+  .podcast_sec .cont .card .img img {
+    width: 40%;
+  }
+}/*# sourceMappingURL=podcast_sec.css.map */

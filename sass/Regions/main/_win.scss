@@ -1,0 +1,124 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+
+.win {
+    @include mixins.flexBox(center, flex-start, row, '', 2rem);
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    &__card {
+        font-family: $Roboto;
+        @include mixins.flexBox(start, flex-start, column, '', '');
+        padding: 30px;
+        width: 500px;
+        height: 500px;
+        background-color: #F7F9FC;
+        margin-bottom: 40px;
+        border-radius: 15px;
+
+        #f2 {
+            color: $bg-dark;
+            font-size: $fs-22;
+            font-weight: $fw-6;
+
+            @media only screen and (max-width: 1024px) {
+                font-size: $fs-18;
+
+            }
+        }
+
+        p {
+            font-size: $fs-20;
+            margin-top: 10px;
+            color: $bg-gray;
+
+            @media only screen and (max-width: 1024px) {
+                font-size: $fs-16;
+
+            }
+        }
+
+        img {
+            width: 290px;
+            transform: rotate(10deg);
+            position: relative;
+            top: 40px;
+            left: 140px;
+            filter: contrast(130%);
+
+            @media only screen and (max-width: 1024px) {
+                width: 200px;
+                top: 10px;
+            }
+
+            @media only screen and (max-width: 425px) {
+                width: 190px;
+                right: 10px;
+            }
+
+
+
+        }
+
+        #img2 {
+            width: 210px;
+            transform: rotate(5deg);
+            position: relative;
+            top: 30px;
+            left: 180px;
+            filter: saturate(130%);
+
+            @media only screen and (max-width: 1024px) {
+                width: 138px;
+                top: 5px;
+            }
+
+            @media only screen and (max-width: 425px) {
+                width: 130px;
+                right: 10px;
+            }
+
+        }
+
+        #img3 {
+            width: 230px;
+            position: relative;
+            top: 50px;
+            transform: rotate(-5deg);
+            left: 140px;
+            filter: contrast(150%);
+
+            @media only screen and (max-width: 1024px) {
+                width: 160px;
+                top: 30px;
+            }
+
+            @media only screen and (max-width: 425px) {
+                width: 160px;
+                top: 0px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1024px) {
+            width: 100px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            width: 400px;
+            height: 350px;
+
+        }
+
+        @media only screen and (max-width: 425px) {
+            width: 370px;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        @include mixins.flexBox(center, center, row, wrap, 2rem);
+
+    }
+
+}

@@ -16,28 +16,37 @@
             color: $fc-skyblue;
             font-weight: $fw-5;
             font-size: $fs-30;
-            @media only screen and (max-width: 640px){
-                font-size: $fs-18;
-
-                    }
+            @media only screen and (max-width: 425px) {
+                font-size: $fs-20;
+                line-height: 1;
+            }
         }
-        @media only screen and (max-width: 640px){
-            font-size: $fs-18;
-            padding: 0 20px;
+
+        @media only screen and (max-width: 1024px) {
+            font-size: $fs-24;
             line-height: 1;
-                }
+
+        }
+        @media only screen and (max-width: 425px) {
+            font-size: $fs-20;
+            line-height: 1;
+        }
     }
 
     h1 {
         text-align: center;
         font-size: $fs-48;
         margin-bottom: 30px;
-        @media only screen and (max-width: 640px){
-        font-size: $fs-24;
-        margin-bottom: 20px;
-        line-height: 1;
 
-            }
+        @media only screen and (max-width: 1024px) {
+            font-size: $fs-36;
+            line-height: 1;
+            margin-bottom: -10px;
+        }
+        @media only screen and (max-width: 425px) {
+            font-size: $fs-26;
+            line-height: 1;
+        }
     }
 
     .parent {
@@ -49,10 +58,19 @@
             background-color: $bg-light-blue;
             padding: 30px;
             border-radius: 15px;
+
             p {
                 font-size: $fs-20;
-            color: $bg-gray;
+                color: $bg-gray;
                 line-height: 1.5;
+
+                @media only screen and (max-width: 1024px) {
+                    font-size: $fs-18;
+
+                }
+                @media only screen and (max-width: 425px) {
+                    font-size: $fs-16;
+                }
             }
 
             .flex-card {
@@ -67,10 +85,18 @@
                     color: $bg-skyblue;
                 }
             }
-            @media only screen and (max-width: 640px){
-            width: 350px;
 
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                padding: 30px 50px;
+            }
+            @media only screen and (max-width: 425px) {
             }
         }
+
+        @media only screen and (max-width: 1024px) {
+            @include mixins.flexBox(center, flex-start, column, '', 1rem);
+        }
     }
+
 }

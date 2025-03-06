@@ -1,0 +1,31 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.question{
+    margin-bottom: 400px;
+    width: 100%;
+    @include mixins.flexBox(center, center, row, '', 2rem);
+.savol{
+    @include mixins.flexBox(center, center, row, '', 2rem);
+
+    &__txt{
+        background-color: $bg-light-blue;
+        padding: 80px 100px;
+        border-radius: $br-24;
+        h2{
+            font-size: $fs-36;
+            color: $bg-dark;
+        }
+        p{
+            font-size: $fs-18;
+        }
+        .whatsapp-btn {
+            @include mixins.button(12px 15px, 1px solid $bg-green, $br-8, $bg-green, $fc-white, $fs-18, $fw-5, $shadow-green);
+            margin-top: 30px;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+    }
+}
+}

@@ -1,24 +1,33 @@
 @use '../../roots' as *;
 @use '../../mixins';
 
-.vernut{
-
+.vernut {
+    margin-bottom: 50px;
     margin-top: 70px;
     font-family: $Roboto;
-    h1{
+
+    h1 {
         font-size: $fs-48;
         text-align: center;
-        span{
+
+        span {
             color: $bg-skyblue;
         }
+
+        @media only screen and (max-width: 1024px) {
+            font-size: $fs-36;
+            line-height: 1;
+        }
     }
-    &__cnt{
+
+    &__cnt {
         @include mixins.flexBox(center, center, row, '', 15.5rem);
 
-        .vernut-img{
+        .vernut-img {
             position: relative;
             top: -130px;
-            .rectangle{
+
+            .rectangle {
                 width: 400px;
                 height: 400px;
                 transform: rotate(45deg);
@@ -28,43 +37,109 @@
                 position: relative;
                 left: 60px;
                 z-index: 1;
+
+                @media only screen and (max-width: 1024px) {
+                    width: 270px;
+                    height: 270px;
+                    border-radius: 500px 500px 500px 10px;
+                    transform: rotate(0deg);
+                    top: 30px;
+                    left: 0px;
+                    margin-top: 120px;
+
+                }
             }
-            .alina{
+
+            .alina {
                 width: 300px;
-                padding: 30px;
+                padding: 20px;
                 background-color: rgb(245, 245, 245);
                 border-radius: 20px;
                 position: relative;
                 top: 600px;
                 left: 250px;
                 z-index: 300;
+
+                #h2 {
+                    color: $bg-dark;
+                    font-size: $fs-22;
+
+                    @media only screen and (max-width: 1024px) {
+                        font-size: $fs-20;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    margin-top: -10px;
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    width: 250px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    top: 290px;
+                    left: 50px;
+                }
             }
         }
-        .vernut-txt{
+
+        .vernut-txt {
             width: 500px;
-            h2{
-                font-size: $fs-48;
+
+            #h2 {
+                font-size: $fs-40;
                 font-weight: 700;
                 color: $bg-dark;
                 margin-bottom: 20px;
-            }
-            p{
-                font-size: $fs-18;
-                margin-bottom: 20px;
-                span{
-                    color: $bg-skyblue;
+
+                @media only screen and (max-width: 1024px) {
+                    font-size: $fs-30;
+                    margin-bottom: 10px;
+
                 }
             }
-            ul{
+
+            p {
+                font-size: $fs-18;
+                margin-bottom: 20px;
+
+                span {
+                    color: $bg-skyblue;
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    font-size: $fs-16;
+                }
+            }
+
+            ul {
                 list-style: disc;
                 color: $bg-dark;
                 position: relative;
                 left: 30px;
                 line-height: 2;
-                li::marker{
-                color: $bg-skyblue;
+
+                li::marker {
+                    color: $bg-skyblue;
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    left: 20px;
+                    line-height: 1.7;
+
+
                 }
             }
+
+            @media only screen and (max-width: 1024px) {
+                width: 400px;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            @include mixins.flexBox(center, center, row, '', 4rem);
+
         }
     }
 }

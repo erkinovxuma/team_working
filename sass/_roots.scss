@@ -8,10 +8,17 @@ $fs-18: 1.125rem;
 $fs-20: 1.25rem;
 $fs-22: 1.375rem;
 $fs-24: 1.5rem;
+$fs-26: 1.625rem;
 $fs-30: 1.875rem;
 $fs-36: 2.25rem;
+$fs-38: 2.235rem;
+$fs-40: 2.5rem;
 $fs-48: 3rem;
+$fs-50: 3.125rem;
+$fs-52: 3.25rem;
 $fs-60: 3.75rem;
+$fs-62: 3.875rem;
+$fs-64: 4rem;
 $fs-72: 4.5rem;
 $fs-100: 6.25rem;
 $fs-120: 7.5rem;
@@ -31,7 +38,7 @@ $fw-9: 900;
 
 // FONT FAMILY
 $Roboto: 'Roboto';
-$BebasNeue: 'Bebas Neue';
+$BebasNeue: 'Bebas Neue', sans-serif;
 
 // FONT COLOR
 $fc-dark: #000;
@@ -53,6 +60,8 @@ $bg-skyblue-10: #30B5DF10;
 $bg-green: #25D366;
 $bg-light-blue: #F7F9FC;
 $bg-light-skyblue: #30B5DF;
+
+$bg-gradient-skyblue: linear-gradient(#DEEFFF, #F9FAFB);
 
 // BORDER COLOR
 $br-blue: #9CA3AF;
