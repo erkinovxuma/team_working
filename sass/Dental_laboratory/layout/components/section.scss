@@ -43,6 +43,8 @@
 
         .details {
             display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
@@ -53,6 +55,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px $shadow;
             flex: 1;
+            max-width: 99%;
 
             p{
                 margin-top: 10px;
@@ -77,6 +80,9 @@
             }
             .none{
                 display: none;
+            }
+            .description{
+                max-width: 99%;
             }
            
         }
